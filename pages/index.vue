@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 <template>
-  <BaseLayout>
+  <NuxtLayout name="default">
     <div>
       <h1>{{ $t("qsd") }}</h1>
     </div>
-  </BaseLayout>
+  </NuxtLayout>
 </template>

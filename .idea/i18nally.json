@@ -1,22 +1,22 @@
 {
   "version" : "1.2",
   "profiles" : [ {
-    "id" : "11d5b25e-3308-47ae-bc00-31bb434563c1",
-    "name" : "Vue-i18n",
+    "id" : "5ad8c8d9-c2e8-498e-97e1-790f233843de",
+    "name" : "Vue-i18n3",
     "keyNamingPattern" : "CAMEL_CASE_PATTERN",
     "sink" : {
-      "id" : "a1a562c3-7f19-4cdb-8d02-b47aab546db8",
+      "id" : "0cf497a7-bb07-4945-a7a7-990db3469e37",
       "type" : "namespaced",
-      "translationsDirectory" : "$PROJECT_DIR$/proone-site-presentation/modules/i18n",
+      "translationsDirectory" : "$PROJECT_DIR$/modules/i18n/lang",
       "fileType" : "json",
-      "defaultLocale" : "lang",
-      "namespaces" : [ "en-US", "fr-FR" ],
-      "outputFilenameTemplate" : "%locale%/%namespace%.json",
+      "defaultLocale" : "fr-FR",
+      "namespaces" : [ "messages" ],
+      "outputFilenameTemplate" : "%locale%.json",
       "nestingType" : "DISABLED",
-      "placeholderFormatterName" : "ICU"
+      "placeholderFormatterName" : "I18NEXT"
     },
     "sources" : [ {
-      "id" : "16a683a5-4a6f-4e7d-b9ad-97205da73311",
+      "id" : "e71988fb-7dc9-4b7b-848c-f2af4760490b",
       "type" : "js",
       "scopeName" : "Project Files",
       "scopePattern" : "",
@@ -24,7 +24,7 @@
       "recognizedReplacementTemplates" : [ ],
       "skipDefaultNamespace" : false
     }, {
-      "id" : "2be8cc51-3318-42a5-b8fb-385b43d2cda7",
+      "id" : "cd48258a-3851-46e7-a4fe-c415341879f0",
       "type" : "htmlvue",
       "scopeName" : "Project Files",
       "scopePattern" : "",
@@ -43,6 +43,6 @@
     "filesInProject" : [ ],
     "unignoredFunctionNames" : [ ],
     "unignoredFunctionArguments" : { },
-    "ignoredArrayKeys" : [ "class", "selector", "template", "middleware", "layout", "el", "component", "type", "name", "id", "key", "sql", "query", "dateFormat", "date", "condition" ]
+    "ignoredArrayKeys" : [ "template", "date", "dateFormat", "el", "query", "type", "sql", "layout", "component", "condition", "name", "selector", "id", "class", "key", "middleware" ]
   }
 }

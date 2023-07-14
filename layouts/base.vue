@@ -85,7 +85,7 @@ useHead({
 </script>
 
 <template>
-  <div>
+  <div class="base">
     <SeoKit />
     <!-- OG image -->
     <!-- a. Generates browser screenshots for every page -->
@@ -98,4 +98,10 @@ useHead({
   </div>
 </template>
 
-<style scoped></style>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aqua;
+}
+</style>

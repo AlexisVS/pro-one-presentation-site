@@ -30,9 +30,11 @@ export default defineNuxtConfig({
     "@nuxtjs/eslint-module",
     "@nuxtjs/i18n",
     "@nuxt/image",
-    "@nuxtjs/google-fonts",
     "@nuxt/content",
   ],
+
+  // CSS
+  css: ["~/assets/css/typography.css"],
 
   // I18n module configuration: https://i18n.nuxtjs.org/
   i18n: {
@@ -69,22 +71,6 @@ export default defineNuxtConfig({
     format: ["avif", "webp"],
     provider: "static",
     dir: "assets/images",
-  },
-
-  googleFonts: {
-    overwriting: true,
-    outputDir: "assets/fonts",
-    fontsDir: "fonts",
-    fontsPath: "~assets/fonts",
-    families: {
-      // Roboto: true,
-      // "Josefin+Sans": true,
-      // Lato: [100, 300],
-      // Raleway: {
-      //   wght: [100, 400],
-      //   ital: [100],
-      // },
-    },
   },
 
   // Content module configuration: https://content.nuxtjs.org/configuration

@@ -1,4 +1,3 @@
-import { RuntimeConfig } from 'nuxt/schema';
 <!-- eslint-disable vue/multi-word-component-names -->
 <!-- eslint-disable-next-line vue/multi-word-component-names -->
 <script setup lang="ts">
