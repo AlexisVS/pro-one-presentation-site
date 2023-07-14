@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   typescript: { shim: true },
 
-  // Modules: https://nuxt.com/docs/guide/concepts/modules
+  // Modules : https://nuxt.com/docs/guide/concepts/modules
   modules: [
     "@nuxtjs/eslint-module",
     "@nuxtjs/i18n",
