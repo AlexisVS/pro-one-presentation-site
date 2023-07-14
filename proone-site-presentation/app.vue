@@ -1,9 +1,9 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import BaseLayout from "@/layouts/base.vue";
+</script>
 
 <template>
-  <div>
-    <SeoKit />
-    <OgImageStatic />
+  <BaseLayout>
     <NuxtPage />
-  </div>
+  </BaseLayout>
 </template>

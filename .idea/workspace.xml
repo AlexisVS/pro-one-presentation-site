@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/developement.env" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/developement.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/production.env" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/production.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proone-site-presentation/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +28,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="Unnamed" pattern="file[pro-one]:proone-site-presentation/*" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\laragon\bin\php\php-8.2.3-Win32-vs16-x64\php.exe" />
   <component name="ProjectId" id="2SSvi7h6rjn01xfRjxUWecveoBJ" />
@@ -56,6 +67,7 @@
       <workItem from="1689153147321" duration="291000" />
       <workItem from="1689153449838" duration="5148000" />
       <workItem from="1689164267862" duration="2000" />
+      <workItem from="1689351651403" duration="75000" />
     </task>
     <servers />
   </component>

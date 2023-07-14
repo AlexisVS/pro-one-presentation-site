@@ -1,0 +1,48 @@
+{
+  "version" : "1.2",
+  "profiles" : [ {
+    "id" : "11d5b25e-3308-47ae-bc00-31bb434563c1",
+    "name" : "Vue-i18n",
+    "keyNamingPattern" : "CAMEL_CASE_PATTERN",
+    "sink" : {
+      "id" : "a1a562c3-7f19-4cdb-8d02-b47aab546db8",
+      "type" : "namespaced",
+      "translationsDirectory" : "$PROJECT_DIR$/proone-site-presentation/modules/i18n",
+      "fileType" : "json",
+      "defaultLocale" : "lang",
+      "namespaces" : [ "en-US", "fr-FR" ],
+      "outputFilenameTemplate" : "%locale%/%namespace%.json",
+      "nestingType" : "DISABLED",
+      "placeholderFormatterName" : "ICU"
+    },
+    "sources" : [ {
+      "id" : "16a683a5-4a6f-4e7d-b9ad-97205da73311",
+      "type" : "js",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "$t('%key%', %map%)",
+      "recognizedReplacementTemplates" : [ ],
+      "skipDefaultNamespace" : false
+    }, {
+      "id" : "2be8cc51-3318-42a5-b8fb-385b43d2cda7",
+      "type" : "htmlvue",
+      "scopeName" : "Project Files",
+      "scopePattern" : "",
+      "defaultReplacementTemplate" : "$t('%key%', %map%)",
+      "attributeReplacementTemplate" : "",
+      "inlineTagsReplacementTemplate" : "",
+      "recognizedReplacementTemplates" : [ ],
+      "inlineTagNames" : [ ],
+      "translatableAttributeNames" : [ "title", "alt", "placeholder", "label", "aria-label", "v-text", "v-html" ],
+      "skipDefaultNamespace" : false
+    } ]
+  } ],
+  "ignores" : {
+    "valuesInProject" : [ "use strict" ],
+    "valuesInFile" : { },
+    "filesInProject" : [ ],
+    "unignoredFunctionNames" : [ ],
+    "unignoredFunctionArguments" : { },
+    "ignoredArrayKeys" : [ "class", "selector", "template", "middleware", "layout", "el", "component", "type", "name", "id", "key", "sql", "query", "dateFormat", "date", "condition" ]
+  }
+}

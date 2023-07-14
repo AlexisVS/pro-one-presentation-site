@@ -1,6 +1,7 @@
 {
   "name": "pro-one-site-presentation",
   "private": true,
+  "type": "module",
   "browserList": [
     "defaults",
     "last 2 versions, not dead, > 0.2%"
