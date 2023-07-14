@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/app.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/developement.env" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/developement.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/nuxt.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/production.env" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/production.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proone-site-presentation/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/proone-site-presentation/tsconfig.json" afterDir="false" />
+    <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="- added SEO meta tag&#10;- added OG image for twitter and other">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Storytelling_original.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,21 +33,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;//wsl$/Debian/home/alexisvs/www/laravel-understanding-event-sourcing&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "//wsl$/Debian/home/alexisvs/www/laravel-understanding-event-sourcing",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "terminal",
+    "ts.external.directory.path": "\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one\\proone-site-presentation\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -67,11 +61,25 @@
       <workItem from="1689153147321" duration="291000" />
       <workItem from="1689153449838" duration="5148000" />
       <workItem from="1689164267862" duration="2000" />
-      <workItem from="1689351651403" duration="75000" />
+      <workItem from="1689351651403" duration="289000" />
+      <workItem from="1689362448002" duration="2119000" />
     </task>
+    <task id="LOCAL-00001" summary="- added SEO meta tag&#10;- added OG image for twitter and other">
+      <option name="closed" value="true" />
+      <created>1689351935315</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689351935315</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- added SEO meta tag&#10;- added OG image for twitter and other" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added SEO meta tag&#10;- added OG image for twitter and other" />
   </component>
 </project>
