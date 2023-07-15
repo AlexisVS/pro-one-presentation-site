@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="- added SEO meta tag&#10;- added OG image for twitter and other">
-      <change beforePath="$PROJECT_DIR$/components/OgImage/Default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/OgImage/Default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="Begin typography css">
+      <change afterPath="$PROJECT_DIR$/Storytelling_new.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/typography.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/font-family.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/base.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Composition API Component" />
         <option value="CSS File" />
+        <option value="Vue Composition API Component" />
       </list>
     </option>
   </component>
@@ -51,7 +57,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "//wsl$/Debian/home/alexisvs/www/laravel-understanding-event-sourcing",
+    "last_opened_file_path": "//wsl$/Debian/home/alexisvs/www/pro-one",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -69,6 +75,12 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.client: chrome" />
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -83,7 +95,8 @@
       <workItem from="1689164267862" duration="2000" />
       <workItem from="1689351651403" duration="289000" />
       <workItem from="1689362448002" duration="2119000" />
-      <workItem from="1689370740882" duration="4399000" />
+      <workItem from="1689370740882" duration="5173000" />
+      <workItem from="1689406422524" duration="6834000" />
     </task>
     <task id="LOCAL-00001" summary="- added SEO meta tag&#10;- added OG image for twitter and other">
       <option name="closed" value="true" />
@@ -93,7 +106,23 @@
       <option name="project" value="LOCAL" />
       <updated>1689351935315</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="- added layouts file&#10;- added Raleway fonts&#10;- added WaveFooter">
+      <option name="closed" value="true" />
+      <created>1689375949985</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1689375949985</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- added layouts file\n&#10;- added Raleway fonts\n&#10;- added WaveFooter">
+      <option name="closed" value="true" />
+      <created>1689375988303</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1689375988303</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,7 +131,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="- added SEO meta tag&#10;- added OG image for twitter and other" />
-    <option name="LAST_COMMIT_MESSAGE" value="- added SEO meta tag&#10;- added OG image for twitter and other" />
+    <MESSAGE value="- added layouts file&#10;- added Raleway fonts&#10;- added WaveFooter" />
+    <MESSAGE value="- added layouts file\n&#10;- added Raleway fonts\n&#10;- added WaveFooter" />
+    <MESSAGE value="Begin typography css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Begin typography css" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

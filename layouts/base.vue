@@ -97,11 +97,3 @@ useHead({
     <slot />
   </div>
 </template>
-
-<style>
-body {
-  margin: 0;
-  padding: 0;
-  background-color: aqua;
-}
-</style>

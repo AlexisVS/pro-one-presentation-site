@@ -34,7 +34,7 @@ export default defineNuxtConfig({
   ],
 
   // CSS
-  css: ["~/assets/css/typography.css"],
+  css: ["~/assets/css/main.css", "~/assets/css/font-family.css"],
 
   // I18n module configuration: https://i18n.nuxtjs.org/
   i18n: {
