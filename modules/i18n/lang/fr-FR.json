@@ -1,3 +1,7 @@
 {
-  "qsd": "french"
+  "qsd": "french",
+  "Accueil": "Accueil",
+  "Gravité": "Gravité",
+  "Pression": "Pression",
+  "A propos": "A propos"
 }

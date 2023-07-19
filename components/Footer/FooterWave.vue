@@ -13,6 +13,7 @@
       <path
         id="gentle-wave"
         d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+        class="wave__gentle-wave"
       />
     </defs>
     <g class="parallax">
@@ -34,16 +35,25 @@
   </svg>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use "sass:color";
+@import "assets/scss/main";
+
 .waves {
-  background-color: transparent;
-  position: relative;
+  display: block;
+  overflow: hidden;
   width: 100%;
   height: 15vh;
-  margin-bottom: -7px; /*Fix for safari gap*/
+  position: relative;
+  /* margin-bottom: -7px; /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
-  transform: rotate(180deg);
+  background-color: var(--color-background);
+}
+
+.wave__gentle-wave {
+  fill: $color-primary;
+  opacity: 0.309;
 }
 
 /* Animation */

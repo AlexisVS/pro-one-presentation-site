@@ -48,7 +48,7 @@ useSchemaOrg([
     type: "LocalBusiness",
     telephone: runtimeConfig.public.seo.phone,
     email: runtimeConfig.public.seo.email,
-    vatID: runtimeConfig.public.seo.vatID,
+    vatID: runtimeConfig.public.seo.vatId,
     currenciesAccepted: runtimeConfig.public.seo.currenciesAccepted,
     name: runtimeConfig.public.seo.name,
     url: runtimeConfig.public.seo.url,

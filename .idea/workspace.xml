@@ -5,14 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="Begin typography css">
-      <change afterPath="$PROJECT_DIR$/Storytelling_new.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/typography.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/scss/mixins/_fluid-typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/videos/water_bamboo-pipe.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navigation/Mobile/NavigationMobileButton.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navigation/Mobile/NavigationMobileMenu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navigation/NavigationDesktop.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navigation/NavigationLogo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Navigation/NavigationMobile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/TheHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/TheNavigation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/vue-i18n.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/font-family.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Storytelling_original.md" beforeDir="false" afterPath="$PROJECT_DIR$/Storytelling_original.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.vue" beforeDir="false" afterPath="$PROJECT_DIR$/app.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/font-family.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/_font-family.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer/FooterWave.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/FooterWave.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TheFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheFooter.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composables/states.ts" beforeDir="false" afterPath="$PROJECT_DIR$/composables/states.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/developement.env" beforeDir="false" afterPath="$PROJECT_DIR$/developement.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/layouts/base.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/base.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/i18n/lang/fr-FR.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/i18n/lang/fr-FR.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/typography.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/typography.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/production.env" beforeDir="false" afterPath="$PROJECT_DIR$/production.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/brand/proone_europe.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/brand/brand.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +65,9 @@
   <component name="NamedScopeManager">
     <scope name="Unnamed" pattern="file[pro-one]:proone-site-presentation/*" />
   </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\laragon\bin\php\php-8.2.3-Win32-vs16-x64\php.exe" />
   <component name="ProjectId" id="2SSvi7h6rjn01xfRjxUWecveoBJ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -53,20 +81,24 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "//wsl$/Debian/home/alexisvs/www/pro-one",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "//wsl$/Debian/home/alexisvs/www/pro-one-presentation-site/components/Navigation",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "org.i18nally.jetbrainsideplugin.settings.AllyProjectConfigurable",
-    "ts.external.directory.path": "\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one\\node_modules\\typescript\\lib",
+    "prettierjs.PrettierConfiguration.Package": "\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one-presentation-site\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "ts.external.directory.path": "\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one-presentation-site\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -77,10 +109,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site\components\Navigation" />
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site" />
       <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site" />
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site\assets" />
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site\assets\scss\mixins" />
+    </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.client: chrome" />
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,6 +135,9 @@
       <workItem from="1689362448002" duration="2119000" />
       <workItem from="1689370740882" duration="5173000" />
       <workItem from="1689406422524" duration="6834000" />
+      <workItem from="1689416920762" duration="64000" />
+      <workItem from="1689417037913" duration="28145000" />
+      <workItem from="1689581360172" duration="66461000" />
     </task>
     <task id="LOCAL-00001" summary="- added SEO meta tag&#10;- added OG image for twitter and other">
       <option name="closed" value="true" />

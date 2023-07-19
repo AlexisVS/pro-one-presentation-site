@@ -1,0 +1,71 @@
+$color-background: #ebeff0;
+$color-text: #25303b; /* Adapted */
+$color-text-light: #9eb2c2;
+$color-primary: #5192ba;
+$color-accent: #01baf2;
+
+$base-font-size: 16px;
+$font-scale-ratio: 1.12;
+$minimum-screen-width: 320px;
+$maximum-screen-width: 1024px;
+$fluid-min-font-size-scaling: 0.94;
+$fluid-max-font-size-scaling: 1;
+
+$font-size-0: calc($base-font-size); /* base  and caption bis*/
+$font-size--1: calc($font-size-0 / $font-scale-ratio); /* caption */
+$font-size--2: calc($font-size--1 / $font-scale-ratio);
+$font-size-1: calc($base-font-size * $font-scale-ratio); /* base bis */
+$font-size-2: calc($font-size-1 * $font-scale-ratio); /* H4*/
+$font-size-3: calc($font-size-2 * $font-scale-ratio); /* H4 bis */
+$font-size-4: calc($font-size-3 * $font-scale-ratio); /* H3 */
+$font-size-5: calc($font-size-4 * $font-scale-ratio); /* H3 bis */
+$font-size-6: calc($font-size-5 * $font-scale-ratio); /* H2 */
+$font-size-7: calc($font-size-6 * $font-scale-ratio); /* H2 bis */
+$font-size-8: calc($font-size-7 * $font-scale-ratio); /* H1 */
+$font-size-9: calc($font-size-8 * $font-scale-ratio); /* H1 bis */
+
+:root {
+  /*Color*/
+  /*--color-text: #3e5063; !* Original *!*/
+  --color-background: $color-background;
+  --color-text: $color-text; /* Adapted */
+  --color-text-light: $color-text-light;
+  --color-primary: $color-primary;
+  --color-accent: $color-accent;
+
+  /* Typography */
+
+  --font-family: "Raleway", sans-serif;
+  --font-scale-ratio: #{$font-scale-ratio};
+  --base-font-size: #{$base-font-size};
+  --minimum-screen-width: #{$minimum-screen-width};
+  --maximum-screen-width: #{$maximum-screen-width};
+
+  --font-size-0: #{$font-size-0}; /* base  and caption bis*/
+  --font-size--1: #{$font-size--1}; /* caption */
+  --font-size--2: #{$font-size--2};
+  --font-size-1: #{$font-size-1}; /* base bis */
+  --font-size-2: #{$font-size-2}; /* H4*/
+  --font-size-3: #{$font-size-3}; /* H4 bis */
+  --font-size-4: #{$font-size-4}; /* H3 */
+  --font-size-5: #{$font-size-5}; /* H3 bis */
+  --font-size-6: #{$font-size-6}; /* H2 */
+  --font-size-7: #{$font-size-7}; /* H2 bis */
+  --font-size-8: #{$font-size-8}; /* H1 */
+  --font-size-9: #{$font-size-9}; /* H1 bis */
+
+
+  /* Fluid typography */
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  $base-font-size: 18px;
+  $font-scale-ratio: 1.166;
+
+  :root {
+    --base-font-size: #{$base-font-size};
+    --font-scale-ratio: #{$font-scale-ratio};
+  }
+}

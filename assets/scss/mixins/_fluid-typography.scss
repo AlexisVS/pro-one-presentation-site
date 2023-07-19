@@ -1,0 +1,33 @@
+@use "sass:math";
+
+@function strip-unit($value) {
+  @if (unitless($value)) {
+    @return $value;
+  }
+
+  @return math.div($value, ($value * 0 + 1));
+}
+
+@mixin fluid-type($properties, $min-value, $max-value, $min-vw, $max-vw) {
+  $min-value: strip-unit($min-value * $fluid-min-font-size-scaling);
+  $max-value: strip-unit($max-value * $fluid-max-font-size-scaling);
+  $min-vw: strip-unit($min-vw);
+  $max-vw: strip-unit($max-vw);
+  @each $property in $properties {
+    #{$property}: #{$min-value}px;
+  }
+
+  @media screen and (min-width: #{$min-vw}px) and (max-width: #{$max-vw}px) {
+    @each $property in $properties {
+      $min-value-pixel: if(type-of($min-value) == "number", $min-value * 1px, $min-value);
+      $max-value-pixel: if(type-of($max-value) == "number", $max-value * 1px, $max-value);
+      #{$property}: calc(#{$min-value-pixel} + (#{$max-value} - #{$min-value}) * (100vw - #{$min-value-pixel}) / (#{$max-vw} - #{$min-vw}));
+    }
+  }
+
+  @media screen and (min-width: #{$max-vw}px) {
+    @each $property in $properties {
+      #{$property}: #{$max-value}px;
+    }
+  }
+}
