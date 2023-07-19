@@ -3,6 +3,8 @@
 @function strip-unit($value) {
   @if (unitless($value)) {
     @return $value;
+
+
   }
 
   @return math.div($value, ($value * 0 + 1));
