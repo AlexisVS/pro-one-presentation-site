@@ -1,13 +1,25 @@
 <script setup lang="ts">
-const toggleButtonAnimation = (event: Event) => {
-  const element = event.target as HTMLButtonElement;
-  element.classList.toggle("active");
-  element.classList.toggle("not-active");
-};
+const btn = ref(null);
+
+const props = defineProps({
+  toggleMenu: {
+    type: Function,
+    required: true,
+  },
+  menuDisplayed: {
+    type: Boolean,
+    required: true,
+  },
+});
 </script>
 
 <template>
-  <button ref="btn" class="btn not-active" @click="toggleButtonAnimation">
+  <button
+    ref="btn"
+    class="btn"
+    :class="props.menuDisplayed ? 'active' : 'not-active'"
+    @click="props.toggleMenu"
+  >
     <span></span>
     <span></span>
     <span></span>
@@ -24,6 +36,8 @@ const toggleButtonAnimation = (event: Event) => {
   scale: 55%;
   border: none;
   background-color: transparent;
+  z-index: 10;
+  position: relative;
 }
 
 .btn > * {
@@ -43,6 +57,7 @@ span {
   background: $color-primary;
   transition: all 0.3s;
   position: relative;
+  pointer-events: none;
 }
 
 span + span {
