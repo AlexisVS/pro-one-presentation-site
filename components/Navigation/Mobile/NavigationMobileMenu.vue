@@ -28,4 +28,8 @@ const navigation = useNavigation();
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.mobile-menu {
+  background-color: white;
+}
+</style>

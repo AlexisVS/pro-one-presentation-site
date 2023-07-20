@@ -11,5 +11,6 @@
 .logo {
   position: relative;
   top: 3px;
+  user-select: none;
 }
 </style>

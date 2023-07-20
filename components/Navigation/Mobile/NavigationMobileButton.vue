@@ -51,7 +51,7 @@ const props = defineProps({
 span {
   display: block;
   width: 100%;
-  box-shadow: 0 2px 10px 0 opacify(lighten($color-primary, 0.5), 0.5);
+  box-shadow: 0 0 2px 1px transparentize(darken($color-primary, 90%), 0.6);
   border-radius: 3px;
   height: 8px;
   background: $color-primary;

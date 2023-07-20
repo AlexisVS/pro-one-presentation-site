@@ -3,14 +3,12 @@ const state = reactive({
   menuDisplayed: false,
 });
 
-const menu = document.querySelector(
-  ".navigation-mobile__menu",
-) as HTMLButtonElement;
 const toggleMenu = () => {
   state.menuDisplayed = !state.menuDisplayed;
 
-  state.menuDisplayed &&
-    menu.classList.toggle("navigation-mobile__menu--active");
+  document
+    .querySelector(".navigation__logo")
+    ?.classList.toggle("navigation__logo--hidden", state.menuDisplayed);
 };
 </script>
 
@@ -22,7 +20,6 @@ const toggleMenu = () => {
       class="navigation-mobile__button"
     />
     <NavigationMobileMenu
-      ref="menu"
       class="navigation-mobile__menu"
       :class="state.menuDisplayed && 'navigation-mobile__menu--active'"
     />
