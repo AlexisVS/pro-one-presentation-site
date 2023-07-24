@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import NavigationMobileMenuWaveAnimation from "./NavigationMobileMenuWaveAnimation.vue";
+
 const localePath = useLocalePath();
 
 const navigation = useNavigation();
@@ -32,6 +34,7 @@ const onAnimationMenuItemHasFinished = (el: Element) => {
         </NuxtLink>
       </div>
       <div class="mobile-menu__body">
+        <NavigationMobileMenuWaveAnimation />
         <nav class="mobile-menu__body__navigation">
           <template
             v-for="(item, index) in navigation"
