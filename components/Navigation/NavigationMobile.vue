@@ -9,6 +9,10 @@ const toggleMenu = () => {
   document
     .querySelector(".navigation__logo")
     ?.classList.toggle("navigation__logo--hidden", state.menuDisplayed);
+
+  state.menuDisplayed
+    ? (document.body.style.overflowY = "hidden")
+    : (document.body.style.overflowY = "auto");
 };
 </script>
 
@@ -22,6 +26,7 @@ const toggleMenu = () => {
     <NavigationMobileMenu
       class="navigation-mobile__menu"
       :class="state.menuDisplayed && 'navigation-mobile__menu--active'"
+      :menu-displayed="state.menuDisplayed"
     />
   </div>
 </template>
