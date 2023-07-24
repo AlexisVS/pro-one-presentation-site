@@ -1,3 +1,7 @@
+# IDE
+.idea
+.vscode
+
 # Nuxt dev/build outputs
 .output
 .nuxt

@@ -10,49 +10,57 @@ const props = defineProps({
   },
 });
 
-const onAnimationMenuItemHasFinished = (menuItem: HTMLLinkElement) => {
-  // call the done callback to indicate transition end
-  // optional if used in combination with CSS
-  menuItem.style.opacity = 1;
+const onAnimationMenuItemHasFinished = (el: Element) => {
+  const element = el as HTMLElement;
+  element.style.opacity = "1";
 };
 </script>
 
 <template>
-  <div class="mobile-menu">
-    <div class="mobile-menu__header">
-      <NuxtLink
-        to="/"
-        class="mobile-menu__header__logo"
-        :class="props.menuDisplayed && 'mobile-menu__header__logo--active'"
-      >
-        <NavigationLogo />
-      </NuxtLink>
-    </div>
-    <div class="mobile-menu__body">
-      <nav class="mobile-menu__body__navigation">
-        <transition
-          v-for="(item, index) in navigation"
-          :key="`navigation-${item.name}`"
-          name="translate-up"
-          :style="`animation-delay: ${700 + 300 * index}ms`"
-          @after-enter="onAnimationMenuItemHasFinished"
+  <div>
+    <div
+      class="mobile-menu"
+      :class="props.menuDisplayed && 'mobile-menu--active'"
+    >
+      <div class="mobile-menu__header">
+        <NuxtLink
+          to="/"
+          class="mobile-menu__header__logo"
+          :class="props.menuDisplayed && 'mobile-menu__header__logo--active'"
         >
-          <NuxtLink
-            v-if="props.menuDisplayed"
-            :to="localePath(item.path)"
-            class="mobile-menu__body__navigation__item fluid-font-size-2"
-            active-class="mobile-menu__body__navigation__item--active"
+          <NavigationLogo />
+        </NuxtLink>
+      </div>
+      <div class="mobile-menu__body">
+        <nav class="mobile-menu__body__navigation">
+          <template
+            v-for="(item, index) in navigation"
+            :key="`navigation-${item.name}`"
           >
-            {{ $t(item.name) }}
-          </NuxtLink>
-        </transition>
-      </nav>
+            <transition
+              name="translate-up"
+              @after-enter="onAnimationMenuItemHasFinished"
+            >
+              <NuxtLink
+                v-if="props.menuDisplayed"
+                :style="`animation-delay: ${700 + 250 * index}ms`"
+                :to="localePath(item.path)"
+                class="mobile-menu__body__navigation__item fluid-font-size-2"
+                active-class="mobile-menu__body__navigation__item--active"
+              >
+                {{ $t(item.name) }}
+              </NuxtLink>
+            </transition>
+          </template>
+        </nav>
+      </div>
+      <div class="mobile-menu__footer"></div>
     </div>
-    <div class="mobile-menu__footer"></div>
   </div>
 </template>
 
 <style scoped lang="scss">
+@use "sass:color";
 @import "@/assets/scss/variables.scss";
 
 .mobile-menu {
@@ -60,13 +68,21 @@ const onAnimationMenuItemHasFinished = (menuItem: HTMLLinkElement) => {
   top: 0;
   left: 0;
   right: 0;
-  background-color: white;
+  background-color: #ffffff;
   display: grid;
   grid-template-areas: "header" "body" "footer";
   grid-template-rows: max-content 1fr max-content;
   height: 100dvh;
   max-height: 100dvh;
   overflow-y: scroll;
+  transition: background-color 1s ease-out;
+  transition-delay: 300ms;
+
+  &--active {
+    background-color: lighten($color-primary, 32%);
+    transition: background-color 1100ms ease-out;
+    transition-delay: 300ms;
+  }
 
   &__header {
     display: flex;
@@ -109,7 +125,7 @@ const onAnimationMenuItemHasFinished = (menuItem: HTMLLinkElement) => {
         text-align: center;
         text-decoration: none;
         padding: 1rem 0;
-        font-weight: 600;
+        font-weight: 800;
         color: $color-primary;
         opacity: 0;
 

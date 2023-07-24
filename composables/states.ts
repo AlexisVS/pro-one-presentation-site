@@ -14,6 +14,10 @@ export const navigationState = () => {
       path: "/",
     },
     {
+      name: "Boutique",
+      path: "/shop",
+    },
+    {
       name: "Gravité",
       path: "/gravity",
     },
