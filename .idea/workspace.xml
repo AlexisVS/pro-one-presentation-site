@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="Finished NavigationMobileMenu.vue">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="sooo thinks">
+      <change afterPath="$PROJECT_DIR$/assets/scss/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer/FooterWave.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/FooterWave.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navigation/Mobile/NavigationMobileMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navigation/Mobile/NavigationMobileMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navigation/Mobile/NavigationMobileMenuWaveAnimation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navigation/NavigationDesktop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navigation/NavigationDesktop.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,40 +51,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "//wsl$/Debian/home/alexisvs/www/saint_andre",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;//wsl$/Debian/home/alexisvs/www/pro-one-presentation-site/components/Navigation&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one-presentation-site\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;\\\\wsl$\\Debian\\home\\alexisvs\\www\\pro-one-presentation-site\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "vue.recent.templates": [
-      "Vue Composition API Component"
+  &quot;keyToStringList&quot;: {
+    &quot;vue.recent.templates&quot;: [
+      &quot;Vue Composition API Component&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site\components\Navigation" />
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site" />
       <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one\assets\fonts" />
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site" />
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site\assets" />
+      <recent name="\\wsl$\Debian\home\alexisvs\www\pro-one-presentation-site\assets\scss\mixins" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.client: chrome" />
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -97,6 +108,13 @@
       <workItem from="1689362448002" duration="2119000" />
       <workItem from="1689370740882" duration="5173000" />
       <workItem from="1689406422524" duration="6834000" />
+      <workItem from="1689416920762" duration="64000" />
+      <workItem from="1689417037913" duration="28145000" />
+      <workItem from="1689581360172" duration="67026000" />
+      <workItem from="1689846734095" duration="90000" />
+      <workItem from="1689846842881" duration="7911000" />
+      <workItem from="1689927582549" duration="39000" />
+      <workItem from="1690122096836" duration="9135000" />
     </task>
     <task id="LOCAL-00001" summary="- added SEO meta tag&#10;- added OG image for twitter and other">
       <option name="closed" value="true" />
@@ -122,7 +140,39 @@
       <option name="project" value="LOCAL" />
       <updated>1689375988303</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="sooo thinks">
+      <option name="closed" value="true" />
+      <created>1689804955216</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689804955216</updated>
+    </task>
+    <task id="LOCAL-00005" summary="sooo thinks">
+      <option name="closed" value="true" />
+      <created>1689805050502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689805050502</updated>
+    </task>
+    <task id="LOCAL-00006" summary="sooo thinks">
+      <option name="closed" value="true" />
+      <created>1689805053123</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689805053123</updated>
+    </task>
+    <task id="LOCAL-00007" summary="sooo thinks">
+      <option name="closed" value="true" />
+      <created>1689805081387</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689805081387</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,11 +184,8 @@
     <MESSAGE value="- added layouts file&#10;- added Raleway fonts&#10;- added WaveFooter" />
     <MESSAGE value="- added layouts file\n&#10;- added Raleway fonts\n&#10;- added WaveFooter" />
     <MESSAGE value="Begin typography css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Begin typography css" />
-  </component>
-  <component name="XPathView.XPathProjectComponent">
-    <history />
-    <find-history />
+    <MESSAGE value="sooo thinks" />
+    <option name="LAST_COMMIT_MESSAGE" value="sooo thinks" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
