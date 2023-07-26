@@ -2,6 +2,7 @@
 <template>
   <div>
     <TheHeader />
+    <HomePageSocietyWhoWeAre />
   </div>
 </template>
 

@@ -3,5 +3,15 @@
   "Accueil": "Accueil",
   "Gravité": "Gravité",
   "Pression": "Pression",
-  "A propos": "A propos"
+  "A propos": "A propos",
+  "home": {
+    "header": {
+      "title": "mon titre",
+      "subtitle": "mon sous-titre"
+    },
+    "who-we-are": {
+      "title": "who are we title",
+      "subtitle": "who are we subtitle or paragraph"
+    }
+  }
 }

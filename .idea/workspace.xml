@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="sooo thinks">
-      <change afterPath="$PROJECT_DIR$/assets/scss/_base.scss" afterDir="false" />
+    <list default="true" id="d1431d00-d5ba-4a5f-a2e0-1084db2c09dc" name="Changes" comment="finished menu desktop">
+      <change afterPath="$PROJECT_DIR$/components/HomePage/Society/HomePageSocietyWhoWeAre.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer/FooterWave.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer/FooterWave.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navigation/Mobile/NavigationMobileMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navigation/Mobile/NavigationMobileMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navigation/Mobile/NavigationMobileMenuWaveAnimation.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Navigation/NavigationDesktop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navigation/NavigationDesktop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/TheHeader.vue" beforeDir="false" afterPath="$PROJECT_DIR$/components/TheHeader.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/i18n/lang/en-US.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/i18n/lang/en-US.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/i18n/lang/fr-FR.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules/i18n/lang/fr-FR.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +114,7 @@
       <workItem from="1689846842881" duration="7911000" />
       <workItem from="1689927582549" duration="39000" />
       <workItem from="1690122096836" duration="9135000" />
+      <workItem from="1690362616921" duration="7371000" />
     </task>
     <task id="LOCAL-00001" summary="- added SEO meta tag&#10;- added OG image for twitter and other">
       <option name="closed" value="true" />
@@ -172,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1689805081387</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="finished menu desktop">
+      <option name="closed" value="true" />
+      <created>1690310835755</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690310835755</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +193,8 @@
     <MESSAGE value="- added layouts file\n&#10;- added Raleway fonts\n&#10;- added WaveFooter" />
     <MESSAGE value="Begin typography css" />
     <MESSAGE value="sooo thinks" />
-    <option name="LAST_COMMIT_MESSAGE" value="sooo thinks" />
+    <MESSAGE value="finished menu desktop" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished menu desktop" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
