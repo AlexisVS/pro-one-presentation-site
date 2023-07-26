@@ -10,23 +10,23 @@ export const useNavigation = () =>
 export const navigationState = () => {
   return ref<Array<navigationItem>>([
     {
-      name: "Accueil",
+      name: "home",
       path: "/",
     },
     {
-      name: "Boutique",
+      name: "shop",
       path: "/shop",
     },
     {
-      name: "Gravité",
+      name: "gravity",
       path: "/gravity",
     },
     {
-      name: "Pression",
+      name: "pressure",
       path: "/pressure",
     },
     {
-      name: "A propos",
+      name: "about_us",
       path: "/about",
     },
   ]);

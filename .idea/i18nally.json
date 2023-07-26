@@ -3,7 +3,7 @@
   "profiles" : [ {
     "id" : "5ad8c8d9-c2e8-498e-97e1-790f233843de",
     "name" : "Vue-i18n3",
-    "keyNamingPattern" : "CAMEL_CASE_PATTERN",
+    "keyNamingPattern" : "SNAKE_CASE_PATTERN",
     "sink" : {
       "id" : "0cf497a7-bb07-4945-a7a7-990db3469e37",
       "type" : "namespaced",
@@ -12,7 +12,7 @@
       "defaultLocale" : "fr-FR",
       "namespaces" : [ "messages" ],
       "outputFilenameTemplate" : "%locale%.json",
-      "nestingType" : "DISABLED",
+      "nestingType" : "DOT",
       "placeholderFormatterName" : "I18NEXT"
     },
     "sources" : [ {

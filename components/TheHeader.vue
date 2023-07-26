@@ -9,7 +9,6 @@ onMounted(() => {
 
 const onAnimationLayerTextRendered = (el: Element) => {
   const element = el as HTMLElement;
-  console.log(el);
   element.style.opacity = "1";
 };
 </script>
@@ -33,9 +32,12 @@ const onAnimationLayerTextRendered = (el: Element) => {
         appear
         name="translate-header-text-top"
         @after-enter="onAnimationLayerTextRendered"
-        :style="'animation-delay: 500ms'"
       >
-        <span v-if="state.pageLoaded" class="header__layer__subtitle">
+        <span
+          v-if="state.pageLoaded"
+          :style="'animation-delay: 500ms'"
+          class="header__layer__subtitle"
+        >
           {{ $t("home.header.subtitle") }}
         </span>
       </transition>

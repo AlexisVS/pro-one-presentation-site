@@ -48,7 +48,7 @@ const onAnimationMenuItemHasFinished = (el: Element) => {
                 class="mobile-menu__body__navigation__item fluid-font-size-2"
                 active-class="mobile-menu__body__navigation__item--active"
               >
-                {{ $t(item.name) }}
+                {{ $t(`navigation.${item.name}`) }}
               </NuxtLink>
             </transition>
           </template>

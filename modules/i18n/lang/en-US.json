@@ -1,13 +1,35 @@
 {
-  "qsd": "english",
+  "navigation": {
+    "home": "Home",
+    "Gravity": "Gravity",
+    "Pressure": "Pressure",
+    "about_us": "About us",
+    "shop": "Shop"
+  },
   "home": {
     "header": {
-      "title": "mon titre",
-      "subtitle": "mon sous-titre"
+      "title": "The power of water at your fingertips.",
+      "subtitle": "Discover our products for easy access to perfectly purified water."
     },
-    "who-we-are": {
-      "title": "who are we title",
-      "subtitle": "who are we subtitle or paragraph"
+    "who_we_are": {
+      "title": "Healthy water for all your needs.",
+      "paragraph_1": "At Pro one, we're a passionate team determined to make access to pure water affordable.",
+      "paragraph_2": "Backed by our expertise and commitment to the environment, we do our utmost to provide you with top-quality water filters that guarantee healthy, delicious water in every drop."
+    },
+    "what_we_do": {
+      "title": "Revolutionizing water purification with Pro one G2 technology",
+      "paragraph_1": "We're constantly innovating to bring advanced water purification solutions to every home and business.",
+      "paragraph_2": "Our carbon-based gravity water filters and building pressure filters use our revolutionary Pro one G2 technology, giving you delicious, pure water free from harmful contamination."
+    },
+    "why_we_do": {
+      "title": "For the health of you, your family and our planet.",
+      "paragraph_1": "At Pro one, our commitment is not only to your health, but also to the health of our planet.",
+      "paragraph_2": "By enriching our high-end water filters, you're part of the solution to preserving the environment and reducing the use of single-use plastic."
+    },
+    "conclusion": {
+      "title": "Join the Pro one revolution today",
+      "paragraph_1": "Make the smart, sustainable choice with Pro one water filters, the benchmark in water purification.",
+      "paragraph_2": "Don't wait any longer to improve the quality of your water and contribute to a healthier, more physical future for all."
     }
   }
 }

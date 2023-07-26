@@ -12,7 +12,7 @@ const navigation = useNavigation();
         class="navigation-desktop__menu__item fluid-font-size--1"
         active-class="navigation-desktop__menu__item--active"
       >
-        {{ item.name }}
+        {{ $t(`navigation.${item.name}`) }}
       </NuxtLink>
     </nav>
   </div>
