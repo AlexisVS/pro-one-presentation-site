@@ -28,6 +28,13 @@
     padding-left: 11px
     padding-right: 0
     z-index: 10
+    background: transparentize(lighten($color-primary, 30%), 0.5)
+    backdrop-filter: blur(2px)
+
+    &:after
+      opacity: 0
+      transition: opacity 0.3s ease-out
+
 
   &__content
     grid-area: content

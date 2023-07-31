@@ -21,8 +21,6 @@ onMounted(() => {
 @import "assets/scss/variables.scss";
 
 .navigation {
-  background: transparentize(lighten($color-primary, 30%), 0.5);
-  backdrop-filter: blur(2px);
   position: relative;
 }
 
@@ -35,6 +33,8 @@ onMounted(() => {
   height: 1px;
   background: lighten($color-primary, 20%);
   backdrop-filter: blur(2px);
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
 }
 
 .navigation__logo {

@@ -19,6 +19,37 @@ export default defineNuxtConfig({
       siteDescription: seoConfig.description,
       language: "fr-FR", // prefer more explicit language codes like `en-AU` over `en`
       seo: seoConfig,
+      motion: {
+        directives: {
+          "pop-bottom": {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            },
+          },
+          "translate-top": {
+            initial: {
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              opacity: 1,
+              y: 0,
+              transition: {
+                delay: 0.2,
+                duration: 0.5,
+                ease: "easeOut",
+              },
+            },
+          },
+        },
+      },
     },
   },
 
@@ -32,15 +63,20 @@ export default defineNuxtConfig({
   //   },
   // },
 
-  devtools: { enabled: true },
-  typescript: { shim: true },
-
+  devtools: {
+    enabled: true,
+  },
+  typescript: {
+    shim: true,
+  },
   // Modules : https://nuxt.com/docs/guide/concepts/modules
   modules: [
     "@nuxtjs/eslint-module",
     "@nuxtjs/i18n",
     "@nuxt/image",
     "@nuxt/content",
+    "@vueuse/nuxt",
+    "@vueuse/motion/nuxt",
   ],
 
   // CSS
@@ -58,7 +94,6 @@ export default defineNuxtConfig({
       },
     },
   },
-
   // I18n module configuration: https://i18n.nuxtjs.org/
   i18n: {
     vueI18n: "./modules/i18n/i18n.config.ts",
@@ -86,7 +121,6 @@ export default defineNuxtConfig({
     //   useCookie: true,
     // },
   },
-
   extends: ["nuxt-seo-kit"],
   // Image module configuration: https://v1.image.nuxtjs.org/configuration
   image: {
@@ -95,7 +129,14 @@ export default defineNuxtConfig({
     provider: "ipx",
     dir: "assets/images",
   },
-
   // Content module configuration: https://content.nuxtjs.org/configuration
   content: {},
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
+  ssr: false,
 });
