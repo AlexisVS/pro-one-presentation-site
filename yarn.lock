@@ -2452,6 +2452,15 @@
     "@volar/typescript" "~1.10.0"
     "@vue/language-core" "1.8.8"
 
+"@vueuse/components@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@vueuse/components/-/components-10.3.0.tgz#1a2dcbf532bb6dec3432d7896cafa61b26aa67d5"
+  integrity sha512-EeZz3kjmJI7bH7JSxxMlLyk21LGl6GQjXfpl2n/GiI9QSJi+BVzIra5kEty5eM8McwAanx3e/HnK4drYTgFOWw==
+  dependencies:
+    "@vueuse/core" "10.3.0"
+    "@vueuse/shared" "10.3.0"
+    vue-demi ">=0.14.5"
+
 "@vueuse/core@10.3.0", "@vueuse/core@^10.1.2", "@vueuse/core@^10.3.0":
   version "10.3.0"
   resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-10.3.0.tgz#b2dab7821ef206811b925fc935163c38056fd82b"

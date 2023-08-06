@@ -19,37 +19,37 @@ export default defineNuxtConfig({
       siteDescription: seoConfig.description,
       language: "fr-FR", // prefer more explicit language codes like `en-AU` over `en`
       seo: seoConfig,
-      motion: {
-        directives: {
-          "pop-bottom": {
-            initial: {
-              scale: 0,
-              opacity: 0,
-              y: 100,
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              y: 0,
-            },
-          },
-          "translate-top": {
-            initial: {
-              opacity: 0,
-              y: 100,
-            },
-            visible: {
-              opacity: 1,
-              y: 0,
-              transition: {
-                delay: 0.2,
-                duration: 0.5,
-                ease: "easeOut",
-              },
-            },
-          },
-        },
-      },
+      // motion: {
+      //   directives: {
+      //     "pop-bottom": {
+      //       initial: {
+      //         scale: 0,
+      //         opacity: 0,
+      //         y: 100,
+      //       },
+      //       visible: {
+      //         scale: 1,
+      //         opacity: 1,
+      //         y: 0,
+      //       },
+      //     },
+      //     "translate-top": {
+      //       initial: {
+      //         opacity: 0,
+      //         y: 100,
+      //       },
+      //       visible: {
+      //         opacity: 1,
+      //         y: 0,
+      //         transition: {
+      //           delay: 0.2,
+      //           duration: 0.5,
+      //           ease: "easeOut",
+      //         },
+      //       },
+      //     },
+      //   },
+      // },
     },
   },
 
@@ -76,7 +76,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/content",
     "@vueuse/nuxt",
-    "@vueuse/motion/nuxt",
+    // "@vueuse/components",
   ],
 
   // CSS
@@ -86,7 +86,7 @@ export default defineNuxtConfig({
     plugins: {
       "postcss-import": {},
       "postcss-preset-env": {
-        stage: 2,
+        stage: 3,
         autoprefixer: {
           grid: true,
           // overrideBrowserslist: ["> 2%", "last 2 versions", "not dead"],
@@ -133,10 +133,10 @@ export default defineNuxtConfig({
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-    },
-  },
-  ssr: false,
+  // nitro: {
+  //   prerender: {
+  //     crawlLinks: true,
+  //   },
+  // },
+  // ssr: false,
 });

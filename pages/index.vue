@@ -1,8 +1,13 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TransitionBase from "../components/Transitions/TransitionBase.vue";
+</script>
 <template>
   <div>
     <TheHeader />
     <HomePageSocietyWhoWeAre />
+    <TransitionBase transition="default" :visibility="false">
+      <p>Lorem ipsum dolor sit amet</p>
+    </TransitionBase>
   </div>
 </template>
 

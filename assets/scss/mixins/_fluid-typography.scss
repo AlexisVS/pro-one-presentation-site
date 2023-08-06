@@ -3,8 +3,6 @@
 @function strip-unit($value) {
   @if (unitless($value)) {
     @return $value;
-
-
   }
 
   @return math.div($value, ($value * 0 + 1));
@@ -21,9 +19,22 @@
 
   @media screen and (min-width: #{$min-vw}px) and (max-width: #{$max-vw}px) {
     @each $property in $properties {
-      $min-value-pixel: if(type-of($min-value) == "number", $min-value * 1px, $min-value);
-      $max-value-pixel: if(type-of($max-value) == "number", $max-value * 1px, $max-value);
-      #{$property}: calc(#{$min-value-pixel} + (#{$max-value} - #{$min-value}) * (100vw - #{$min-value-pixel}) / (#{$max-vw} - #{$min-vw}));
+      $min-value-pixel: if(
+        type-of($min-value) == "number",
+        $min-value * 1px,
+        $min-value
+      );
+      $max-value-pixel: if(
+        type-of($max-value) == "number",
+        $max-value * 1px,
+        $max-value
+      );
+      #{$property}: calc(
+        #{$min-value-pixel} +
+          (#{$max-value} - #{$min-value}) *
+          (100vw - #{$min-value-pixel}) /
+          (#{$max-vw} - #{$min-vw})
+      );
     }
   }
 

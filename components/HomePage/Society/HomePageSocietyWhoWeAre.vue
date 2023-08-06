@@ -3,10 +3,7 @@
 <template>
   <section class="who-we-are">
     <div class="who-we-are__text-side">
-      <h2
-        v-motion-fade-visible="{ visible: { transition: { duration: 5000 } } }"
-        class="who-we-are__text-side__title"
-      >
+      <h2 class="who-we-are__text-side__title">
         {{ $t("home.who_we_are.title") }}
       </h2>
       <p class="who-we-are__text-side__paragraph">

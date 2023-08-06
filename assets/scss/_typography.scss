@@ -61,26 +61,62 @@ body {
 
 /* Fluid typography */
 
-h1, .fluid-font-size-4 {
-  @include fluid-type(font-size, $font-size-8, $font-size-9, $minimum-screen-width, $maximum-screen-width);
+h1,
+.fluid-font-size-4 {
+  @include fluid-type(
+    font-size,
+    $font-size-8,
+    $font-size-9,
+    $minimum-screen-width,
+    $maximum-screen-width
+  );
 }
 
-h2, .fluid-font-size-3 {
-  @include fluid-type(font-size, $font-size-6, $font-size-7, $minimum-screen-width, $maximum-screen-width);
+h2,
+.fluid-font-size-3 {
+  @include fluid-type(
+    font-size,
+    $font-size-6,
+    $font-size-7,
+    $minimum-screen-width,
+    $maximum-screen-width
+  );
 }
 
-h3, .fluid-font-size-2 {
-  @include fluid-type(font-size, $font-size-4, $font-size-5, $minimum-screen-width, $maximum-screen-width);
+h3,
+.fluid-font-size-2 {
+  @include fluid-type(
+    font-size,
+    $font-size-4,
+    $font-size-5,
+    $minimum-screen-width,
+    $maximum-screen-width
+  );
 }
 
-h4, .fluid-font-size-1 {
-  @include fluid-type(font-size, $font-size-2, $font-size-3, $minimum-screen-width, $maximum-screen-width);
+h4,
+.fluid-font-size-1 {
+  @include fluid-type(
+    font-size,
+    $font-size-2,
+    $font-size-3,
+    $minimum-screen-width,
+    $maximum-screen-width
+  );
 }
 
-p, .fluid-font-size-0 {
+p,
+.fluid-font-size-0 {
   @include fluid-type(font-size, $font-size-0, $font-size-1, 320px, 1024px);
 }
 
-caption, .fluid-font-size--1 {
-  @include fluid-type(font-size, $font-size--1, $font-size-0, $minimum-screen-width, $maximum-screen-width);
+caption,
+.fluid-font-size--1 {
+  @include fluid-type(
+    font-size,
+    $font-size--1,
+    $font-size-0,
+    $minimum-screen-width,
+    $maximum-screen-width
+  );
 }
