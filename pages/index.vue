@@ -8,6 +8,7 @@ import TransitionBase from "../components/Transitions/TransitionBase.vue";
     <TransitionBase>
       <p>Lorem ipsum dolor sit amet</p>
     </TransitionBase>
+    <img src="~/assets/images/brand/brand.png" alt="" />
   </div>
 </template>
 
