@@ -5,6 +5,8 @@
 </template>
 
 <script setup lang="ts">
+import { CSSProperties, PropType } from "vue";
+
 type transitionKey = "appear" | "leave" | "initial";
 
 type transitionType = {
@@ -19,7 +21,7 @@ type transitionsObject = {
 const props = defineProps({
   // Pre build-in transition name or custom transition object
   transition: {
-    type: [String, Object] as PropType<string, transitionType>,
+    type: [String, Object] as PropType<string | transitionType>,
     default: "default",
     required: false,
   },
@@ -45,13 +47,13 @@ const props = defineProps({
 
 const displayed = ref(true);
 const hasIntersected = ref(false);
-const observed = ref<HTMLDivElement | null>(null);
+const observed = ref<HTMLElement | null>(null);
 const observer = ref<IntersectionObserver | null>(null);
 const transitions: transitionsObject = {
   default: {
     initial: {
       opacity: 0,
-      transform: "translateY(100%)",
+      transform: "translateY(-100%)",
       "transition-duration": "2000ms",
       transitionProperty: "opacity transform",
     },
@@ -62,7 +64,7 @@ const transitions: transitionsObject = {
       transitionProperty: "opacity transform",
     },
     leave: {
-      transform: "translateY(-100%)",
+      transform: "translateY(100%)",
       opacity: 0,
       "transition-duration": "2000ms",
       transitionProperty: "opacity transform",
@@ -119,16 +121,17 @@ const applyTransitionStyle = (
   transitionKey: transitionKey,
   element: Element,
 ): void => {
+  const htmlElement = element as HTMLElement;
   Object.entries(getTransition()[transitionKey]).forEach(([key, value]) => {
-    element.style[key] = value;
+    htmlElement.style.setProperty(key, value as string);
   });
 };
 
-const handleInIntersection = (element: HTMLElement) => {
+const handleInIntersection = (element: Element) => {
   applyTransitionStyle("appear", element);
 };
 
-const handleOutIntersection = (element: HTMLElement) => {
+const handleOutIntersection = (element: Element) => {
   applyTransitionStyle("leave", element);
 };
 
@@ -139,7 +142,7 @@ const getTransitionDurationNumber = (transitionKey: transitionKey): number => {
 };
 
 onMounted(() => {
-  const observer = new IntersectionObserver(
+  const intersectionObserver = new IntersectionObserver(
     ([entry]): void => {
       // has already handleIntersection once
       if (props.once && hasIntersected.value) return;
@@ -174,202 +177,11 @@ onMounted(() => {
     { threshold: 1 },
   );
 
-  observer.observe(observed.value);
-  observer.value = observer;
+  intersectionObserver.observe(observed.value as Element);
+  observer.value = intersectionObserver;
 });
 
 onUnmounted(() => {
   observer.value?.disconnect();
 });
 </script>
-<!--<template>-->
-<!--  <div-->
-<!--    ref="observedElement"-->
-<!--    :key="`transition-intersected-${isIntersected ? 'true' : 'false'}`"-->
-<!--    :style="getTransitionType('initial')"-->
-<!--  >-->
-<!--    &lt;!&ndash; Your content goes here &ndash;&gt;-->
-<!--    <slot></slot>-->
-<!--  </div>-->
-<!--</template>-->
-
-<!--<script setup lang="ts">-->
-<!--import { CSSProperties, ref, StyleValue } from "vue";-->
-<!--import { onIntersect } from "../../composables/IntersectionObserver";-->
-
-<!--type TransitionType = "appear" | "leave" | "initial";-->
-
-<!--type TransitionObject = {-->
-<!--  [key in TransitionType]: CSSProperties;-->
-<!--};-->
-
-<!--type TransitionsObject = {-->
-<!--  default: TransitionObject;-->
-<!--  [key: string]: TransitionObject;-->
-<!--};-->
-
-<!--const observer = ref<IntersectionObserver | null>(null);-->
-<!--const observedElement = ref<HTMLDivElement | null>(null);-->
-<!--const hasIntersectedOnce = ref(false);-->
-<!--const shouldUseLeave = ref(false);-->
-<!--const isIntersected = ref(false);-->
-<!--const props = defineProps({-->
-<!--  transitionProps: {-->
-<!--    type: [String, Object] as PropType<string | TransitionObject>,-->
-<!--    default: "default",-->
-<!--  },-->
-<!--  animateOnLeave: {-->
-<!--    type: Boolean,-->
-<!--    default: false,-->
-<!--    required: false,-->
-<!--  },-->
-<!--  once: {-->
-<!--    type: Boolean,-->
-<!--    default: false,-->
-<!--    required: false,-->
-<!--  },-->
-<!--  visibility: {-->
-<!--    type: Boolean,-->
-<!--    default: false,-->
-<!--    required: false,-->
-<!--  },-->
-<!--  threshold: {-->
-<!--    type: Number,-->
-<!--    default: 1,-->
-<!--    required: false,-->
-<!--  },-->
-<!--});-->
-<!--const transitions: TransitionsObject = {-->
-<!--  default: {-->
-<!--    initial: {-->
-<!--      opacity: 0,-->
-<!--      transform: "translateY(-100%)",-->
-<!--      "transition-duration": "2000ms",-->
-<!--      transitionProperty: "opacity transform",-->
-<!--    },-->
-<!--    appear: {-->
-<!--      opacity: 1,-->
-<!--      transform: "translateY(0)",-->
-<!--      "transition-duration": "2000ms",-->
-<!--      transitionProperty: "opacity transform",-->
-<!--    },-->
-<!--    leave: {-->
-<!--      opacity: 0,-->
-<!--      "transition-duration": "2000ms",-->
-<!--      transitionProperty: "opacity transform",-->
-<!--    },-->
-<!--  },-->
-<!--  fade: {-->
-<!--    initial: {-->
-<!--      opacity: 0,-->
-<!--    },-->
-<!--    appear: {-->
-<!--      opacity: 1,-->
-<!--    },-->
-<!--    leave: {-->
-<!--      opacity: 0,-->
-<!--    },-->
-<!--  },-->
-<!--  slideRight: {-->
-<!--    initial: {-->
-<!--      transform: "translateX(-100%)",-->
-<!--    },-->
-<!--    appear: {-->
-<!--      transform: "translateX(0)",-->
-<!--    },-->
-<!--    leave: {-->
-<!--      transform: "translateX(100%)",-->
-<!--    },-->
-<!--  },-->
-<!--  // Add more transitions here...-->
-<!--};-->
-
-<!--const getTransition = computed((): TransitionObject => {-->
-<!--  // if transitionProps is a string,try to use it as a key to get the transitionsObject if false return transitions.default-->
-<!--  if (-->
-<!--    typeof props.transitionProps === "string" &&-->
-<!--    typeof transitions[props.transitionProps] === "object"-->
-<!--  ) {-->
-<!--    return transitions[props.transitionProps];-->
-<!--  }-->
-
-<!--  // if transitionProps is an object and is the same type of TransitionObject, use it as the transitionObject-->
-<!--  if (-->
-<!--    typeof props.transitionProps === "object" &&-->
-<!--    typeof props.transitionProps.initial === "object" &&-->
-<!--    typeof props.transitionProps.appear === "object"-->
-<!--  ) {-->
-<!--    return props.transitionProps;-->
-<!--  }-->
-<!--  return transitions.default;-->
-<!--});-->
-
-<!--const getTransitionType = (type: TransitionType): StyleValue =>-->
-<!--  getTransition.value[type];-->
-
-<!--const setCSSProperties = (element: HTMLElement, type: TransitionType) => {-->
-<!--  Object.entries(getTransitionType(type)).forEach(([key, value]) => {-->
-<!--    element.style[key as string] = value;-->
-<!--  });-->
-<!--};-->
-
-<!--const intersectionCallback = (target: Element) => {-->
-<!--  console.log("intersectionCallback", target, getTransitionType("appear"));-->
-<!--  const element = target as HTMLElement;-->
-<!--  isIntersected.value = true;-->
-<!--  if (props.once && hasIntersectedOnce.value) return;-->
-
-<!--  if (props.once) {-->
-<!--    hasIntersectedOnce.value = true;-->
-<!--    observer.value?.unobserve(element);-->
-<!--  }-->
-
-<!--  setCSSProperties(element, "appear");-->
-<!--};-->
-<!--const intersectionOutCallback = (target: Element) => {-->
-<!--  if (props.visibility) return;-->
-
-<!--  const element = target as HTMLElement;-->
-<!--  console.log("intersectionOutCallback", element, getTransitionType("leave"));-->
-<!--  isIntersected.value = false;-->
-
-<!--  if (shouldUseLeave.value) {-->
-<!--    setCSSProperties(element, "leave");-->
-
-<!--    const timeout = parseInt(-->
-<!--      getTransitionType("leave").transitionDuration.replace("ms", ""),-->
-<!--    );-->
-<!--    setTimeout(() => {-->
-<!--      setCSSProperties(element, "initial");-->
-<!--    }, timeout);-->
-<!--  } else {-->
-<!--    setCSSProperties(element, "initial");-->
-<!--  }-->
-<!--};-->
-<!--onMounted(() => {-->
-<!--  const options: IntersectionObserverInit = {-->
-<!--    // root: document.body,-->
-<!--    rootMargin: "0px",-->
-<!--    threshold: props.threshold,-->
-<!--  };-->
-
-<!--  const element = observedElement.value as HTMLElement;-->
-
-<!--  observer.value = onIntersect(-->
-<!--    element,-->
-<!--    intersectionCallback,-->
-<!--    intersectionOutCallback,-->
-<!--    props.once,-->
-<!--    options,-->
-<!--  );-->
-<!--});-->
-
-<!--// When the component is removed, disconnect the observer (clean-up step)-->
-<!--onUnmounted(() => {-->
-<!--  observer.value?.disconnect();-->
-<!--});-->
-<!--</script>-->
-
-<!--<style scoped lang="scss">-->
-<!--/* Add your custom styles here if needed */-->
-<!--</style>-->

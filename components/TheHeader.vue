@@ -16,7 +16,7 @@ const onAnimationLayerTextRendered = (el: Element) => {
 <template>
   <header class="header">
     <video class="header__video" autoplay muted loop>
-      <source src="assets/videos/water_bamboo-pipe.webm" type="video/webm" />
+      <source src="@/assets/videos/water_bamboo-pipe.webm" type="video/webm" />
     </video>
     <div class="header__layer">
       <transition

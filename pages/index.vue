@@ -5,7 +5,7 @@ import TransitionBase from "../components/Transitions/TransitionBase.vue";
   <div>
     <TheHeader />
     <HomePageSocietyWhoWeAre />
-    <TransitionBase transition="default" :visibility="false">
+    <TransitionBase>
       <p>Lorem ipsum dolor sit amet</p>
     </TransitionBase>
   </div>

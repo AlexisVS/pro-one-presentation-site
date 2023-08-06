@@ -85,15 +85,17 @@ useHead({
 </script>
 
 <template>
-  <div class="base">
-    <SeoKit />
-    <!-- OG image -->
-    <!-- a. Generates browser screenshots for every page -->
-    <OgImageScreenshot />
-    <!-- b. Generate satori images for every page (uses the default template) -->
-    <!-- <OgImageStatic title="qsd" /> -->
-    <!-- c. Generate satori images for every page (uses a custom template) -->
-    <!-- <OgImageStatic title="qsd" template="Default" background="red" /> -->
-    <slot />
-  </div>
+  <TheSmoothScroll>
+    <div class="base">
+      <SeoKit />
+      <!-- OG image -->
+      <!-- a. Generates browser screenshots for every page -->
+      <OgImageScreenshot />
+      <!-- b. Generate satori images for every page (uses the default template) -->
+      <!-- <OgImageStatic title="qsd" /> -->
+      <!-- c. Generate satori images for every page (uses a custom template) -->
+      <!-- <OgImageStatic title="qsd" template="Default" background="red" /> -->
+      <slot />
+    </div>
+  </TheSmoothScroll>
 </template>

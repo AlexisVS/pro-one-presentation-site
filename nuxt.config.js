@@ -19,37 +19,6 @@ export default defineNuxtConfig({
       siteDescription: seoConfig.description,
       language: "fr-FR", // prefer more explicit language codes like `en-AU` over `en`
       seo: seoConfig,
-      // motion: {
-      //   directives: {
-      //     "pop-bottom": {
-      //       initial: {
-      //         scale: 0,
-      //         opacity: 0,
-      //         y: 100,
-      //       },
-      //       visible: {
-      //         scale: 1,
-      //         opacity: 1,
-      //         y: 0,
-      //       },
-      //     },
-      //     "translate-top": {
-      //       initial: {
-      //         opacity: 0,
-      //         y: 100,
-      //       },
-      //       visible: {
-      //         opacity: 1,
-      //         y: 0,
-      //         transition: {
-      //           delay: 0.2,
-      //           duration: 0.5,
-      //           ease: "easeOut",
-      //         },
-      //       },
-      //     },
-      //   },
-      // },
     },
   },
 
@@ -76,7 +45,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/content",
     "@vueuse/nuxt",
-    // "@vueuse/components",
   ],
 
   // CSS
@@ -97,7 +65,7 @@ export default defineNuxtConfig({
   // I18n module configuration: https://i18n.nuxtjs.org/
   i18n: {
     vueI18n: "./modules/i18n/i18n.config.ts",
-    defaultLocale: process.env.NUXT_PUBLIC_LANGUAGE || "en-US",
+    defaultLocale: process.env.NUXT_PUBLIC_LANGUAGE || "fr",
     defaultDirection: "ltr",
     langDir: "./modules/i18n/lang",
     locales: [
@@ -114,12 +82,12 @@ export default defineNuxtConfig({
         dir: "ltr",
       },
     ],
-    // detectBrowserLanguage: {
-    //   alwaysRedirect: true,
-    //   fallbackLocale: "fr",
-    //   redirectOn: "root",
-    //   useCookie: true,
-    // },
+    detectBrowserLanguage: {
+      alwaysRedirect: true,
+      fallbackLocale: "fr",
+      redirectOn: "root",
+      useCookie: true,
+    },
   },
   extends: ["nuxt-seo-kit"],
   // Image module configuration: https://v1.image.nuxtjs.org/configuration
@@ -133,10 +101,10 @@ export default defineNuxtConfig({
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  // nitro: {
-  //   prerender: {
-  //     crawlLinks: true,
-  //   },
-  // },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+    },
+  },
   // ssr: false,
 });

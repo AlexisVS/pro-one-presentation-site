@@ -19,9 +19,9 @@ logs
 .vscode
 
 # Local env files
-.env
-.env.*
-!.env.example
+#.env
+#.env.*
+#!.env.example
 
 # dev files
 .unlighthouse

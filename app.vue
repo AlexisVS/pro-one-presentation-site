@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+onMounted(() => {});
+</script>
 
 <template>
   <NuxtLayout layout="base">
