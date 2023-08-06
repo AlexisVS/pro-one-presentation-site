@@ -28,7 +28,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 @use "sass:color";
-@import "assets/scss/_variables.scss";
+@import "~/assets/scss/_variables.scss";
 
 .btn {
   width: 70px;

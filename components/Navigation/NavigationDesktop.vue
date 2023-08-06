@@ -20,7 +20,7 @@ const navigation = useNavigation();
 
 <style scoped lang="scss">
 @use "sass:color";
-@import "assets/scss/_variables.scss";
+@import "~/assets/scss/_variables.scss";
 
 .navigation-desktop {
   width: 100%;

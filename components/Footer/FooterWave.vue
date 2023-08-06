@@ -42,7 +42,7 @@
 
 <style lang="scss" scoped>
 @use "sass:color";
-@import "assets/scss/main";
+@import "~/assets/scss/main";
 
 .waves {
   display: block;

@@ -18,7 +18,7 @@ onMounted(() => {
 
 <style scoped lang="scss">
 @use "sass:color";
-@import "assets/scss/variables.scss";
+@import "~/assets/scss/variables.scss";
 
 .navigation {
   position: relative;

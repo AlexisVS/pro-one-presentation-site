@@ -61,7 +61,7 @@ const onAnimationMenuItemHasFinished = (el: Element) => {
 
 <style scoped lang="scss">
 @use "sass:color";
-@import "@/assets/scss/variables.scss";
+@import "~/assets/scss/variables.scss";
 
 .mobile-menu {
   position: fixed;
