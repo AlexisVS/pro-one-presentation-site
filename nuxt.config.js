@@ -98,7 +98,7 @@ export default defineNuxtConfig({
     quality: 80,
     format: ["avif", "webp"],
     provider: "ipx",
-    dir: "assets/images",
+    dir: "public/images",
   },
   // Content module configuration: https://content.nuxtjs.org/configuration
   content: {},
