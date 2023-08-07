@@ -4,7 +4,7 @@ const seoConfig = {
   name: "pro one",
   description: "Welcome to my pro one website!",
   image: "/images/brand/proone_europe.png",
-  url: process.env.NUXT_PUBLIC_SITE_URL || "localhost:3000",
+  url: process.env.NUXT_PUBLIC_SITE_URL,
   phone: "+33 6 00 00 00 00",
   email: "qsdqsd@gmail.com",
   vatId: "BE 0000 000 000",
@@ -12,6 +12,9 @@ const seoConfig = {
 };
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: process.env.NUXT_APP_BASE_URL,
+  },
   runtimeConfig: {
     public: {
       siteUrl: seoConfig.url,
@@ -106,5 +109,5 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
-  // ssr: false,
+  ssr: true,
 });
