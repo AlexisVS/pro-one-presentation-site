@@ -7,7 +7,7 @@ import TransitionBase from "../components/Transitions/TransitionBase.vue";
     <HomePageSocietyWhoWeAre />
     <TransitionBase>
       <p>Lorem ipsum dolor sit amet</p>
-      <img src="~/assets/images/brand/brand.png" alt="" />
+      <!--      <img src="~/assets/images/brand/brand.png" alt="" />-->
     </TransitionBase>
   </div>
 </template>
