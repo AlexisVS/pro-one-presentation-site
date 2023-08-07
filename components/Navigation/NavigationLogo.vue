@@ -4,7 +4,7 @@
   <NuxtLink to="/">
     <NuxtImg
       class="logo"
-      src="/images/brand/brand.png"
+      src="./images/brand/brand.png"
       alt="Logo"
       height="40"
     />
