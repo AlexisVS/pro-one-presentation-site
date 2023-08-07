@@ -3,7 +3,7 @@
 const seoConfig = {
   name: "pro one",
   description: "Welcome to my pro one website!",
-  image: "/images/brand/proone_europe.png",
+  image: "/images/brand/brand.png",
   url: process.env.NUXT_PUBLIC_SITE_URL,
   phone: "+33 6 00 00 00 00",
   email: "qsdqsd@gmail.com",
