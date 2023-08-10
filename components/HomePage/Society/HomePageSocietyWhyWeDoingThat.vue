@@ -12,29 +12,44 @@ const hasIntersectedOnce = ref(false);
 
 onMounted(() => {
   circleAnimation.value?.endElement();
-  const tl = gsap.timeline();
+  const tl = gsap.timeline({});
+  tl.pause(0);
+
+  const textElements = section.value?.children[0].children;
+
+  const textFromVar = {
+    opacity: 0,
+    y: 100,
+  };
+
+  const textToVar = {
+    opacity: 1,
+    y: 0,
+    duration: 0.45,
+  };
 
   tl.fromTo(
     ".water-droplet__big-face",
     { fill: "#002a39" }, // Start color (blue)
     { fill: "#01baf2", duration: 1, delay: 1 }, // Desired color and animation duration
-  ).fromTo(
-    ".water-droplet__little-face",
-    { fill: "#002a39" }, // Start color (blue)
-    { fill: "#5192ba", duration: 1 }, // Desired color and animation duration
-    "-=1",
-  );
+  )
+    .fromTo(
+      ".water-droplet__little-face",
+      { fill: "#002a39" }, // Start color (blue)
+      { fill: "#5192ba", duration: 1 }, // Desired color and animation duration
+      "-=1",
+    )
+    .fromTo(textElements[0], textFromVar, textToVar, "-=1")
+    .fromTo(textElements[1], textFromVar, textToVar, "-=0.75")
+    .fromTo(textElements[2], textFromVar, textToVar, "-=0.5");
 
   sectionObserver.value = new IntersectionObserver(
     (entries) => {
       if (entries[0].isIntersecting) {
-        hasIntersectedOnce.value = true;
-        if (!hasIntersectedOnce.value) {
-          circleAnimation.value?.beginElement();
-        }
+        if (hasIntersectedOnce.value) return;
         tl.play();
-      } else {
-        tl.reverse();
+        circleAnimation.value?.beginElement();
+        hasIntersectedOnce.value = true;
       }
     },
     {
@@ -59,7 +74,17 @@ onUnmounted(() => {
     src="./images/water/water_wall.jpg"
   />
   <section ref="section" class="why-we-doing-that">
-    <div class="why-we-doing-that__text-side"></div>
+    <div class="why-we-doing-that__text-side">
+      <h2 class="fluid-font-size-3">
+        {{ $t("home.why_we_doing_that.title") }}
+      </h2>
+      <p class="fluid-font-size-0">
+        {{ $t("home.why_we_doing_that.paragraph_1") }}
+      </p>
+      <p class="fluid-font-size-0">
+        {{ $t("home.why_we_doing_that.paragraph_2") }}
+      </p>
+    </div>
     <div class="why-we-doing-that__svg-side">
       <svg
         ref="svg"
@@ -120,12 +145,14 @@ onUnmounted(() => {
 }
 
 .why-we-doing-that {
-  height: 700px;
   background-color: #002a39;
   position: relative;
   top: -10px;
-  padding-top: 100px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  min-height: 512px;
 
   &::before {
     content: "";
@@ -139,14 +166,24 @@ onUnmounted(() => {
   }
 
   &__text-side {
-    width: 50%;
+    color: white;
+    z-index: 2;
+    position: absolute;
+    top: 11%;
+    left: 0;
+    padding: 0 1rem;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
   }
 
   &__svg-side {
-    width: 50%;
     display: flex;
+    width: 100%;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 
   &__after {
@@ -158,7 +195,7 @@ onUnmounted(() => {
       #adb9bd,
       #ebeff0
     );
-    height: 480px;
+    height: 240px;
     position: relative;
     top: -10px;
   }
@@ -181,6 +218,27 @@ onUnmounted(() => {
     transform: rotate(-90deg);
     transform-origin: center;
     z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .why-we-doing-that {
+    display: flex;
+    padding-bottom: 200px;
+
+    &__text-side {
+      position: relative;
+      width: 50%;
+    }
+
+    &__svg-side {
+      width: 50%;
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    }
   }
 }
 </style>
