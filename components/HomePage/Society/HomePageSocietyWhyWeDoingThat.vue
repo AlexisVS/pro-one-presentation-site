@@ -8,6 +8,7 @@ const section = ref<HTMLElement | null>(null);
 const svg = ref<HTMLElement | null>(null);
 const sectionObserver = ref<IntersectionObserver | null>(null);
 const circleAnimation = ref<SVGAnimateElement | null>(null);
+const hasIntersectedOnce = ref(false);
 
 onMounted(() => {
   circleAnimation.value?.endElement();
@@ -27,7 +28,10 @@ onMounted(() => {
   sectionObserver.value = new IntersectionObserver(
     (entries) => {
       if (entries[0].isIntersecting) {
-        circleAnimation.value?.beginElement();
+        hasIntersectedOnce.value = true;
+        if (!hasIntersectedOnce.value) {
+          circleAnimation.value?.beginElement();
+        }
         tl.play();
       } else {
         tl.reverse();
