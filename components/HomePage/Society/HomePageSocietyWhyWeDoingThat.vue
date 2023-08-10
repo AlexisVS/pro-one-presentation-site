@@ -24,14 +24,19 @@ onMounted(() => {
     "-=1",
   );
 
-  sectionObserver.value = new IntersectionObserver((entries) => {
-    if (entries[0].isIntersecting) {
-      circleAnimation.value?.beginElement();
-      tl.play();
-    } else {
-      tl.reverse();
-    }
-  });
+  sectionObserver.value = new IntersectionObserver(
+    (entries) => {
+      if (entries[0].isIntersecting) {
+        circleAnimation.value?.beginElement();
+        tl.play();
+      } else {
+        tl.reverse();
+      }
+    },
+    {
+      threshold: 1,
+    },
+  );
 
   sectionObserver.value?.observe(section.value);
 });
