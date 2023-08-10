@@ -2,8 +2,7 @@
 
 <template>
   <NuxtLink to="/">
-    <NuxtImg alt="Logo" class="logo" src="./images/brand/brand.png" />
-    <!--      height="40"-->
+    <NuxtImg alt="Logo" class="logo" height="40" src="images/brand/brand.png" />
     <!--    <img src="~/assets/images/brand/brand.png" alt="Logo" />-->
   </NuxtLink>
 </template>
