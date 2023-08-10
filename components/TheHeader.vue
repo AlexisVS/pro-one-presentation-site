@@ -52,10 +52,8 @@ const onAnimationLayerTextRendered = (el: Element) => {
 .header {
   display: block;
   position: relative;
-  top: -65px;
-  left: 0;
   width: 100%;
-  height: 100dvh;
+  height: calc(100dvh - 65px);
 
   &__video {
     width: 100%;

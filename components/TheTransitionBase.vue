@@ -1,5 +1,5 @@
 <template>
-  <div v-if="displayed" ref="observed" :style="transitions.default.initial">
+  <div v-if="displayed" ref="observed" :style="getTransition().initial">
     <slot></slot>
   </div>
 </template>
@@ -43,6 +43,11 @@ const props = defineProps({
     default: true,
     required: false,
   },
+  delay: {
+    type: Number,
+    default: 0,
+    required: false,
+  },
 });
 
 const displayed = ref(true);
@@ -70,29 +75,26 @@ const transitions: transitionsObject = {
       transitionProperty: "opacity transform",
     },
   },
-  fade: {
+  easeTranslateTop: {
     initial: {
       opacity: 0,
+      transform: "translateY(100%)",
+      "transition-duration": "2000ms",
+      transitionProperty: "opacity transform",
     },
     appear: {
       opacity: 1,
+      transform: "translateY(0)",
+      "transition-duration": "2000ms",
+      transitionProperty: "opacity transform",
     },
     leave: {
       opacity: 0,
+      transform: "translateY(-100%)",
+      "transition-duration": "2000ms",
+      transitionProperty: "opacity transform",
     },
   },
-  slideRight: {
-    initial: {
-      transform: "translateX(-100%)",
-    },
-    appear: {
-      transform: "translateX(0)",
-    },
-    leave: {
-      transform: "translateX(100%)",
-    },
-  },
-  // Add more transitions here...
 };
 
 const getTransition = (): transitionType => {
@@ -124,6 +126,7 @@ const applyTransitionStyle = (
   const htmlElement = element as HTMLElement;
   Object.entries(getTransition()[transitionKey]).forEach(([key, value]) => {
     htmlElement.style.setProperty(key, value as string);
+    htmlElement.style.setProperty("transition-delay", `${props.delay}ms`);
   });
 };
 

@@ -21,7 +21,8 @@ onMounted(() => {
 @import "~/assets/scss/variables.scss";
 
 .navigation {
-  position: relative;
+  position: absolute;
+  width: 100%;
 }
 
 .navigation::after {

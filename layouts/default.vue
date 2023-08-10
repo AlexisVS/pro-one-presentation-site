@@ -1,9 +1,11 @@
 <template>
   <div class="layout">
     <TheNavigation class="layout__navigation" />
-    <div class="layout__content">
-      <slot />
-    </div>
+    <TheSmoothScroll>
+      <div class="layout__content">
+        <slot />
+      </div>
+    </TheSmoothScroll>
     <TheFooter class="layout__footer" />
   </div>
 </template>
