@@ -48,7 +48,8 @@ onUnmounted(() => {
 /* Recommended CSS for smooth scrolling */
 
 /* Ensure HTML element's height is auto */
-.the-smooth-scroll {
+.the-smooth-scroll,
+html.lenis {
   height: auto;
 }
 
@@ -62,17 +63,20 @@ onUnmounted(() => {
 }
 
 /* Apply settings for nested scroll elements */
-.the-smooth-scroll .lenis.lenis-smooth [data-lenis-prevent] {
+.the-smooth-scroll .lenis.lenis-smooth [data-lenis-prevent],
+.lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
 }
 
 /* Hide overflow when lenis is stopped */
-.the-smooth-scroll .lenis.lenis-stopped {
+.the-smooth-scroll .lenis.lenis-stopped,
+.lenis.lenis-stopped {
   overflow: hidden;
 }
 
 /* Disable pointer events on iframes during scrolling */
-.the-smooth-scroll .lenis.lenis-scrolling iframe {
+.the-smooth-scroll .lenis.lenis-scrolling iframe,
+.lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
 </style>

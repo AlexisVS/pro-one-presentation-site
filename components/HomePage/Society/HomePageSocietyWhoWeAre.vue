@@ -19,12 +19,12 @@ gsap.registerPlugin(ScrollTrigger);
           {{ $t("home.who_we_are.title") }}
         </h2>
       </TheTransitionBase>
-      <TheTransitionBase delay="300" transition="easeTranslateTop">
+      <TheTransitionBase :delay="300" transition="easeTranslateTop">
         <p class="who-we-are__text-side__paragraph">
           {{ $t("home.who_we_are.paragraph_1") }}
         </p>
       </TheTransitionBase>
-      <TheTransitionBase delay="300" transition="easeTranslateTop">
+      <TheTransitionBase :delay="300" transition="easeTranslateTop">
         <p class="who-we-are__text-side__paragraph">
           {{ $t("home.who_we_are.paragraph_2") }}
         </p>
