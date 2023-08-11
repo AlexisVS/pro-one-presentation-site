@@ -15,7 +15,7 @@ onMounted(() => {
   const tl = gsap.timeline({});
   tl.pause(0);
 
-  const textElements = section.value?.children[0].children;
+  const textElements = section.value?.children[0].children as HTMLCollection;
 
   const textFromVar = {
     opacity: 0,
@@ -56,8 +56,8 @@ onMounted(() => {
       threshold: 0.5,
     },
   );
-
-  sectionObserver.value?.observe(section.value);
+  if (sectionObserver.value)
+    sectionObserver.value?.observe(section.value as HTMLElement);
 });
 
 onUnmounted(() => {
@@ -128,8 +128,27 @@ onUnmounted(() => {
         />
       </svg>
     </div>
+    <!--    <div class="why-we-doing-that__after"></div>-->
   </section>
-  <div class="why-we-doing-that__after"></div>
+  <svg
+    class="why-we-doing-that__wave"
+    style="transform: rotate(180deg); transition: 0.3s"
+    version="1.1"
+    viewBox="0 0 1440 230"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <defs>
+      <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+        <stop offset="0%" stop-color="rgba(0, 42, 57, 1)"></stop>
+        <stop offset="100%" stop-color="rgba(81, 146, 186, 1)"></stop>
+      </linearGradient>
+    </defs>
+    <path
+      d="M0,184L48,168.7C96,153,192,123,288,126.5C384,130,480,169,576,187.8C672,207,768,207,864,203.2C960,199,1056,192,1152,172.5C1248,153,1344,123,1440,107.3C1536,92,1632,92,1728,92C1824,92,1920,92,2016,84.3C2112,77,2208,61,2304,46C2400,31,2496,15,2592,26.8C2688,38,2784,77,2880,92C2976,107,3072,100,3168,99.7C3264,100,3360,107,3456,107.3C3552,107,3648,100,3744,80.5C3840,61,3936,31,4032,15.3C4128,0,4224,0,4320,26.8C4416,54,4512,107,4608,126.5C4704,146,4800,130,4896,111.2C4992,92,5088,69,5184,72.8C5280,77,5376,107,5472,134.2C5568,161,5664,184,5760,176.3C5856,169,5952,130,6048,111.2C6144,92,6240,92,6336,80.5C6432,69,6528,46,6624,65.2C6720,84,6816,146,6864,176.3L6912,207L6912,230L6864,230C6816,230,6720,230,6624,230C6528,230,6432,230,6336,230C6240,230,6144,230,6048,230C5952,230,5856,230,5760,230C5664,230,5568,230,5472,230C5376,230,5280,230,5184,230C5088,230,4992,230,4896,230C4800,230,4704,230,4608,230C4512,230,4416,230,4320,230C4224,230,4128,230,4032,230C3936,230,3840,230,3744,230C3648,230,3552,230,3456,230C3360,230,3264,230,3168,230C3072,230,2976,230,2880,230C2784,230,2688,230,2592,230C2496,230,2400,230,2304,230C2208,230,2112,230,2016,230C1920,230,1824,230,1728,230C1632,230,1536,230,1440,230C1344,230,1248,230,1152,230C1056,230,960,230,864,230C768,230,672,230,576,230C480,230,384,230,288,230C192,230,96,230,48,230L0,230Z"
+      fill="url(#sw-gradient-0)"
+      style="transform: translate(0, 0px); opacity: 1"
+    ></path>
+  </svg>
 </template>
 
 <style lang="scss" scoped>
@@ -180,24 +199,15 @@ onUnmounted(() => {
     width: 100%;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 1;
   }
 
-  &__after {
-    background-image: linear-gradient(
-      to bottom,
-      #002a39,
-      #3b5662,
-      #72868e,
-      #adb9bd,
-      #ebeff0
-    );
-    height: 240px;
+  &__wave {
     position: relative;
-    top: -10px;
+    top: -11px;
   }
 }
 
@@ -214,7 +224,6 @@ onUnmounted(() => {
   }
 
   &__circle {
-    //fill: #28c968;
     transform: rotate(-90deg);
     transform-origin: center;
     z-index: 1;
@@ -224,11 +233,14 @@ onUnmounted(() => {
 @media screen and (min-width: 1024px) {
   .why-we-doing-that {
     display: flex;
-    padding-bottom: 200px;
+    padding-bottom: 150px;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     &__text-side {
       position: relative;
       width: 50%;
+      padding-left: 2rem;
     }
 
     &__svg-side {

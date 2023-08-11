@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-onMounted(() => {});
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <NuxtLayout layout="base">
@@ -8,8 +6,4 @@ onMounted(() => {});
   </NuxtLayout>
 </template>
 
-<style>
-body {
-  overflow-x: hidden;
-}
-</style>
+<style></style>

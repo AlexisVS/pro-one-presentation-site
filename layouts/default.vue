@@ -1,11 +1,11 @@
 <template>
   <div class="layout">
     <TheNavigation class="layout__navigation" />
-    <TheSmoothScroll>
-      <div class="layout__content">
+    <div class="layout__content">
+      <TheSmoothScroll>
         <slot />
-      </div>
-    </TheSmoothScroll>
+      </TheSmoothScroll>
+    </div>
     <TheFooter class="layout__footer" />
   </div>
 </template>
@@ -42,7 +42,7 @@
     grid-area: content
     background-color: $color-background
 
-    & > div
+    & > div > div
       height: 100%
 
   &__footer

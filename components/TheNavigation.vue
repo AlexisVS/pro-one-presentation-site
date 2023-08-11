@@ -22,7 +22,7 @@ onMounted(() => {
 
 .navigation {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 11px);
 }
 
 .navigation::after {

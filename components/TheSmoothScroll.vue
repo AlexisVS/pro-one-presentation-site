@@ -58,7 +58,8 @@ html.lenis {
 }
 
 /* Apply scroll behavior settings */
-.the-smooth-scroll .lenis.lenis-smooth {
+.the-smooth-scroll .lenis.lenis-smooth,
+.lenis.lenis-smooth {
   scroll-behavior: auto;
 }
 
