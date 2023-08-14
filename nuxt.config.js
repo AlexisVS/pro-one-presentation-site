@@ -71,6 +71,8 @@ export default defineNuxtConfig({
     defaultLocale: process.env.NUXT_PUBLIC_LANGUAGE || "fr",
     defaultDirection: "ltr",
     langDir: "./modules/i18n/lang",
+    trailingSlash: undefined,
+    strategy: "no_prefix",
     locales: [
       {
         code: "fr",
@@ -90,6 +92,7 @@ export default defineNuxtConfig({
       fallbackLocale: "fr",
       redirectOn: "root",
       useCookie: true,
+      cookieKey: "i18n_redirected",
     },
   },
   extends: ["nuxt-seo-kit"],

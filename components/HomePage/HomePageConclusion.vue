@@ -16,8 +16,8 @@
         />
       </div>
     </div>
-    <ButtonPage class="btn" text="Nos appareils à pression" to="/pression" />
-    <ButtonPage class="btn" text="Nos appareils à gravité" to="/gravity" />
+    <ButtonPage class="btn" text="Nos appareils à pression" to="/pression/" />
+    <ButtonPage class="btn" text="Nos appareils à gravité" to="/gravity/" />
   </section>
 </template>
 
