@@ -5,6 +5,7 @@
     <TheHeader />
     <HomePageSocietyWhoWeAre />
     <HomePageSocietyWhyWeDoingThat />
+    <HomePageConclusion />
   </div>
 </template>
 

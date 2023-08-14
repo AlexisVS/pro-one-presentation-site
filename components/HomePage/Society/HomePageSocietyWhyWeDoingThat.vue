@@ -191,7 +191,7 @@ onUnmounted(() => {
     top: 11%;
     left: 0;
     padding: 0 1rem;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
   }
 
   &__svg-side {
@@ -212,6 +212,7 @@ onUnmounted(() => {
 }
 
 .water-droplet {
+  width: 100%;
   position: relative;
   z-index: 1;
 
@@ -241,6 +242,7 @@ onUnmounted(() => {
       position: relative;
       width: 50%;
       padding-left: 2rem;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     }
 
     &__svg-side {
