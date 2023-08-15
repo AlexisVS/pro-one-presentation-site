@@ -8,8 +8,17 @@
         <p class="fluid-font-size-0">{{ $t("home.conclusion.paragraph_1") }}</p>
         <p class="fluid-font-size-0">{{ $t("home.conclusion.paragraph_2") }}</p>
         <div class="conclusion__text-side__cta">
-          <ButtonPage text="Nos appareils à pression" to="/pression/" />
-          <ButtonPage text="Nos appareils à gravité" to="/gravity/" />
+          <ButtonPage
+            button-image-path="./images/pression.png"
+            text="Nos appareils à pression"
+            to="/pression/"
+          />
+          <ButtonPage
+            button-image-path="./images/gravity.png"
+            text="Nos appareils à gravité"
+            to="/gravity/"
+            type="primary"
+          />
         </div>
       </div>
       <div class="conclusion__image-side">
@@ -30,9 +39,14 @@
   &__text-side {
     &__cta {
       display: flex;
-      flex-direction: column;
+      flex-wrap: wrap;
       align-items: flex-start;
       margin-top: 1rem;
+
+      & > * {
+        flex-grow: 0.9;
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
@@ -63,8 +77,11 @@
         flex-wrap: wrap;
 
         & > *:first-child {
-          margin-right: 1rem;
           margin-bottom: 1rem;
+        }
+
+        & > * {
+          flex-grow: 1;
         }
       }
     }
