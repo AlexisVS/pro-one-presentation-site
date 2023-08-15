@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div></div>
+  <NuxtLayout name="product">
+    <div></div>
+  </NuxtLayout>
 </template>
 
 <style scoped lang="scss"></style>

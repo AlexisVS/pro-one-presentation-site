@@ -39,9 +39,14 @@ const runtimeConfig = useRuntimeConfig();
 
 <style lang="scss" scoped>
 .conclusion {
-  padding: 0 1rem;
+  padding: 5vh 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &__text-side {
+    order: 2;
     &__cta {
       display: flex;
       flex-wrap: wrap;
@@ -73,13 +78,19 @@ const runtimeConfig = useRuntimeConfig();
 @media screen and (min-width: 1024px) {
   .conclusion {
     display: flex;
-    padding: 0 2rem;
+    padding: 10vh 2rem;
+    flex-direction: row;
+
+    &__image-side {
+      order: 2;
+    }
 
     &__text-side {
       padding-left: 1rem;
       justify-content: flex-start;
       width: 50%;
       min-width: 550px;
+      order: 1;
 
       &__cta {
         display: flex;

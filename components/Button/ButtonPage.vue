@@ -30,7 +30,7 @@ const props = defineProps({
   <NuxtLink :class="`button--${props.type}`" :to="props.to" class="button">
     <span
       class="button__text fluid-font-size--1"
-      :style="props.center === true && 'text-align: center; width: 100%;'"
+      :style="props.center === true ? 'text-align: center; width: 100%;' : ''"
     >
       <slot />
     </span>

@@ -3,15 +3,11 @@
 <template>
   <div>
     <TheHeader />
-    <HomePageSocietyWhoWeAre />
-    <HomePageSocietyWhyWeDoingThat />
-    <HomePageConclusion />
+    <PageHomeSocietyWhoWeAre />
+    <PageHomeSocietyWhyWeDoingThat />
+    <PageHomeProoneFilter />
+    <PageHomeConclusion />
   </div>
 </template>
 
-<style>
-/* Used for the default layout !! */
-.layout__content {
-  height: calc(100% - 65px);
-}
-</style>
+<style scoped></style>
