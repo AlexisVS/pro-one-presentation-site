@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const runtimeConfig = useRuntimeConfig();
+</script>
 
 <template>
   <section class="wrapper">
@@ -8,18 +10,21 @@
         <p class="fluid-font-size-0">{{ $t("home.conclusion.paragraph_1") }}</p>
         <p class="fluid-font-size-0">{{ $t("home.conclusion.paragraph_2") }}</p>
         <div class="conclusion__text-side__cta">
-          <ButtonPage
-            button-image-path="./images/pression.png"
-            text="Nos appareils à pression"
-            to="/pression/"
-          />
-          <ButtonPage
-            button-image-path="./images/gravity.png"
-            text="Nos appareils à gravité"
-            to="/gravity/"
-            type="primary"
-          />
+          <ButtonPage button-image-path="./images/pression.png" to="/pression/">
+            Nos appareils à pression
+          </ButtonPage>
+          <ButtonPage button-image-path="./images/gravity.png" to="/gravity/">
+            Nos appareils à gravité
+          </ButtonPage>
         </div>
+        <ButtonPage
+          class="conclusion__text-side__shop-button"
+          center
+          type="primary"
+          :to="runtimeConfig.public.siteUrl"
+        >
+          Visitez notre boutique
+        </ButtonPage>
       </div>
       <div class="conclusion__image-side">
         <NuxtImg
@@ -48,6 +53,11 @@
         margin-bottom: 1.5rem;
       }
     }
+
+    &__shop-button {
+      margin-top: 0.35rem;
+      margin-bottom: 5rem;
+    }
   }
 
   &__image-side {
@@ -69,12 +79,14 @@
       padding-left: 1rem;
       justify-content: flex-start;
       width: 50%;
+      min-width: 550px;
 
       &__cta {
         display: flex;
         margin-top: 1rem;
         flex-direction: row;
         flex-wrap: wrap;
+        transform: translateX(-6px);
 
         & > *:first-child {
           margin-bottom: 1rem;
@@ -83,6 +95,10 @@
         & > * {
           flex-grow: 1;
         }
+      }
+
+      &__shop-button {
+        transform: translateX(-6px);
       }
     }
   }
