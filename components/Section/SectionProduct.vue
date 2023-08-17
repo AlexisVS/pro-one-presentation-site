@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 const props = defineProps({
   header: {
     type: Boolean,
@@ -37,7 +37,7 @@ const props = defineProps({
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 .product {
   padding-top: 165px;
   padding-left: 1rem;
@@ -94,6 +94,7 @@ const props = defineProps({
     padding-left: 3rem;
     padding-right: 2rem;
     padding-bottom: 160px;
+
     &__details {
       flex-direction: row;
       align-items: center;

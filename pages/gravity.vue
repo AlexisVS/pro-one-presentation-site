@@ -3,7 +3,7 @@ const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
-  <NuxtLayout name="product">
+  <SectionProduct>
     <template #product-details-title>
       <h1 class="fluid-font-size-3">{{ $t("page.gravity.products.title") }}</h1>
     </template>
@@ -52,16 +52,16 @@ const runtimeConfig = useRuntimeConfig();
     <template #product-additional-informations>
       <div class="product-additional-informations">
         <div class="product-additional-informations__text-side">
-          <h2 class="fluid-font-size-1">
-            <TheTransitionBase transition="easeTranslateTop">
+          <TheTransitionBase transition="easeTranslateTop">
+            <h2 class="fluid-font-size-1">
               {{ $t("page.gravity.additional-informations.paragraph_1") }}
-            </TheTransitionBase>
-          </h2>
-          <p class="fluid-font-size-0" style="text-align: justify-all">
-            <TheTransitionBase transition="easeTranslateTop">
+            </h2>
+          </TheTransitionBase>
+          <TheTransitionBase transition="easeTranslateTop">
+            <p class="fluid-font-size-0" style="text-align: justify-all">
               {{ $t("page.gravity.additional-informations.paragraph_2") }}
-            </TheTransitionBase>
-          </p>
+            </p>
+          </TheTransitionBase>
         </div>
         <div class="product-additional-informations__image-side">
           <NuxtImg
@@ -73,7 +73,7 @@ const runtimeConfig = useRuntimeConfig();
         </div>
       </div>
     </template>
-  </NuxtLayout>
+  </SectionProduct>
 </template>
 
 <style scoped lang="scss">

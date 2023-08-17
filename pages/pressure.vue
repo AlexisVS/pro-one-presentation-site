@@ -3,7 +3,7 @@ const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
-  <NuxtLayout name="product">
+  <SectionProduct>
     <template #product-details-title>
       <h1 class="fluid-font-size-3">
         {{ $t("page.pressure.products.title") }}
@@ -55,7 +55,7 @@ const runtimeConfig = useRuntimeConfig();
         </ButtonPage>
       </TheTransitionBase>
     </template>
-  </NuxtLayout>
+  </SectionProduct>
 </template>
 
 <style lang="scss" scoped>

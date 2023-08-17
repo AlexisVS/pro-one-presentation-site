@@ -11,6 +11,7 @@ const circleAnimation = ref<SVGAnimateElement | null>(null);
 const hasIntersectedOnce = ref(false);
 
 onMounted(() => {
+  if (!section?.value || circleAnimation?.value) return;
   circleAnimation.value?.endElement();
   const tl = gsap.timeline({});
   tl.pause(0);
@@ -153,7 +154,7 @@ onUnmounted(() => {
 
 <style lang="scss" scoped>
 @use "sass:color";
-@import "~/assets/scss/variables.scss";
+@import "~/assets/scss/_variables.scss";
 
 .image-water-wall {
   width: 100%;
