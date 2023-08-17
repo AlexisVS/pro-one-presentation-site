@@ -3,8 +3,17 @@ const state = reactive({
   pageLoaded: false,
 });
 
+const video = ref<HTMLVideoElement | null>(null);
+
 onMounted(() => {
   state.pageLoaded = true;
+
+  const videoElement = video.value as HTMLVideoElement;
+  window?.innerWidth >= 768
+    ? (videoElement.src = "./videos/header_pc.webm")
+    : (videoElement.src = "./videos/header_mobile.webm");
+
+  videoElement.load();
 });
 
 const onAnimationLayerTextRendered = (el: Element) => {
@@ -15,9 +24,14 @@ const onAnimationLayerTextRendered = (el: Element) => {
 
 <template>
   <header class="header">
-    <video class="header__video" autoplay muted loop>
-      <source src="~/assets/videos/water_bamboo-pipe.webm" type="video/webm" />
-    </video>
+    <video
+      ref="video"
+      class="header__video"
+      type="video/webm"
+      autoplay
+      muted
+      loop
+    ></video>
     <div class="header__layer">
       <transition
         appear
@@ -54,13 +68,17 @@ const onAnimationLayerTextRendered = (el: Element) => {
   position: relative;
   width: 100%;
   height: 100dvh;
+  overflow: hidden;
 
   &__video {
+    overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    object-position: 40% bottom;
     object-fit: cover;
-    object-position: center;
     z-index: -1;
+    transform: scale(1.5);
+    transform-origin: 82% 90%;
   }
 
   &__layer {
@@ -120,6 +138,14 @@ const onAnimationLayerTextRendered = (el: Element) => {
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__video {
+    object-position: center;
+    transform-origin: center;
+    transform: scale(1);
   }
 }
 

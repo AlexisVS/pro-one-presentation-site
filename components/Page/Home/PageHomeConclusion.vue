@@ -31,7 +31,7 @@ const runtimeConfig = useRuntimeConfig();
         </div>
         <TheTransitionBase
           transition="easeTranslateTop"
-          delay="500"
+          :delay="500"
           :once="false"
           :visibility="false"
         >

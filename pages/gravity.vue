@@ -34,7 +34,7 @@ const runtimeConfig = useRuntimeConfig();
       </TheTransitionBase>
       <TheTransitionBase
         transition="easeTranslateTop"
-        delay="500"
+        :delay="500"
         :once="false"
         :visibility="false"
       >
@@ -68,6 +68,7 @@ const runtimeConfig = useRuntimeConfig();
             class="product-additional-informations__image-side__image"
             alt="Filter Pro One G2.0"
             src="./images/gravity/schema.png"
+            width="547px"
           />
         </div>
       </div>
@@ -103,7 +104,7 @@ const runtimeConfig = useRuntimeConfig();
     & > img {
       object-fit: contain;
       width: 85%;
-      max-width: 630px;
+      max-width: 547px;
     }
   }
 }
