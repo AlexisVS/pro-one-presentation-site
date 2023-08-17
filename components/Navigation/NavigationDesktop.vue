@@ -32,19 +32,19 @@ const navigation = useNavigation();
     align-items: center;
 
     &__item {
-      color: darken($color-primary, 15%);
+      color: darken($color-primary, 8%);
       padding: 5px 1rem;
       font-weight: 580;
       text-shadow: 0 0 1px transparentize(darken($color-primary, 28%), 0.3);
       transition: color 650ms ease-in;
 
       &:hover {
-        color: lighten($color-primary, 10%);
+        color: darken($color-primary, 20%);
         transition: color 350ms ease-out;
       }
 
       &--active {
-        color: $color-accent, 15%;
+        color: $color-accent;
         text-shadow: 0 0 1px transparentize(darken($color-accent, 55%), 0.3);
 
         &:hover {
