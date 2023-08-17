@@ -3,22 +3,24 @@
 <template>
   <section class="proone-filter">
     <div class="proone-filter__text-side">
-      <h2 class="fluid-font-size-3">{{ $t("home.proone_filter.title") }}</h2>
+      <h2 class="fluid-font-size-3">
+        {{ $t("page.home.proone_filter.title") }}
+      </h2>
       <p class="fluid-font-size-0">
-        {{ $t("home.proone_filter.paragraph_1") }}
+        {{ $t("page.home.proone_filter.paragraph_1") }}
       </p>
       <p class="fluid-font-size-0">
-        {{ $t("home.proone_filter.paragraph_2") }}
+        {{ $t("page.home.proone_filter.paragraph_2") }}
       </p>
       <p class="fluid-font-size-0">
-        {{ $t("home.proone_filter.paragraph_3") }}
+        {{ $t("page.home.proone_filter.paragraph_3") }}
       </p>
     </div>
     <div class="proone-filter__image-side">
       <NuxtImg
         alt="Pro One stuff"
         class="proone-filter__image-side__image"
-        src="./images/filtration_agents.png"
+        src="./images/filtration/filtration_agents.png"
       />
     </div>
   </section>

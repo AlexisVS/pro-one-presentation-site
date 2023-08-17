@@ -6,31 +6,50 @@ const runtimeConfig = useRuntimeConfig();
   <section class="wrapper">
     <div class="conclusion">
       <div class="conclusion__text-side">
-        <h2 class="fluid-font-size-3">{{ $t("home.conclusion.title") }}</h2>
-        <p class="fluid-font-size-0">{{ $t("home.conclusion.paragraph_1") }}</p>
-        <p class="fluid-font-size-0">{{ $t("home.conclusion.paragraph_2") }}</p>
+        <h2 class="fluid-font-size-3">
+          {{ $t("page.home.conclusion.title") }}
+        </h2>
+        <p class="fluid-font-size-0">
+          {{ $t("page.home.conclusion.paragraph_1") }}
+        </p>
+        <p class="fluid-font-size-0">
+          {{ $t("page.home.conclusion.paragraph_2") }}
+        </p>
         <div class="conclusion__text-side__cta">
-          <ButtonPage button-image-path="./images/pression.png" to="/pression/">
+          <ButtonPage
+            button-image-path="./images/pressure/pressure.png"
+            to="/pressure/"
+          >
             Nos appareils à pression
           </ButtonPage>
-          <ButtonPage button-image-path="./images/gravity.png" to="/gravity/">
+          <ButtonPage
+            button-image-path="./images/gravity/gravity.png"
+            to="/gravity/"
+          >
             Nos appareils à gravité
           </ButtonPage>
         </div>
-        <ButtonPage
-          class="conclusion__text-side__shop-button"
-          center
-          type="primary"
-          :to="runtimeConfig.public.siteUrl"
+        <TheTransitionBase
+          transition="easeTranslateTop"
+          delay="500"
+          :once="false"
+          :visibility="false"
         >
-          Visitez notre boutique
-        </ButtonPage>
+          <ButtonPage
+            class="conclusion__text-side__shop-button"
+            center
+            type="primary"
+            :to="runtimeConfig.public.siteUrl + '/shop/'"
+          >
+            {{ $t("component.button.visit_shop") }}
+          </ButtonPage>
+        </TheTransitionBase>
       </div>
       <div class="conclusion__image-side">
         <NuxtImg
           alt="Pro One stuff"
           class="conclusion__image-side__image"
-          src="./images/proone_stuff.png"
+          src="./images/products/proone_products.png"
         />
       </div>
     </div>

@@ -8,6 +8,10 @@ const props = defineProps({
     type: Boolean,
     required: true,
   },
+  toggleMenu: {
+    type: Function,
+    required: true,
+  },
 });
 
 const onAnimationMenuItemHasFinished = (el: Element) => {
@@ -47,6 +51,7 @@ const onAnimationMenuItemHasFinished = (el: Element) => {
                 :to="localePath(item.path)"
                 class="mobile-menu__body__navigation__item fluid-font-size-2"
                 active-class="mobile-menu__body__navigation__item--active"
+                @click="props.toggleMenu"
               >
                 {{ $t(`navigation.${item.name}`) }}
               </NuxtLink>

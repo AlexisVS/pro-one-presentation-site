@@ -76,13 +76,13 @@ onUnmounted(() => {
   <section ref="section" class="why-we-doing-that">
     <div class="why-we-doing-that__text-side">
       <h2 class="fluid-font-size-3">
-        {{ $t("home.why_we_doing_that.title") }}
+        {{ $t("page.home.why_we_doing_that.title") }}
       </h2>
       <p class="fluid-font-size-0">
-        {{ $t("home.why_we_doing_that.paragraph_1") }}
+        {{ $t("page.home.why_we_doing_that.paragraph_1") }}
       </p>
       <p class="fluid-font-size-0">
-        {{ $t("home.why_we_doing_that.paragraph_2") }}
+        {{ $t("page.home.why_we_doing_that.paragraph_2") }}
       </p>
     </div>
     <div class="why-we-doing-that__svg-side">

@@ -25,7 +25,7 @@ const onAnimationLayerTextRendered = (el: Element) => {
         @after-enter="onAnimationLayerTextRendered"
       >
         <h1 v-if="state.pageLoaded" class="header__layer__title">
-          {{ $t("home.header.title") }}
+          {{ $t("page.home.header.title") }}
         </h1>
       </transition>
       <transition
@@ -38,7 +38,7 @@ const onAnimationLayerTextRendered = (el: Element) => {
           :style="'animation-delay: 500ms'"
           class="header__layer__subtitle"
         >
-          {{ $t("home.header.subtitle") }}
+          {{ $t("page.home.header.subtitle") }}
         </span>
       </transition>
     </div>

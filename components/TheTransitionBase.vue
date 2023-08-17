@@ -18,10 +18,12 @@ type transitionsObject = {
   [key: string]: transitionType;
 };
 
+type transitionPreset = "default" | "easeTranslateTop";
+
 const props = defineProps({
   // Pre build-in transition name or custom transition object
   transition: {
-    type: [String, Object] as PropType<string | transitionType>,
+    type: [String, Object] as PropType<transitionPreset | transitionType>,
     default: "default",
     required: false,
   },

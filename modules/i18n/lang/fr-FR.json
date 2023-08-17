@@ -6,31 +6,62 @@
     "about_us": "A propos",
     "shop": "Boutique"
   },
-  "home": {
-    "header": {
-      "title": "Le pouvoir de l'eau à porter de main.",
-      "subtitle": "Découvrez nos produits pour un accès facile à une eau parfaitement purifiées."
+  "page": {
+    "home": {
+      "header": {
+        "title": "Le pouvoir de l'eau à porter de main.",
+        "subtitle": "Découvrez nos produits pour un accès facile à une eau parfaitement purifiées."
+      },
+      "who_we_are": {
+        "title": "Une eau saine pour tous vos besoin.",
+        "paragraph_1": "Chez Pro one, nous sommes une équipe de passionné et déterminé à rendre l'accès à une eau pure abordable.",
+        "paragraph_2": "Fort de notre expertise et de notre engagement envers l'environnement, nous mettons tout en oeuvre pour vous offrir des filtres à eau de qualité superieur garantissant une eau saine et délicieuse à chaque goutte."
+      },
+      "why_we_doing_that": {
+        "title": "Pour votre santé, celle de votre famille et de notre planète.",
+        "paragraph_1": "Chez Pro one, notre engagement ne se limite pas seulement à votre santé mais également à celle de notre planete.",
+        "paragraph_2": "Enrichissant nos filtres à eaux haute gamme, vous faites partie de la solution pour préserver l'environnement et réduisez l'utilisation du plastique à usage unique."
+      },
+      "proone_filter": {
+        "title": "La technologie des filtres ProOne G2.0 est sans pareille.",
+        "paragraph_1": "Bien que n'étant pas les premiers sur le marché de la filtration et le traitement de l'eau, notre société est parvenue à développer une des meilleures technologies disponibles sur le marché actuellement.",
+        "paragraph_2": "Nous sommes fiers d'annoncer notre gamme d'éléments ProOne G2.0 a obtenu la certification NSF ANSI-42 garantissant une qualité de purification de très haut niveau.",
+        "paragraph_3": "Nous avons appliqué les mêmes standards dans notre gamme Coldsteam et ProMax (systèmes à pression)."
+      },
+      "conclusion": {
+        "title": "Rejoignez la révolution Pro one dès aujourd'hui",
+        "paragraph_1": "Faite le choix intelligent et durable en optant pour les filtres à eaux Pro one, la référence en matière de purification d'eaux.",
+        "paragraph_2": "N'attendez plus pour améliorer la qualité de votre eau et contribuer à un avenir physique et plus sain pour tous."
+      }
     },
-    "who_we_are": {
-      "title": "Une eau saine pour tous vos besoin.",
-      "paragraph_1": "Chez Pro one, nous sommes une équipe de passionné et déterminé à rendre l'accès à une eau pure abordable.",
-      "paragraph_2": "Fort de notre expertise et de notre engagement envers l'environnement, nous mettons tout en oeuvre pour vous offrir des filtres à eau de qualité superieur garantissant une eau saine et délicieuse à chaque goutte."
+    "gravity": {
+      "products": {
+        "title": "Une Eau Pure à Portée de Main avec les Filtres ProOne.",
+        "subtitle": "Assemblage Facile et Utilisation Universelle, Sans Contraintes.",
+        "paragraph_1": "Que vous soyez en déplacement, en recherche d'autonomie ou pour votre usage quotidien, vous aurez la garantie d'une eau potable de qualité avec les filtres ProOne.",
+        "paragraph_2": "Simples à assembler, ne nécessitant ni électricité, ni raccord au réseau de distribution, vous pouvez utiliser toutes sources d'eau à votre disposition, que ce soit à votre domicile, votre bureau ou en vacances."
+      },
+      "additional-informations": {
+        "paragraph_1": "Tous nos systèmes à gravité utilisent la technologie ProOne G2.0 certifiés NSF.",
+        "paragraph_2": "Ils permettent d'éliminer totalement ou de réduire au niveau de traces les micro-plastiques, les pesticides, les herbicides, les métaux lourds, le chlore, le fluor, les parasites, bactéries, les contaminants pharmaceutiques et radiologiques... etc (voir le rapport de laboratoire avec les +200 contaminants testés)."
+      }
     },
-    "why_we_doing_that": {
-      "title": "Pour votre santé, celle de votre famille et de notre planète.",
-      "paragraph_1": "Chez Pro one, notre engagement ne se limite pas seulement à votre santé mais également à celle de notre planete.",
-      "paragraph_2": "Enrichissant nos filtres à eaux haute gamme, vous faites partie de la solution pour préserver l'environnement et réduisez l'utilisation du plastique à usage unique."
+    "pressure": {
+      "products": {
+        "title": "Maîtrisez Votre Eau Sous Pression avec les Solutions ProOne",
+        "subtitle": "Découvrez Nos Innovations Sous Pression ProOne",
+        "paragraph_1": "ProOne vous propose une gamme complète destinée à traiter votre eau de votre réseau pression, de la simple distribution à votre citerne de récupération d'eau pluviale.",
+        "paragraph_2": "De l'adoucissement de votre eau calcaire, de l'élimination du chlore pour la douche, à la production d'eau potable sans passer par le remplissage des cuves des filtres à gravité, visiter notre boutique pour trouver le système qui convient le mieux à votre domicile.",
+        "paragraph_3": "Ne nécessite pas d’électricité, seule la pression est suffisante."
+      }
     },
-    "proone_filter": {
-      "title": "La technologie des filtres ProOne G2.0 est sans pareille.",
-      "paragraph_1": "Bien que n'étant pas les premiers sur le marché de la filtration et le traitement de l'eau, notre société est parvenue à développer une des meilleures technologies disponibles sur le marché actuellement.",
-      "paragraph_2": "Nous sommes fiers d'annoncer notre gamme d'éléments ProOne G2.0 a obtenu la certification NSF ANSI-42 garantissant une qualité de purification de très haut niveau.",
-      "paragraph_3": "Nous avons appliqué les mêmes standards dans notre gamme Coldsteam et ProMax (systèmes à pression)."
-    },
-    "conclusion": {
-      "title": "Rejoignez la révolution Pro one dès aujourd'hui",
-      "paragraph_1": "Faite le choix intelligent et durable en optant pour les filtres à eaux Pro one, la référence en matière de purification d'eaux.",
-      "paragraph_2": "N'attendez plus pour améliorer la qualité de votre eau et contribuer à un avenir physique et plus sain pour tous."
+    "about": {
+      "paragraph": "ProOne Europe - Mozito SRL, est l'importateur exclusif des produits ProOne pour la France, la Belgique et le Luxembourg.\n\nNous sommes situés en Belgique et nous disposons d'un large stock de modèles et de pièces détachées.\n\nNous nous engageons à fournir à nos clients la documentation et guide d’entretien en français et en anglais avec un service après-vente rapide et efficace.\n\nNous vous offrons une documentation et des manuels de qualité traduits en français.\n\nNous assurons la livraison en Europe + Suisse (autres pays sur demande.)\n\nNotre service livraison comprends une assurance colis.\n\nLes commandes sont envoyées dès réception de votre payement, elle vous parviendront ensuite dans un délai de 2 à 3 jours ouvrables / 24 h en Belgique via notre partenaire Bpost.\n\nSi vous avez besoin d'aide à la suite de votre achat, nous nous ferons un plaisir de vous répondre (merci de préparer au préalable votre numéro de facture et/ou identifiant).\n\nN’hésitez pas à nous contacter au 0032 87 70 12 51 ou au 0032 473 40 86 35 pour toutes informations complémentaires."
+    }
+  },
+  "component": {
+    "button": {
+      "visit_shop": "Visiter notre boutique"
     }
   }
 }

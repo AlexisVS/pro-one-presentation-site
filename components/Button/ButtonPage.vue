@@ -139,6 +139,7 @@ const props = defineProps({
       transition:
         box-shadow 225ms,
         border-color 350ms;
+
       .button__text {
         color: white;
         text-shadow: 0 0 0.25em transparentize(white, 0.8);

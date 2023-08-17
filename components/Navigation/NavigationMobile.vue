@@ -27,6 +27,7 @@ const toggleMenu = () => {
       class="navigation-mobile__menu"
       :class="state.menuDisplayed && 'navigation-mobile__menu--active'"
       :menu-displayed="state.menuDisplayed"
+      :toggle-menu="toggleMenu"
     />
   </div>
 </template>

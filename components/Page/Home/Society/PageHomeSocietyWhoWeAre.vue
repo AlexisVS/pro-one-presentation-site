@@ -16,17 +16,17 @@ gsap.registerPlugin(ScrollTrigger);
     <div class="who-we-are__text-side">
       <TheTransitionBase transition="easeTranslateTop">
         <h2 class="who-we-are__text-side__title">
-          {{ $t("home.who_we_are.title") }}
+          {{ $t("page.home.who_we_are.title") }}
         </h2>
       </TheTransitionBase>
       <TheTransitionBase :delay="300" transition="easeTranslateTop">
         <p class="who-we-are__text-side__paragraph">
-          {{ $t("home.who_we_are.paragraph_1") }}
+          {{ $t("page.home.who_we_are.paragraph_1") }}
         </p>
       </TheTransitionBase>
       <TheTransitionBase :delay="300" transition="easeTranslateTop">
         <p class="who-we-are__text-side__paragraph">
-          {{ $t("home.who_we_are.paragraph_2") }}
+          {{ $t("page.home.who_we_are.paragraph_2") }}
         </p>
       </TheTransitionBase>
     </div>
