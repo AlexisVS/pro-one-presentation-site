@@ -39,12 +39,12 @@ const navigation = useNavigation();
       transition: color 650ms ease-in;
 
       &:hover {
-        color: darken($color-primary, 10%);
+        color: lighten($color-primary, 10%);
         transition: color 350ms ease-out;
       }
 
       &--active {
-        color: darken($color-accent, 15%);
+        color: $color-accent, 15%;
         text-shadow: 0 0 1px transparentize(darken($color-accent, 55%), 0.3);
 
         &:hover {
