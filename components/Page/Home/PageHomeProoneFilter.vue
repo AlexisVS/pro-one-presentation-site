@@ -64,14 +64,26 @@
     &__image-side {
       order: 2;
       margin: 0;
+      width: 50%;
     }
 
     &__text-side {
       padding-left: 1rem;
+      padding-right: 7vw;
       justify-content: flex-start;
       width: 50%;
-      min-width: 550px;
+      min-width: 450px;
       order: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .proone-filter {
+    &__image-side {
+      &__image {
+        max-width: 821px;
+      }
     }
   }
 }

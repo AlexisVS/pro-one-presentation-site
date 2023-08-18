@@ -56,13 +56,3 @@ $font-size-9: calc($font-size-8 * $font-scale-ratio); /* H1 bis */
 
   /* Fluid typography */
 }
-
-@media screen and (min-width: 1024px) {
-  $base-font-size: 18px;
-  $font-scale-ratio: 1.166;
-
-  :root {
-    --base-font-size: #{$base-font-size};
-    --font-scale-ratio: #{$font-scale-ratio};
-  }
-}

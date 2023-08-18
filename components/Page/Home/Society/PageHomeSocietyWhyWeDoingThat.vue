@@ -11,7 +11,7 @@ const circleAnimation = ref<SVGAnimateElement | null>(null);
 const hasIntersectedOnce = ref(false);
 
 onMounted(() => {
-  if (!section?.value && !circleAnimation?.value) return;
+  if (!section.value && !circleAnimation.value) return;
   circleAnimation.value?.endElement();
   const tl = gsap.timeline({});
   tl.pause(0);
@@ -186,6 +186,7 @@ onUnmounted(() => {
   }
 
   &__text-side {
+    box-sizing: border-box;
     color: white;
     width: 100%;
     z-index: 2;

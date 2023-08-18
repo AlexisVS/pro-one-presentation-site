@@ -1,3 +1,6 @@
+@import "./mixins/fluid-typography";
+@import "variables";
+
 body {
   background-color: var(--color-background);
   color: var(--color-text);
@@ -107,7 +110,13 @@ h4,
 
 p,
 .fluid-font-size-0 {
-  @include fluid-type(font-size, $font-size-0, $font-size-1, 320px, 1024px);
+  @include fluid-type(
+    font-size,
+    $font-size-0,
+    $font-size-1,
+    $minimum-screen-width,
+    $maximum-screen-width
+  );
 }
 
 caption,
@@ -119,4 +128,295 @@ caption,
     $minimum-screen-width,
     $maximum-screen-width
   );
+}
+
+@media screen and (min-width: 1024px) {
+  $base-font-size: 17.5px;
+  $font-scale-ratio: 1.12;
+  $minimum-screen-width: 1024px;
+  $maximum-screen-width: 1920px;
+  $fluid-min-font-size-scaling: 0.8;
+  $fluid-max-font-size-scaling: 1.6;
+
+  $font-size-0: calc($base-font-size); /* base  and caption bis*/
+  $font-size--1: calc($font-size-0 / $font-scale-ratio); /* caption */
+  $font-size--2: calc($font-size--1 / $font-scale-ratio);
+  $font-size-1: calc($base-font-size * $font-scale-ratio); /* base bis */
+  $font-size-2: calc($font-size-1 * $font-scale-ratio); /* H4*/
+  $font-size-3: calc($font-size-2 * $font-scale-ratio); /* H4 bis */
+  $font-size-4: calc($font-size-3 * $font-scale-ratio); /* H3 */
+  $font-size-5: calc($font-size-4 * $font-scale-ratio); /* H3 bis */
+  $font-size-6: calc($font-size-5 * $font-scale-ratio); /* H2 */
+  $font-size-7: calc($font-size-6 * $font-scale-ratio); /* H2 bis */
+  $font-size-8: calc($font-size-7 * $font-scale-ratio); /* H1 */
+  $font-size-9: calc($font-size-8 * $font-scale-ratio);
+
+  :root {
+    --minimum-screen-width: #{$minimum-screen-width};
+    --maximum-screen-width: #{$maximum-screen-width};
+    --base-font-size: #{$base-font-size};
+    --font-scale-ratio: #{$font-scale-ratio};
+  }
+
+  /* Fluid typography */
+
+  h1,
+  .fluid-font-size-4 {
+    @include fluid-type(
+      font-size,
+      $font-size-8,
+      $font-size-9,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h2,
+  .fluid-font-size-3 {
+    @include fluid-type(
+      font-size,
+      $font-size-6,
+      $font-size-7,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h3,
+  .fluid-font-size-2 {
+    @include fluid-type(
+      font-size,
+      $font-size-4,
+      $font-size-5,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h4,
+  .fluid-font-size-1 {
+    @include fluid-type(
+      font-size,
+      $font-size-2,
+      $font-size-3,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  p,
+  .fluid-font-size-0 {
+    @include fluid-type(
+      font-size,
+      $font-size-0,
+      $font-size-1,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  caption,
+  .fluid-font-size--1 {
+    @include fluid-type(
+      font-size,
+      $font-size--1,
+      $font-size-0,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  $base-font-size: 17.2px;
+  $font-scale-ratio: 1.12;
+  $minimum-screen-width: 1920px;
+  $maximum-screen-width: 2540px;
+  $fluid-min-font-size-scaling: 0.98;
+  $fluid-max-font-size-scaling: 1.3;
+
+  $font-size-0: calc($base-font-size); /* base  and caption bis*/
+  $font-size--1: calc($font-size-0 / $font-scale-ratio); /* caption */
+  $font-size--2: calc($font-size--1 / $font-scale-ratio);
+  $font-size-1: calc($base-font-size * $font-scale-ratio); /* base bis */
+  $font-size-2: calc($font-size-1 * $font-scale-ratio); /* H4*/
+  $font-size-3: calc($font-size-2 * $font-scale-ratio); /* H4 bis */
+  $font-size-4: calc($font-size-3 * $font-scale-ratio); /* H3 */
+  $font-size-5: calc($font-size-4 * $font-scale-ratio); /* H3 bis */
+  $font-size-6: calc($font-size-5 * $font-scale-ratio); /* H2 */
+  $font-size-7: calc($font-size-6 * $font-scale-ratio); /* H2 bis */
+  $font-size-8: calc($font-size-7 * $font-scale-ratio); /* H1 */
+  $font-size-9: calc($font-size-8 * $font-scale-ratio);
+
+  :root {
+    --minimum-screen-width: #{$minimum-screen-width};
+    --maximum-screen-width: #{$maximum-screen-width};
+    --base-font-size: #{$base-font-size};
+    --font-scale-ratio: #{$font-scale-ratio};
+  }
+
+  /* Fluid typography */
+
+  h1,
+  .fluid-font-size-4 {
+    @include fluid-type(
+      font-size,
+      $font-size-8,
+      $font-size-9,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h2,
+  .fluid-font-size-3 {
+    @include fluid-type(
+      font-size,
+      $font-size-6,
+      $font-size-7,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h3,
+  .fluid-font-size-2 {
+    @include fluid-type(
+      font-size,
+      $font-size-4,
+      $font-size-5,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h4,
+  .fluid-font-size-1 {
+    @include fluid-type(
+      font-size,
+      $font-size-2,
+      $font-size-3,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  p,
+  .fluid-font-size-0 {
+    @include fluid-type(
+      font-size,
+      $font-size-0,
+      $font-size-1,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  caption,
+  .fluid-font-size--1 {
+    @include fluid-type(
+      font-size,
+      $font-size--1,
+      $font-size-0,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+}
+
+@media screen and (min-width: 2540px) {
+  $base-font-size: 22px;
+  $font-scale-ratio: 1.12;
+  $minimum-screen-width: 2540px;
+  $maximum-screen-width: 3840px;
+  $fluid-min-font-size-scaling: 0.98;
+  $fluid-max-font-size-scaling: 1.3;
+
+  $font-size-0: calc($base-font-size); /* base  and caption bis*/
+  $font-size--1: calc($font-size-0 / $font-scale-ratio); /* caption */
+  $font-size--2: calc($font-size--1 / $font-scale-ratio);
+  $font-size-1: calc($base-font-size * $font-scale-ratio); /* base bis */
+  $font-size-2: calc($font-size-1 * $font-scale-ratio); /* H4*/
+  $font-size-3: calc($font-size-2 * $font-scale-ratio); /* H4 bis */
+  $font-size-4: calc($font-size-3 * $font-scale-ratio); /* H3 */
+  $font-size-5: calc($font-size-4 * $font-scale-ratio); /* H3 bis */
+  $font-size-6: calc($font-size-5 * $font-scale-ratio); /* H2 */
+  $font-size-7: calc($font-size-6 * $font-scale-ratio); /* H2 bis */
+  $font-size-8: calc($font-size-7 * $font-scale-ratio); /* H1 */
+  $font-size-9: calc($font-size-8 * $font-scale-ratio);
+
+  :root {
+    --minimum-screen-width: #{$minimum-screen-width};
+    --maximum-screen-width: #{$maximum-screen-width};
+    --base-font-size: #{$base-font-size};
+    --font-scale-ratio: #{$font-scale-ratio};
+  }
+
+  /* Fluid typography */
+
+  h1,
+  .fluid-font-size-4 {
+    @include fluid-type(
+      font-size,
+      $font-size-8,
+      $font-size-9,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h2,
+  .fluid-font-size-3 {
+    @include fluid-type(
+      font-size,
+      $font-size-6,
+      $font-size-7,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h3,
+  .fluid-font-size-2 {
+    @include fluid-type(
+      font-size,
+      $font-size-4,
+      $font-size-5,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  h4,
+  .fluid-font-size-1 {
+    @include fluid-type(
+      font-size,
+      $font-size-2,
+      $font-size-3,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  p,
+  .fluid-font-size-0 {
+    @include fluid-type(
+      font-size,
+      $font-size-0,
+      $font-size-1,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
+
+  caption,
+  .fluid-font-size--1 {
+    @include fluid-type(
+      font-size,
+      $font-size--1,
+      $font-size-0,
+      $minimum-screen-width,
+      $maximum-screen-width
+    );
+  }
 }

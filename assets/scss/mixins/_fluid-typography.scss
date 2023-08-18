@@ -1,4 +1,5 @@
 @use "sass:math";
+@import "../variables";
 
 @function strip-unit($value) {
   @if (unitless($value)) {

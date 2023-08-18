@@ -66,7 +66,7 @@ gsap.registerPlugin(ScrollTrigger);
 
     &__text-side {
       width: 50%;
-      padding: 0 2rem;
+      padding: 0 7vw 0 2rem;
     }
   }
 }
