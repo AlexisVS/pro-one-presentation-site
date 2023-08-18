@@ -85,16 +85,5 @@ useHead({
 </script>
 
 <template>
-  <div>
-    <SeoKit />
-
-    <!-- OG image -->
-    <!-- a. Generates browser screenshots for every page -->
-    <OgImageScreenshot :delay="3000" />
-    <!-- b. Generate satori images for every page (uses the default template) -->
-    <!--    <OgImageStatic />-->
-    <!-- c. Generate satori images for every page (uses a custom template) -->
-    <!-- <OgImageStatic title="qsd" template="Default" background="red" /> -->
-    <slot />
-  </div>
+  <slot />
 </template>

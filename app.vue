@@ -13,6 +13,8 @@ useHead({
 <template>
   <NuxtLayout>
     <TheHead />
+    <SeoKit />
+    <OgImageScreenshot :delay="3000" />
     <NuxtPage />
   </NuxtLayout>
 </template>
