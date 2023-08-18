@@ -1,5 +1,11 @@
 <script lang="ts" setup>
+import { defineOgImageScreenshot } from ".nuxt/imports";
+
 const i18n = useI18n();
+defineOgImageScreenshot({
+  delay: 3000,
+});
+
 useHead({
   htmlAttrs: { lang: i18n?.locale || "fr" },
 });
