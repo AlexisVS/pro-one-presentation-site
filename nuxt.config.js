@@ -15,6 +15,9 @@ export default defineNuxtConfig({
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL,
     pageTransition: { name: "layout", mode: "out-in" },
+    head: {
+      titleTemplate: "%pageTitle %titleSeparator %siteName",
+    },
   },
   runtimeConfig: {
     public: {
@@ -23,6 +26,8 @@ export default defineNuxtConfig({
       siteDescription: seoConfig.description,
       language: "fr-FR", // prefer more explicit language codes like `en-AU` over `en`
       seo: seoConfig,
+      titleSeparator: "|",
+      trailingSlash: true,
     },
   },
 
@@ -112,5 +117,5 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
-  ssr: true,
+  ssr: false,
 });
