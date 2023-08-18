@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import { defineOgImageScreenshot } from ".nuxt/imports";
 defineOgImageScreenshot({
   delay: 3000,
 });
