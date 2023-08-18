@@ -1,4 +1,6 @@
 <script setup lang="ts">
+const localePath = useLocalePath();
+
 const navigation = useNavigation();
 </script>
 
@@ -8,7 +10,11 @@ const navigation = useNavigation();
       <NuxtLink
         v-for="item in navigation"
         :key="`navigation-${item.name}`"
-        :to="item.path"
+        :to="
+          item.name != 'shop'
+            ? localePath(item.path)
+            : 'https://prooneusa.eu/shop'
+        "
         class="navigation-desktop__menu__item fluid-font-size--1"
         active-class="navigation-desktop__menu__item--active"
       >

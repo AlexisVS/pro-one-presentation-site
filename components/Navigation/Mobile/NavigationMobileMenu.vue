@@ -48,7 +48,11 @@ const onAnimationMenuItemHasFinished = (el: Element) => {
               <NuxtLink
                 v-if="props.menuDisplayed"
                 :style="`animation-delay: ${700 + 250 * index}ms`"
-                :to="localePath(item.path)"
+                :to="
+                  item.name != 'shop'
+                    ? localePath(item.path)
+                    : 'https://prooneusa.eu/shop'
+                "
                 class="mobile-menu__body__navigation__item fluid-font-size-2"
                 active-class="mobile-menu__body__navigation__item--active"
                 @click="props.toggleMenu"
