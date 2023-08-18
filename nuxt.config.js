@@ -117,5 +117,5 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
-  ssr: false,
+  ssr: true,
 });
