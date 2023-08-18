@@ -1,4 +1,9 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const i18n = useI18n();
+useHead({
+  htmlAttrs: { lang: i18n?.locale || "fr" },
+});
+</script>
 
 <template>
   <NuxtLayout>

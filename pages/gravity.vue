@@ -42,7 +42,7 @@ const runtimeConfig = useRuntimeConfig();
           style="margin-top: 2rem"
           center
           type="primary"
-          :to="runtimeConfig.public.siteUrl + '/shop/'"
+          to="https://prooneusa.eu/shop"
         >
           {{ $t("component.button.visit_shop") }}
         </ButtonPage>
