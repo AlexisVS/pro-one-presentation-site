@@ -34,7 +34,9 @@ export default defineNuxtConfig({
     },
   },
   ogImage: {
-    delay: 3000,
+    defaults: {
+      delay: 3000,
+    },
   },
 
   // vite: {
