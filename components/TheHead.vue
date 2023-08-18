@@ -90,7 +90,7 @@ useHead({
 
     <!-- OG image -->
     <!-- a. Generates browser screenshots for every page -->
-    <OgImageScreenshot />
+    <OgImageScreenshot :delay="3000" />
     <!-- b. Generate satori images for every page (uses the default template) -->
     <!--    <OgImageStatic />-->
     <!-- c. Generate satori images for every page (uses a custom template) -->

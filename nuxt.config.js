@@ -34,6 +34,8 @@ export default defineNuxtConfig({
     },
   },
   ogImage: {
+    runtimeBrowser: true,
+    delay: 3000,
     defaults: {
       delay: 3000,
     },
