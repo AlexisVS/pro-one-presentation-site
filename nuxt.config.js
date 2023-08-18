@@ -34,10 +34,39 @@ export default defineNuxtConfig({
     },
   },
   ogImage: {
-    runtimeBrowser: true,
     delay: 3000,
+    waitForTimeout: 3000,
+    runtimeBrowser: true,
     defaults: {
       delay: 3000,
+      waitForTimeout: 3000,
+    },
+    screenshot: {
+      delay: 3000,
+      waitForTimeout: 3000,
+      options: {
+        delay: 3000,
+        waitForTimeout: 3000,
+      },
+    },
+  },
+  seo: {
+    // Other SEO module options
+    og: {
+      waitForTimeout: 3000,
+      delay: 3000,
+      // Other OG module options
+      screenshot: {
+        waitForTimeout: 3000,
+        delay: 3000,
+        // Add Playwright options here
+        options: {
+          // Add the wait-for-timeout option
+          waitForTimeout: 3000,
+          delay: 3000,
+          // You can also add other Playwright options if needed
+        },
+      },
     },
   },
 
