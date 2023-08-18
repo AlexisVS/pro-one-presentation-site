@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineOgImageScreenshot({
+  delay: 3000,
+});
+</script>
 
 <template>
   <SectionProduct>

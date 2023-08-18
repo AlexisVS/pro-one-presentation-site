@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+defineOgImageScreenshot({
+  delay: 3000,
+});
+</script>
 
 <template>
   <div>

@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineOgImageScreenshot({
+  delay: 3000,
+});
+</script>
 
 <template>
   <section style="padding: 8rem 1rem 2rem 1rem">
