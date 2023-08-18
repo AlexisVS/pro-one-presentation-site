@@ -33,6 +33,9 @@ export default defineNuxtConfig({
       trailingSlash: true,
     },
   },
+  ogImage: {
+    delay: 3000,
+  },
 
   // vite: {
   //   css: {

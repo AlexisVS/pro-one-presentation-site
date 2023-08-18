@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig();
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <section class="wrapper">
@@ -66,6 +64,7 @@ const runtimeConfig = useRuntimeConfig();
 
   &__text-side {
     order: 2;
+
     &__cta {
       display: flex;
       flex-wrap: wrap;

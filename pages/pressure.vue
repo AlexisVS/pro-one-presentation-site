@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-const runtimeConfig = useRuntimeConfig();
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <SectionProduct>
