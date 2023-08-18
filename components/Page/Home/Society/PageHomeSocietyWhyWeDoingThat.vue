@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import Context = gsap.Context;
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -10,11 +11,20 @@ const sectionObserver = ref<IntersectionObserver | null>(null);
 const circleAnimation = ref<SVGAnimateElement | null>(null);
 const hasIntersectedOnce = ref(false);
 
+const gsapContext = ref<Context | null>(null);
+const tl = null;
+
 onMounted(() => {
-  if (!section.value && !circleAnimation.value) return;
+  if (
+    section.value === null &&
+    circleAnimation.value === null &&
+    svg.value === null
+  )
+    return;
+
   circleAnimation.value?.endElement();
-  const tl = gsap.timeline({});
-  tl.pause(0);
+  const tl = gsap.timeline({ paused: true });
+  // tl.pause(0);
 
   const textElements = section.value?.children[0].children as HTMLCollection;
 
@@ -48,7 +58,7 @@ onMounted(() => {
     (entries) => {
       if (entries[0].isIntersecting) {
         if (hasIntersectedOnce.value) return;
-        tl.play();
+        tl?.play();
         circleAnimation.value?.beginElement();
         hasIntersectedOnce.value = true;
       }
@@ -57,13 +67,17 @@ onMounted(() => {
       threshold: 0.5,
     },
   );
-  if (sectionObserver.value)
+  if (sectionObserver.value !== null)
     sectionObserver.value?.observe(section.value as HTMLElement);
 });
 
 onUnmounted(() => {
-  if (sectionObserver.value) {
+  gsapContext.value?.revert();
+  if (sectionObserver.value !== null) {
     sectionObserver.value?.disconnect();
+    // gsapContext.value?.kill();
+    // gsapContext = null;
+    // tl = null;
   }
 });
 </script>
