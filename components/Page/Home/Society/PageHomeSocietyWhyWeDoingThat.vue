@@ -11,7 +11,7 @@ const circleAnimation = ref<SVGAnimateElement | null>(null);
 const hasIntersectedOnce = ref(false);
 
 onMounted(() => {
-  if (!section?.value || circleAnimation?.value) return;
+  if (!section?.value && !circleAnimation?.value) return;
   circleAnimation.value?.endElement();
   const tl = gsap.timeline({});
   tl.pause(0);
@@ -187,12 +187,18 @@ onUnmounted(() => {
 
   &__text-side {
     color: white;
+    width: 100%;
     z-index: 2;
     position: absolute;
     top: 11%;
     left: 0;
     padding: 0 1rem;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30dvh;
   }
 
   &__svg-side {
@@ -214,6 +220,7 @@ onUnmounted(() => {
 
 .water-droplet {
   width: 100%;
+  height: auto;
   position: relative;
   z-index: 1;
 
@@ -244,16 +251,23 @@ onUnmounted(() => {
       width: 50%;
       padding-left: 2rem;
       text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      height: 100%;
+      align-items: flex-start;
     }
 
     &__svg-side {
       width: 50%;
       position: relative;
-
       display: flex;
       justify-content: center;
       align-items: flex-start;
     }
+  }
+
+  .water-droplet {
+    overflow: visible;
+    width: 37dvw;
+    height: auto;
   }
 }
 </style>
