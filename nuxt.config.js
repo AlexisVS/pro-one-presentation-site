@@ -94,7 +94,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/content",
     "@vueuse/nuxt",
-    "@nuxtjs/stylelint-module",
   ],
 
   // CSS
