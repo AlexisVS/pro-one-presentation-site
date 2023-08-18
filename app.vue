@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 defineOgImageScreenshot({
-  delay: 3000,
+  delay: 10000,
 });
 
 const i18n = useI18n();

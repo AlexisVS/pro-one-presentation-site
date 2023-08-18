@@ -12,6 +12,7 @@ const seoConfig = {
 };
 
 export default defineNuxtConfig({
+  extends: ["nuxt-seo-kit"],
   site: {
     url: seoConfig.url,
   },
@@ -140,7 +141,6 @@ export default defineNuxtConfig({
       cookieKey: "i18n_redirected",
     },
   },
-  extends: ["nuxt-seo-kit"],
   // Image module configuration: https://v1.image.nuxtjs.org/configuration
   image: {
     quality: 80,

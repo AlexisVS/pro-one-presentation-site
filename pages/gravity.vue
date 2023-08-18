@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineOgImageScreenshot({
-  delay: 3000,
+  delay: 10000,
 });
 </script>
 
