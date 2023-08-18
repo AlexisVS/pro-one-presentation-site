@@ -87,6 +87,7 @@ useHead({
 <template>
   <div>
     <SeoKit />
+
     <!-- OG image -->
     <!-- a. Generates browser screenshots for every page -->
     <OgImageScreenshot />

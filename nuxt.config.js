@@ -12,6 +12,9 @@ const seoConfig = {
 };
 
 export default defineNuxtConfig({
+  site: {
+    url: seoConfig.url,
+  },
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL,
     pageTransition: { name: "layout", mode: "out-in" },
@@ -117,5 +120,6 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
-  ssr: false,
+  target: "static",
+  ssr: true,
 });
