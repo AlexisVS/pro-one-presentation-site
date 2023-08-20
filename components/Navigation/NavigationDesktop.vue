@@ -31,6 +31,7 @@ const { width } = useWindowSize();
 
 .navigation-desktop {
   width: 100%;
+  border-color: transparent;
 
   &__menu {
     width: 100%;
