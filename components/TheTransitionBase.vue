@@ -179,7 +179,9 @@ onMounted(() => {
         }
       }
     },
-    { threshold: 1 },
+    {
+      threshold: 0.8,
+    },
   );
 
   intersectionObserver.observe(observed.value as Element);
