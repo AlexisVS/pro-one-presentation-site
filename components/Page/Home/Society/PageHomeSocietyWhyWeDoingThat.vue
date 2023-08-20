@@ -1,84 +1,103 @@
 <script lang="ts" setup>
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Context = gsap.Context;
 
-gsap.registerPlugin(ScrollTrigger);
-
-const section = ref<HTMLElement | null>(null);
-const svg = ref<HTMLElement | null>(null);
+const section = ref<Element | null>(null);
+const svg = ref<Element | null>(null);
 const sectionObserver = ref<IntersectionObserver | null>(null);
 const circleAnimation = ref<SVGAnimateElement | null>(null);
 const hasIntersectedOnce = ref(false);
 
 const gsapContext = ref<Context | null>(null);
-const tl = null;
+const tl = ref<GSAPTimeline | null>(null);
 
 onMounted(() => {
   if (
-    section.value === null &&
-    circleAnimation.value === null &&
+    section.value === null ||
+    circleAnimation.value === null ||
     svg.value === null
-  )
+  ) {
     return;
-
-  circleAnimation.value?.endElement();
-  const tl = gsap.timeline({ paused: true });
+  }
   // tl.pause(0);
 
-  const textElements = section.value?.children[0].children as HTMLCollection;
+  circleAnimation.value?.endElement();
 
-  const textFromVar = {
-    opacity: 0,
-    y: 100,
-  };
+  gsapContext.value = gsap.context((self: Context) => {
+    if (typeof self === "object" && typeof self.selector === "function") {
+      const textElements = self.selector(
+        ".why-we-doing-that--gsap-text-element",
+      );
 
-  const textToVar = {
-    opacity: 1,
-    y: 0,
-    duration: 0.45,
-  };
+      const textFromVar = {
+        opacity: 0,
+        y: 100,
+      };
 
-  tl.fromTo(
-    ".water-droplet__big-face",
-    { fill: "#002a39" }, // Start color (blue)
-    { fill: "#01baf2", duration: 1, delay: 1 }, // Desired color and animation duration
-  )
-    .fromTo(
-      ".water-droplet__little-face",
-      { fill: "#002a39" }, // Start color (blue)
-      { fill: "#5192ba", duration: 1 }, // Desired color and animation duration
-      "-=1",
-    )
-    .fromTo(textElements[0], textFromVar, textToVar, "-=1")
-    .fromTo(textElements[1], textFromVar, textToVar, "-=0.75")
-    .fromTo(textElements[2], textFromVar, textToVar, "-=0.5");
+      const textToVar = {
+        opacity: 1,
+        y: 0,
+        duration: 0.45,
+      };
+
+      tl.value = gsap
+        .timeline({
+          paused: true,
+          onComplete() {
+            tl.value?.kill();
+            gsapContext.value?.kill();
+          },
+        })
+        .fromTo(
+          self.selector(".water-droplet__big-face"),
+          { immediateRender: false, fill: "#002a39" }, // Start color (blue)
+          { fill: "#01baf2", duration: 1, delay: 1 }, // Desired color and animation duration
+        )
+        .fromTo(
+          self.selector(".water-droplet__little-face"),
+          { immediateRender: false, fill: "#002a39" }, // Start color (blue)
+          { fill: "#5192ba", duration: 1, delay: 0 }, // Desired color and animation duration
+          "-=1",
+        )
+        .fromTo(textElements[0], textFromVar, textToVar, "-=1")
+        .fromTo(textElements[1], textFromVar, textToVar, "-=0.75")
+        .fromTo(textElements[2], textFromVar, textToVar, "-=0.5");
+    }
+  }, section.value as HTMLElement);
 
   sectionObserver.value = new IntersectionObserver(
     (entries) => {
-      if (entries[0].isIntersecting) {
-        if (hasIntersectedOnce.value) return;
-        tl?.play();
+      if (
+        entries[0].isIntersecting &&
+        hasIntersectedOnce.value === false &&
+        tl.value !== null &&
+        circleAnimation.value !== null
+      ) {
+        tl.value?.play();
         circleAnimation.value?.beginElement();
         hasIntersectedOnce.value = true;
+
+        sectionObserver.value?.disconnect();
       }
     },
     {
       threshold: 0.5,
     },
   );
-  if (sectionObserver.value !== null)
-    sectionObserver.value?.observe(section.value as HTMLElement);
+  sectionObserver.value?.observe(section.value as HTMLElement);
 });
 
 onUnmounted(() => {
+  tl.value?.revert();
   gsapContext.value?.revert();
-  if (sectionObserver.value !== null) {
-    sectionObserver.value?.disconnect();
-    // gsapContext.value?.kill();
-    // gsapContext = null;
-    // tl = null;
-  }
+  sectionObserver.value?.disconnect();
+  nextTick();
+
+  // if (sectionObserver.value !== null) {
+  // gsapContext.value?.kill();
+  // gsapContext = null;
+  // tl = null;
+  // }
 });
 </script>
 
@@ -90,13 +109,13 @@ onUnmounted(() => {
   />
   <section ref="section" class="why-we-doing-that">
     <div class="why-we-doing-that__text-side">
-      <h2 class="fluid-font-size-3">
+      <h2 class="fluid-font-size-3 why-we-doing-that--gsap-text-element">
         {{ $t("page.home.why_we_doing_that.title") }}
       </h2>
-      <p class="fluid-font-size-0">
+      <p class="fluid-font-size-0 why-we-doing-that--gsap-text-element">
         {{ $t("page.home.why_we_doing_that.paragraph_1") }}
       </p>
-      <p class="fluid-font-size-0">
+      <p class="fluid-font-size-0 why-we-doing-that--gsap-text-element">
         {{ $t("page.home.why_we_doing_that.paragraph_2") }}
       </p>
     </div>

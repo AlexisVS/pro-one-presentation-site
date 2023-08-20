@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   app: {
     baseURL: process.env.NUXT_APP_BASE_URL,
-    pageTransition: { name: "layout", mode: "out-in" },
+    // pageTransition: { name: "layout", mode: "out-in" },
     head: {
       titleTemplate: "%pageTitle %titleSeparator %siteName",
     },

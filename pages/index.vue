@@ -13,3 +13,5 @@ defineOgImageScreenshot({
     <PageHomeConclusion />
   </div>
 </template>
+
+<style scoped></style>
