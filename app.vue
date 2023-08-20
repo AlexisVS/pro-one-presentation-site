@@ -11,15 +11,19 @@ useHead({
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtLoadingIndicator>
-      <TheLoader />
-    </NuxtLoadingIndicator>
+  <div>
+    <ClientOnly>
+      <NuxtLoadingIndicator>
+        <TheLoader />
+      </NuxtLoadingIndicator>
+    </ClientOnly>
     <TheHead />
     <SeoKit />
     <OgImageScreenshot :delay="10000" />
-    <LazyNuxtPage />
-  </NuxtLayout>
+    <NuxtLayout>
+      <LazyNuxtPage />
+    </NuxtLayout>
+  </div>
 </template>
 
 <style lang="css">

@@ -14,10 +14,10 @@ definePageMeta({
 <template>
   <div>
     <TheHeader />
-    <PageHomeSocietyWhoWeAre />
+    <LazyPageHomeSocietyWhoWeAre />
     <LazyPageHomeSocietyWhyWeDoingThat />
-    <PageHomeProoneFilter />
-    <PageHomeConclusion />
+    <LazyPageHomeProoneFilter />
+    <LazyPageHomeConclusion />
   </div>
 </template>
 
