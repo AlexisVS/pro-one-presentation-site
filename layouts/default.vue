@@ -88,7 +88,7 @@ onUnmounted(() => {
     &__navigation {
       transform: translateY(3dvh);
       backdrop-filter: blur(0px);
-      width: 100dvw;
+      width: 100%;
       overflow-x: hidden;
       transition:
         height 0.7s ease-in-out,

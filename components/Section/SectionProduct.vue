@@ -40,7 +40,7 @@ const props = defineProps({
 <style scoped lang="scss">
 .product {
   padding: 9dvh 1rem 18dvh;
-  width: 100dvw;
+  width: 100%;
   box-sizing: border-box;
 
   &__header {
