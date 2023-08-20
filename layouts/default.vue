@@ -104,9 +104,9 @@ onUnmounted(() => {
         padding-right: 0;
         transform: translateY(0);
         transition:
-          backdrop-filter 0s,
           transform 0.3s ease-out 1s,
-          background-color 0.3s ease-out 2s;
+          background-color 0.3s ease-out 2s,
+          backdrop-filter 650ms;
       }
     }
   }
