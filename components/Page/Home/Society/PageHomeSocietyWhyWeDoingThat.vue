@@ -20,71 +20,72 @@ onMounted(() => {
     return;
   }
   // tl.pause(0);
+  setTimeout(() => {
+    circleAnimation.value?.endElement();
 
-  circleAnimation.value?.endElement();
+    gsapContext.value = gsap.context((self: Context) => {
+      if (typeof self === "object" && typeof self.selector === "function") {
+        const textElements = self.selector(
+          ".why-we-doing-that--gsap-text-element",
+        );
 
-  gsapContext.value = gsap.context((self: Context) => {
-    if (typeof self === "object" && typeof self.selector === "function") {
-      const textElements = self.selector(
-        ".why-we-doing-that--gsap-text-element",
-      );
+        const textFromVar = {
+          opacity: 0,
+          y: 100,
+        };
 
-      const textFromVar = {
-        opacity: 0,
-        y: 100,
-      };
+        const textToVar = {
+          opacity: 1,
+          y: 0,
+          duration: 0.45,
+        };
 
-      const textToVar = {
-        opacity: 1,
-        y: 0,
-        duration: 0.45,
-      };
-
-      tl.value = gsap
-        .timeline({
-          paused: true,
-          onComplete() {
-            tl.value?.kill();
-            gsapContext.value?.kill();
-          },
-        })
-        .fromTo(
-          self.selector(".water-droplet__big-face"),
-          { immediateRender: false, fill: "#002a39" }, // Start color (blue)
-          { fill: "#01baf2", duration: 1, delay: 1 }, // Desired color and animation duration
-        )
-        .fromTo(
-          self.selector(".water-droplet__little-face"),
-          { immediateRender: false, fill: "#002a39" }, // Start color (blue)
-          { fill: "#5192ba", duration: 1, delay: 0 }, // Desired color and animation duration
-          "-=1",
-        )
-        .fromTo(textElements[0], textFromVar, textToVar, "-=1")
-        .fromTo(textElements[1], textFromVar, textToVar, "-=0.75")
-        .fromTo(textElements[2], textFromVar, textToVar, "-=0.5");
-    }
-  }, section.value as HTMLElement);
-
-  sectionObserver.value = new IntersectionObserver(
-    (entries) => {
-      if (
-        entries[0].isIntersecting &&
-        hasIntersectedOnce.value === false &&
-        tl.value !== null &&
-        circleAnimation.value !== null
-      ) {
-        tl.value?.play();
-        circleAnimation.value?.beginElement();
-        hasIntersectedOnce.value = true;
-
-        sectionObserver.value?.disconnect();
+        tl.value = gsap
+          .timeline({
+            paused: true,
+            onComplete() {
+              tl.value?.kill();
+              gsapContext.value?.kill();
+            },
+          })
+          .fromTo(
+            self.selector(".water-droplet__big-face"),
+            { immediateRender: false, fill: "#002a39" }, // Start color (blue)
+            { fill: "#01baf2", duration: 1, delay: 1 }, // Desired color and animation duration
+          )
+          .fromTo(
+            self.selector(".water-droplet__little-face"),
+            { immediateRender: false, fill: "#002a39" }, // Start color (blue)
+            { fill: "#5192ba", duration: 1, delay: 0 }, // Desired color and animation duration
+            "-=1",
+          )
+          .fromTo(textElements[0], textFromVar, textToVar, "-=1")
+          .fromTo(textElements[1], textFromVar, textToVar, "-=0.75")
+          .fromTo(textElements[2], textFromVar, textToVar, "-=0.5");
       }
-    },
-    {
-      threshold: 0.5,
-    },
-  );
-  sectionObserver.value?.observe(section.value as HTMLElement);
+    }, section.value as HTMLElement);
+
+    sectionObserver.value = new IntersectionObserver(
+      (entries) => {
+        if (
+          entries[0].isIntersecting &&
+          hasIntersectedOnce.value === false &&
+          tl.value !== null &&
+          circleAnimation.value !== null
+        ) {
+          tl.value?.play();
+          circleAnimation.value?.beginElement();
+          hasIntersectedOnce.value = true;
+
+          sectionObserver.value?.disconnect();
+        }
+      },
+      {
+        threshold: 0.5,
+      },
+    );
+    sectionObserver.value?.observe(section.value as HTMLElement);
+  }, 2000);
 });
 
 onUnmounted(() => {

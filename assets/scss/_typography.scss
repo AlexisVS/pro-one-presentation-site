@@ -130,6 +130,16 @@ caption,
   );
 }
 
+.fluid-font-size--2 {
+  @include fluid-type(
+    font-size,
+    $font-size--2,
+    $font-size--1,
+    $minimum-screen-width,
+    $maximum-screen-width
+  )
+}
+
 @media screen and (min-width: 1024px) {
   $base-font-size: 17.5px;
   $font-scale-ratio: 1.12;
@@ -224,6 +234,16 @@ caption,
       $minimum-screen-width,
       $maximum-screen-width
     );
+  }
+
+  .fluid-font-size--2 {
+    @include fluid-type(
+      font-size,
+      $font-size--2,
+      $font-size--1,
+      $minimum-screen-width,
+      $maximum-screen-width
+    )
   }
 }
 
@@ -322,6 +342,16 @@ caption,
       $maximum-screen-width
     );
   }
+
+  .fluid-font-size--2 {
+    @include fluid-type(
+      font-size,
+      $font-size--2,
+      $font-size--1,
+      $minimum-screen-width,
+      $maximum-screen-width
+    )
+  }
 }
 
 @media screen and (min-width: 2540px) {
@@ -418,5 +448,15 @@ caption,
       $minimum-screen-width,
       $maximum-screen-width
     );
+  }
+
+  .fluid-font-size--2 {
+    @include fluid-type(
+      font-size,
+      $font-size--2,
+      $font-size--1,
+      $minimum-screen-width,
+      $maximum-screen-width
+    )
   }
 }

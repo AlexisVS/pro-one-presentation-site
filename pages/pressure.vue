@@ -2,6 +2,13 @@
 defineOgImageScreenshot({
   delay: 10000,
 });
+
+definePageMeta({
+  pageTransition: {
+    name: "page",
+    mode: "out-in",
+  },
+});
 </script>
 
 <template>

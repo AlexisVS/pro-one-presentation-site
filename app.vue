@@ -20,14 +20,5 @@ useHead({
 </template>
 
 <style lang="css">
-.layout-enter-active,
-.layout-leave-active {
-  transition: all 1s;
-}
-
-.layout-enter-from,
-.layout-leave-to {
-  opacity: 0;
-  filter: blur(1rem);
-}
+@import "~/assets/scss/_page-transition.scss";
 </style>

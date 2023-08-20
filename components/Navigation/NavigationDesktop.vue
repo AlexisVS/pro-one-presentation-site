@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const localePath = useLocalePath();
-
 const navigation = useNavigation();
+const { width } = useWindowSize();
 </script>
 
 <template>
@@ -15,7 +15,8 @@ const navigation = useNavigation();
             ? localePath(item.path)
             : 'https://prooneusa.eu/shop'
         "
-        class="navigation-desktop__menu__item fluid-font-size--1"
+        class="navigation-desktop__menu__item"
+        :class="width <= 1920 ? 'fluid-font-size--1' : 'fluid-font-size--2'"
         active-class="navigation-desktop__menu__item--active"
       >
         {{ $t(`navigation.${item.name}`) }}
