@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineOgImageScreenshot({
-  delay: 10000,
+  delay: 5000,
 });
 
 definePageMeta({

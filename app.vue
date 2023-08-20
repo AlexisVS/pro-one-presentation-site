@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 defineOgImageScreenshot({
-  delay: 10000,
+  delay: 5000,
 });
 
 const i18n = useI18n();
@@ -19,7 +19,7 @@ useHead({
     <!--    </ClientOnly>-->
     <TheHead />
     <SeoKit />
-    <OgImageScreenshot :delay="10000" />
+    <OgImageScreenshot :delay="5000" />
     <NuxtLayout>
       <LazyNuxtPage />
     </NuxtLayout>
