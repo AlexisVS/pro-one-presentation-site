@@ -12,11 +12,11 @@ useHead({
 
 <template>
   <div>
-    <!--    <ClientOnly>-->
-    <!--      <NuxtLoadingIndicator>-->
-    <!--        <TheLoader />-->
-    <!--      </NuxtLoadingIndicator>-->
-    <!--    </ClientOnly>-->
+    <ClientOnly>
+      <NuxtLoadingIndicator>
+        <TheLoader />
+      </NuxtLoadingIndicator>
+    </ClientOnly>
     <TheHead />
     <SeoKit />
     <OgImageScreenshot :delay="5000" />
