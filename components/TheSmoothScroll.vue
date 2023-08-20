@@ -26,8 +26,8 @@ onMounted(() => {
       duration: 1.3,
       smoothWheel: true,
       smoothTouch: true,
-      wheelMultiplier: 1.3,
-      touchMultiplier: 1.0,
+      wheelMultiplier: 1.2,
+      touchMultiplier: 0.8,
       normalizeWheel: true,
       // easing: (x: number) => cubicBezier(x, 0.45, 0.45, 0.28, 1),
     });
