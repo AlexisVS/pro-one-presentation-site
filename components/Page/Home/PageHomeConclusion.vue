@@ -14,8 +14,12 @@
           {{ $t("page.home.conclusion.paragraph_2") }}
         </p>
         <div class="conclusion__text-side__cta">
-          <ButtonPage to="/pressure/"> Nos appareils à pression</ButtonPage>
-          <ButtonPage to="/gravity/"> Nos appareils à gravité</ButtonPage>
+          <ButtonPage center to="/pressure/">
+            Nos appareils à pression
+          </ButtonPage>
+          <ButtonPage center to="/gravity/">
+            Nos appareils à gravité
+          </ButtonPage>
         </div>
         <TheTransitionBase
           transition="easeTranslateTop"
