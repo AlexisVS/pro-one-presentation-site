@@ -40,6 +40,11 @@ onMounted(() => {
 
 .navigation__logo {
   transition: all 0.3s ease-out;
+  height: 100%;
+
+  & img {
+    height: 85%;
+  }
 }
 
 .navigation__logo--hidden {
