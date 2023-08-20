@@ -88,13 +88,12 @@ onUnmounted(() => {
       backdrop-filter: blur(0px);
       width: 100dvw;
       transition:
-        backdrop-filter 0s,
         background-color 0.7s ease-out,
-        transform 0.3s ease-out 1.2s;
+        transform 0.3s ease-out 1.2s,
+        backdrop-filter 650ms;
 
       &.absolute {
         background: transparentize(lighten($color-primary, 50%), 0.5);
-        backdrop-filter: blur(2px);
         position: fixed;
         height: 65px;
         top: 0;
@@ -103,6 +102,7 @@ onUnmounted(() => {
         z-index: 100;
         padding-right: 0;
         transform: translateY(0);
+        backdrop-filter: blur(2px);
         transition:
           transform 0.3s ease-out 1s,
           background-color 0.3s ease-out 2s,
