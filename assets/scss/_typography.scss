@@ -146,7 +146,7 @@ caption,
   $minimum-screen-width: 1024px;
   $maximum-screen-width: 1920px;
   $fluid-min-font-size-scaling: 0.8;
-  $fluid-max-font-size-scaling: 1.6;
+  $fluid-max-font-size-scaling: 1.25;
 
   $font-size-0: calc($base-font-size); /* base  and caption bis*/
   $font-size--1: calc($font-size-0 / $font-scale-ratio); /* caption */
