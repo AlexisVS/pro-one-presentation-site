@@ -43,11 +43,23 @@ onMounted(() => {
   height: 100%;
 
   & img {
-    height: 85%;
+    height: 48px;
   }
 }
 
 .navigation__logo--hidden {
   opacity: 0;
+}
+
+@media screen and (min-width: 1920px) {
+  .navigation__logo {
+    transition: all 0.3s ease-out;
+    height: 100%;
+
+    & img {
+      height: auto;
+      width: 8dvh;
+    }
+  }
 }
 </style>

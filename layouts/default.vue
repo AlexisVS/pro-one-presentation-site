@@ -115,8 +115,8 @@ onUnmounted(() => {
 @media screen and (min-width: 1920px) {
   .layout {
     &__navigation {
+      height: 11dvh;
       &.absolute {
-        height: 9vh;
       }
     }
   }
