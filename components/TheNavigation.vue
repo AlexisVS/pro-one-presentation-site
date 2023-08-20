@@ -22,7 +22,7 @@ onMounted(() => {
 
 .navigation {
   position: absolute;
-  width: calc(100% - 11px);
+  width: 100%; // 11px problem '-'
 }
 
 .navigation::after {
@@ -55,11 +55,8 @@ onMounted(() => {
   .navigation__logo {
     transition: all 0.3s ease-out;
     height: 100%;
-
-    & img {
-      height: auto;
-      width: 8dvh;
-    }
+    position: relative;
+    left: 3.2dvw;
   }
 }
 </style>

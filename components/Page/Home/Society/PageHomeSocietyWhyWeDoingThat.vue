@@ -305,4 +305,15 @@ onUnmounted(() => {
     height: auto;
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .why-we-doing-that {
+    padding-left: 3dvw;
+    padding-right: 2dvw;
+
+    &__text-side {
+      padding-left: 1rem;
+    }
+  }
+}
 </style>

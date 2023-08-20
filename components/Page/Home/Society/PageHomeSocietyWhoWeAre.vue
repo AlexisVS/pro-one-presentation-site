@@ -70,4 +70,14 @@ gsap.registerPlugin(ScrollTrigger);
     }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .who-we-are {
+    padding: 0 3dvw;
+
+    &__text-side {
+      padding: 0 5dvw 0 0;
+    }
+  }
+}
 </style>

@@ -88,6 +88,7 @@ onUnmounted(() => {
       backdrop-filter: blur(0px);
       width: 100dvw;
       transition:
+        height 0.7s ease-in-out,
         background-color 0.7s ease-out,
         transform 0.3s ease-out 1.2s,
         backdrop-filter 650ms;
@@ -104,6 +105,7 @@ onUnmounted(() => {
         transform: translateY(0);
         backdrop-filter: blur(2px);
         transition:
+          height 0.7s ease-in-out,
           transform 0.3s ease-out 1s,
           background-color 0.3s ease-out 2s,
           backdrop-filter 650ms;
@@ -115,8 +117,9 @@ onUnmounted(() => {
 @media screen and (min-width: 1920px) {
   .layout {
     &__navigation {
-      height: 11dvh;
+      height: 8dvh;
       &.absolute {
+        height: 8dvh;
       }
     }
   }

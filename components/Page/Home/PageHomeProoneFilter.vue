@@ -87,4 +87,11 @@
     }
   }
 }
+
+@media screen and (min-width: 2560px) {
+  .proone-filter {
+    padding-left: 3dvw;
+    padding-right: 3dvw;
+  }
+}
 </style>

@@ -104,4 +104,12 @@ const props = defineProps({
     }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .product {
+    padding-left: 3dvw;
+    padding-right: 3dvw;
+    padding-top: 18dvh;
+  }
+}
 </style>
