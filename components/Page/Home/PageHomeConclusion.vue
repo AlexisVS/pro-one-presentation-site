@@ -14,18 +14,8 @@
           {{ $t("page.home.conclusion.paragraph_2") }}
         </p>
         <div class="conclusion__text-side__cta">
-          <ButtonPage
-            button-image-path="./images/pressure/pressure.png"
-            to="/pressure/"
-          >
-            Nos appareils à pression
-          </ButtonPage>
-          <ButtonPage
-            button-image-path="./images/gravity/gravity.png"
-            to="/gravity/"
-          >
-            Nos appareils à gravité
-          </ButtonPage>
+          <ButtonPage to="/pressure/"> Nos appareils à pression</ButtonPage>
+          <ButtonPage to="/gravity/"> Nos appareils à gravité</ButtonPage>
         </div>
         <TheTransitionBase
           transition="easeTranslateTop"

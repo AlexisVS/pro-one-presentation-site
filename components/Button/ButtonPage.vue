@@ -8,11 +8,11 @@ const props = defineProps({
     type: String,
     required: true,
   },
-  buttonImagePath: {
-    type: String,
-    required: false,
-    default: "",
-  },
+  // buttonImagePath: {
+  //   type: String,
+  //   required: false,
+  //   default: "",
+  // },
   type: {
     type: String as PropType<buttonType>,
     required: false,
@@ -34,11 +34,11 @@ const props = defineProps({
     >
       <slot />
     </span>
-    <NuxtImg
-      v-if="props.buttonImagePath?.length > 0"
-      :src="props.buttonImagePath"
-      class="button__image"
-    />
+    <!--    <NuxtImg-->
+    <!--      v-if="props.buttonImagePath?.length > 0"-->
+    <!--      :src="props.buttonImagePath"-->
+    <!--      class="button__image"-->
+    <!--    />-->
   </NuxtLink>
 </template>
 
@@ -51,7 +51,7 @@ const props = defineProps({
   display: flex;
   align-items: center;
   border: 1px solid rgb(150, 150, 150);
-  padding: 0 2rem;
+  padding: 0.015dvw 2rem;
   box-shadow: 0 0.15em 0.2em 0 rgba(0, 0, 0, 0.35);
   transition: box-shadow 350ms;
   height: 40px;
