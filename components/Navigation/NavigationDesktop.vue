@@ -65,4 +65,10 @@ const { width } = useWindowSize();
     }
   }
 }
+
+@media screen and (min-width: 1920px) {
+  .navigation-desktop__menu__item {
+    padding: 5px 0.9dvw;
+  }
+}
 </style>
