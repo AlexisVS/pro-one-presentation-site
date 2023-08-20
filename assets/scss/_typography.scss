@@ -137,7 +137,7 @@ caption,
     $font-size--1,
     $minimum-screen-width,
     $maximum-screen-width
-  )
+  );
 }
 
 @media screen and (min-width: 1024px) {
@@ -243,7 +243,7 @@ caption,
       $font-size--1,
       $minimum-screen-width,
       $maximum-screen-width
-    )
+    );
   }
 }
 
@@ -350,7 +350,7 @@ caption,
       $font-size--1,
       $minimum-screen-width,
       $maximum-screen-width
-    )
+    );
   }
 }
 
@@ -457,6 +457,6 @@ caption,
       $font-size--1,
       $minimum-screen-width,
       $maximum-screen-width
-    )
+    );
   }
 }

@@ -12,10 +12,13 @@ useHead({
 
 <template>
   <NuxtLayout>
+    <NuxtLoadingIndicator>
+      <TheLoader />
+    </NuxtLoadingIndicator>
     <TheHead />
     <SeoKit />
-    <OgImageScreenshot :delay="3000" />
-    <NuxtPage />
+    <OgImageScreenshot :delay="10000" />
+    <LazyNuxtPage />
   </NuxtLayout>
 </template>
 

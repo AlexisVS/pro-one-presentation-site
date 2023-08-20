@@ -24,6 +24,7 @@
     "@nuxt/types": "^2.17.1",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@nuxtjs/eslint-module": "^4.1.0",
+    "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/i18n": "^8.0.0-beta.13",
     "@studio-freight/lenis": "^1.0.19",
     "@types/node": "^18.16.19",
