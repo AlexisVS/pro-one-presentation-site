@@ -42,7 +42,7 @@ const toggleMenu = () => {
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   z-index: 1;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .navigation-mobile__menu--active {

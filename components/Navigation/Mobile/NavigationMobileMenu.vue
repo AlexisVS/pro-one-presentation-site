@@ -83,7 +83,7 @@ const onAnimationMenuItemHasFinished = (el: Element) => {
   grid-template-rows: max-content 1fr max-content;
   height: 100dvh;
   max-height: 100dvh;
-  overflow-y: scroll;
+  overflow-y: hidden;
   transition: background-color 1s ease-out;
   transition-delay: 300ms;
 
@@ -114,7 +114,7 @@ const onAnimationMenuItemHasFinished = (el: Element) => {
 
   &__body {
     grid-area: body;
-    overflow-y: scroll;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;

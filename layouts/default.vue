@@ -56,9 +56,10 @@ onUnmounted(() => {
     display: flex;
     justify-content: space-between;
     /* Value 0 for mobile version */
-    padding-left: 11px;
+    //padding-left: 11px;
     padding-right: 0;
     z-index: 10;
+    overflow-y: hidden;
 
     &:after {
       opacity: 0;
@@ -69,6 +70,7 @@ onUnmounted(() => {
   &__content {
     grid-area: content;
     background-color: $color-background;
+    overflow-x: hidden;
   }
 
   & > div > div {
@@ -87,6 +89,7 @@ onUnmounted(() => {
       transform: translateY(3dvh);
       backdrop-filter: blur(0px);
       width: 100dvw;
+      overflow-x: hidden;
       transition:
         height 0.7s ease-in-out,
         background-color 0.7s ease-out,
@@ -99,7 +102,7 @@ onUnmounted(() => {
         height: 65px;
         top: 0;
         left: 0;
-        width: 100dvw;
+        width: 100%;
         z-index: 100;
         padding-right: 0;
         transform: translateY(0);
