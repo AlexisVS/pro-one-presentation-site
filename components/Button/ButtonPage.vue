@@ -51,7 +51,7 @@ const props = defineProps({
   display: flex;
   align-items: center;
   border: 1px solid rgb(150, 150, 150);
-  padding: 0.15dvw 2rem;
+  padding: 0.6dvw 2rem;
   box-shadow: 0 0.15em 0.2em 0 rgba(0, 0, 0, 0.35);
   transition: box-shadow 350ms;
   height: 40px;
