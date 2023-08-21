@@ -27,7 +27,7 @@
     "@nuxtjs/fontaine": "^0.4.1",
     "@nuxtjs/i18n": "^8.0.0-beta.13",
     "@studio-freight/lenis": "^1.0.19",
-    "@types/node": "^18.16.19",
+    "@types/node": "^20.5.1",
     "@typescript-eslint/parser": "^6.0.0",
     "@vueuse/components": "^10.3.0",
     "@vueuse/core": "^10.3.0",
