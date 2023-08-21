@@ -35,7 +35,7 @@
     "@vueuse/nuxt": "^10.3.0",
     "bezier-easing": "^2.1.0",
     "eslint": "^8.44.0",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "gsap": "^3.12.2",
     "nuxt": "^3.6.5",
