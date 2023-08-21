@@ -44,7 +44,7 @@
     "postcss": "^8.4.26",
     "postcss-import": "^15.1.0",
     "postcss-preset-env": "^9.0.0",
-    "prettier": "^3.0.0",
+    "prettier": "^3.0.2",
     "sass": "^1.63.6",
     "sass-loader": "^13.3.2",
     "typescript": "^5.1.6",
