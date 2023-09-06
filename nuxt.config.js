@@ -68,7 +68,9 @@ export default defineNuxtConfig({
     format: ["webp"],
     provider: "ipx",
     dir: "assets/images",
-    screens: {},
+    screens: {
+      xs: 320,
+    },
   },
   modules: [
     "@nuxtjs/eslint-module",
