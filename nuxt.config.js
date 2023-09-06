@@ -106,6 +106,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: seoConfig.url,
+      url: seoConfig.url,
       siteName: seoConfig.name,
       siteDescription: seoConfig.description,
       language: "fr-FR", // prefer more explicit language codes like `en-AU` over `en`
@@ -118,6 +119,8 @@ export default defineNuxtConfig({
   site: {
     url: seoConfig.url,
   },
+
+  seo: seoConfig,
 
   // I18n module configuration: https://i18n.nuxtjs.org/
   ssr: true,

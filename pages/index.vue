@@ -1,4 +1,8 @@
 <script lang="ts" setup>
+import { useAssetLoader } from "~/composables/useAssetLoader";
+
+const { isLoading } = useAssetLoader();
+
 defineOgImageScreenshot({
   delay: 5000,
 });
@@ -13,11 +17,12 @@ definePageMeta({
 
 <template>
   <div>
+    <TheLoader v-if="isLoading" />
     <TheHeader />
-    <LazyPageHomeSocietyWhoWeAre />
-    <LazyPageHomeSocietyWhyWeDoingThat />
-    <LazyPageHomeProoneFilter />
-    <LazyPageHomeConclusion />
+    <PageHomeSocietyWhoWeAre />
+    <PageHomeSocietyWhyWeDoingThat />
+    <PageHomeProoneFilter />
+    <PageHomeConclusion />
   </div>
 </template>
 

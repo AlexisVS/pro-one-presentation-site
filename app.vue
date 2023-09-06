@@ -11,11 +11,6 @@ useHead({
     <SeoKit />
     <OgImageScreenshot :delay="5000" />
     <TheHead />
-    <ClientOnly>
-      <NuxtLoadingIndicator>
-        <TheLoader />
-      </NuxtLoadingIndicator>
-    </ClientOnly>
     <NuxtLayout>
       <LazyNuxtPage />
     </NuxtLayout>

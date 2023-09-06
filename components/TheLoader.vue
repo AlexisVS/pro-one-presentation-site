@@ -39,17 +39,20 @@
   &__image {
     width: 90dvw;
     max-width: 500px;
-    animation: rotate 2s ease-out infinite;
-    animation-delay: 600ms;
+    animation: translate-wave 4s infinite;
+    animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 }
 
-@keyframes rotate {
+@keyframes translate-wave {
   0% {
-    transform: rotate(0deg);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8vh);
   }
   100% {
-    transform: rotate(359deg);
+    transform: translateY(0);
   }
 }
 </style>
