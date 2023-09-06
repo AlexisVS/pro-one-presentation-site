@@ -68,6 +68,7 @@ export default defineNuxtConfig({
     format: ["avif", "webp"],
     provider: "ipx",
     dir: "assets/images",
+    screens: {},
   },
 
   modules: [
