@@ -39,7 +39,7 @@
       </div>
       <div class="conclusion__image-side">
         <NuxtImg
-          format="avif,webp"
+          format="webp"
           alt="Pro One stuff"
           class="conclusion__image-side__image"
           src="/products/proone_products.png"

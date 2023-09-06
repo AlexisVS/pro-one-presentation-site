@@ -16,11 +16,13 @@ export default defineNuxtConfig({
     baseURL: process.env.NUXT_APP_BASE_URL,
     head: {
       titleTemplate: "%pageTitle %titleSeparator %siteName",
+      htmlAttrs: {
+        lang: "fr",
+      },
     },
   },
   // Modules : https://nuxt.com/docs/guide/concepts/modules
   content: {},
-
   // Build Configuration: https://go.nuxtjs.dev/config-build
   css: ["~/assets/scss/main.scss"],
 
@@ -32,7 +34,6 @@ export default defineNuxtConfig({
   fontMetrics: {
     fonts: ["Raleway"],
   },
-
   i18n: {
     vueI18n: "./modules/i18n/i18n.config.ts",
     defaultLocale: process.env.NUXT_PUBLIC_LANGUAGE || "fr",
@@ -62,15 +63,13 @@ export default defineNuxtConfig({
       cookieKey: "i18n_redirected",
     },
   },
-
   image: {
     quality: 90,
-    format: ["avif", "webp"],
+    format: ["webp"],
     provider: "ipx",
     dir: "assets/images",
     screens: {},
   },
-
   modules: [
     "@nuxtjs/eslint-module",
     "@nuxtjs/i18n",
@@ -86,7 +85,6 @@ export default defineNuxtConfig({
       crawlLinks: true,
     },
   },
-
   // ogImage: {
   //   runtimeBrowser: true,
   // },
@@ -103,7 +101,6 @@ export default defineNuxtConfig({
       },
     },
   },
-
   // CSS
   runtimeConfig: {
     public: {
@@ -117,11 +114,9 @@ export default defineNuxtConfig({
       trailingSlash: true,
     },
   },
-
   site: {
     url: seoConfig.url,
   },
-
   seo: seoConfig,
 
   // I18n module configuration: https://i18n.nuxtjs.org/

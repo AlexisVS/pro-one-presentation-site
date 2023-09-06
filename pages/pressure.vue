@@ -21,7 +21,7 @@ definePageMeta({
 
     <template #product-details-image>
       <NuxtImg
-        format="avif,webp"
+        format="webp"
         class="product-details__image"
         alt="Gravity stuff"
         src="/pressure/products.png"
