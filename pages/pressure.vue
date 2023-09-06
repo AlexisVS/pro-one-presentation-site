@@ -21,6 +21,7 @@ definePageMeta({
 
     <template #product-details-image>
       <NuxtPicture
+        format="avif,webp"
         placeholder
         class="product-details__image"
         alt="Gravity stuff"

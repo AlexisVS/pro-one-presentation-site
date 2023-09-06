@@ -8,6 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 <template>
   <section class="who-we-are">
     <NuxtPicture
+      format="avif,webp"
       placeholder
       alt="Our team"
       class="who-we-are__image"

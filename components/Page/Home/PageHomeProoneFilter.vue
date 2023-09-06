@@ -18,6 +18,7 @@
     </div>
     <div class="proone-filter__image-side">
       <NuxtPicture
+        format="avif,webp"
         placeholder
         alt="Pro One stuff"
         class="proone-filter__image-side__image"

@@ -39,6 +39,7 @@
       </div>
       <div class="conclusion__image-side">
         <NuxtPicture
+          format="avif,webp"
           placeholder
           alt="Pro One stuff"
           class="conclusion__image-side__image"
