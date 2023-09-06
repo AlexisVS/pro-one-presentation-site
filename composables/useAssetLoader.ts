@@ -58,8 +58,6 @@ export function useAssetLoader() {
     videos.forEach((asset) => {
       asset.removeEventListener("loadeddata", handleAssetLoad);
     });
-
-    clearInterval(interval);
   });
 
   return { isLoading };
