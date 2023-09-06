@@ -1,6 +1,6 @@
 <template>
   <div class="loader">
-    <NuxtPicture
+    <NuxtImg
       format="avif,webp"
       placeholder
       class="loader__image"

@@ -17,7 +17,7 @@
       </p>
     </div>
     <div class="proone-filter__image-side">
-      <NuxtPicture
+      <NuxtImg
         format="avif,webp"
         placeholder
         alt="Pro One stuff"

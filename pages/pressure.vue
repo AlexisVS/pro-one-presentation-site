@@ -20,7 +20,7 @@ definePageMeta({
     </template>
 
     <template #product-details-image>
-      <NuxtPicture
+      <NuxtImg
         format="avif,webp"
         placeholder
         class="product-details__image"

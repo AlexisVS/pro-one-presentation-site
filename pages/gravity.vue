@@ -18,7 +18,7 @@ definePageMeta({
     </template>
 
     <template #product-details-image>
-      <NuxtPicture
+      <NuxtImg
         format="avif,webp"
         placeholder
         class="product-details__image"
@@ -75,7 +75,7 @@ definePageMeta({
           </TheTransitionBase>
         </div>
         <div class="product-additional-informations__image-side">
-          <NuxtPicture
+          <NuxtImg
             format="avif,webp"
             placeholder
             class="product-additional-informations__image-side__image"
