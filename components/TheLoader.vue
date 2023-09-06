@@ -1,7 +1,7 @@
 <template>
   <div class="loader">
     <NuxtPicture
-      format="avif,webp"
+      format="webp"
       placeholder
       class="loader__image"
       src="/brand/brand.png"

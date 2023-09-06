@@ -104,7 +104,7 @@ onUnmounted(() => {
 
 <template>
   <NuxtPicture
-    format="avif,webp"
+    format="webp"
     placeholder
     alt="Water wall"
     class="image-water-wall"
