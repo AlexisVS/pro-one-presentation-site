@@ -14,7 +14,7 @@ definePageMeta({
 <template>
   <section style="padding: 8rem 1rem 2rem 1rem">
     <NuxtPicture
-      format="webp"
+      format="avif,webp"
       placeholder
       alt="Pro One independent"
       src="/proone-independant.png"
