@@ -7,10 +7,6 @@ export function useAssetLoader() {
   const assetsToLoad = ref(0);
   const assetsLoaded = ref(0);
 
-  const interval = setInterval(() => {
-    handleAssetLoad();
-  }, 300);
-
   const handleAssetLoad = () => {
     const assets = document.querySelectorAll("video, img") as NodeListOf<
       HTMLVideoElement | HTMLImageElement
@@ -31,15 +27,12 @@ export function useAssetLoader() {
     });
 
     if (assetsLoaded.value >= assetsToLoad.value || assetsToLoad.value === 0) {
-      const timeout = setTimeout(() => {
-        isLoading.value = false;
-      }, 700)();
-
-      clearTimeout(timeout);
+      isLoading.value = false;
     }
   };
 
   onMounted(() => {
+    watch(assetsToLoad, handleAssetLoad);
     const videos = document.querySelectorAll("video");
     const images = document.querySelectorAll("img");
 
