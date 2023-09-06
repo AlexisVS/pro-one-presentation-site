@@ -20,7 +20,6 @@ definePageMeta({
     <template #product-details-image>
       <NuxtImg
         format="avif,webp"
-        placeholder
         class="product-details__image"
         alt="Gravity stuff"
         src="/gravity/products.png"
@@ -77,7 +76,6 @@ definePageMeta({
         <div class="product-additional-informations__image-side">
           <NuxtImg
             format="avif,webp"
-            placeholder
             class="product-additional-informations__image-side__image"
             alt="Filter Pro One G2.0"
             src="/gravity/schema.png"

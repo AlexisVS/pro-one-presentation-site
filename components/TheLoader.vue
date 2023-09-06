@@ -2,7 +2,6 @@
   <div class="loader">
     <NuxtImg
       format="avif,webp"
-      placeholder
       class="loader__image"
       src="/brand/brand.png"
       alt="Brand logo"

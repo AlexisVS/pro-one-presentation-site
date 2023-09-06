@@ -19,7 +19,6 @@
     <div class="proone-filter__image-side">
       <NuxtImg
         format="avif,webp"
-        placeholder
         alt="Pro One stuff"
         class="proone-filter__image-side__image"
         src="/filtration/filtration_agents.png"

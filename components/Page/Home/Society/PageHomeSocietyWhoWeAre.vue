@@ -9,7 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
   <section class="who-we-are">
     <NuxtImg
       format="avif,webp"
-      placeholder
       alt="Our team"
       class="who-we-are__image"
       src="/team/team1.jpg"

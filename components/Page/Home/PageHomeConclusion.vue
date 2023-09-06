@@ -40,7 +40,6 @@
       <div class="conclusion__image-side">
         <NuxtImg
           format="avif,webp"
-          placeholder
           alt="Pro One stuff"
           class="conclusion__image-side__image"
           src="/products/proone_products.png"
