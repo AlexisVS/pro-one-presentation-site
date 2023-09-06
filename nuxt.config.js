@@ -127,9 +127,6 @@ export default defineNuxtConfig({
   // I18n module configuration: https://i18n.nuxtjs.org/
   ssr: true,
 
-  // Image module configuration: https://v1.image.nuxtjs.org/configuration
-  target: "static",
-
   // Content module configuration : https://content.nuxtjs.org/configuration
   typescript: {
     shim: true,
