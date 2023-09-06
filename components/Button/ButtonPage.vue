@@ -34,7 +34,7 @@ const props = defineProps({
     >
       <slot />
     </span>
-    <!--    <NuxtImg-->
+    <!--    <NuxtPicture-->
     <!--      v-if="props.buttonImagePath?.length > 0"-->
     <!--      :src="props.buttonImagePath"-->
     <!--      class="button__image"-->

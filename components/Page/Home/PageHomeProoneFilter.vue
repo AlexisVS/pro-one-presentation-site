@@ -17,10 +17,11 @@
       </p>
     </div>
     <div class="proone-filter__image-side">
-      <NuxtImg
+      <NuxtPicture
+        placeholder
         alt="Pro One stuff"
         class="proone-filter__image-side__image"
-        src="./images/filtration/filtration_agents.png"
+        src="/filtration/filtration_agents.png"
       />
     </div>
   </section>

@@ -18,10 +18,11 @@ definePageMeta({
     </template>
 
     <template #product-details-image>
-      <NuxtImg
+      <NuxtPicture
+        placeholder
         class="product-details__image"
         alt="Gravity stuff"
-        src="./images/gravity/products.png"
+        src="/gravity/products.png"
       />
     </template>
 
@@ -73,10 +74,11 @@ definePageMeta({
           </TheTransitionBase>
         </div>
         <div class="product-additional-informations__image-side">
-          <NuxtImg
+          <NuxtPicture
+            placeholder
             class="product-additional-informations__image-side__image"
             alt="Filter Pro One G2.0"
-            src="./images/gravity/schema.png"
+            src="/gravity/schema.png"
             width="547px"
           />
         </div>

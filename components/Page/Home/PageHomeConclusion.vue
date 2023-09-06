@@ -38,10 +38,11 @@
         </TheTransitionBase>
       </div>
       <div class="conclusion__image-side">
-        <NuxtImg
+        <NuxtPicture
+          placeholder
           alt="Pro One stuff"
           class="conclusion__image-side__image"
-          src="./images/products/proone_products.png"
+          src="/products/proone_products.png"
         />
       </div>
     </div>

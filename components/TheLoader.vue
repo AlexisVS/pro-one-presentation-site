@@ -1,8 +1,9 @@
 <template>
   <div class="loader">
-    <NuxtImg
+    <NuxtPicture
+      placeholder
       class="loader__image"
-      src="./images/brand/brand.png"
+      src="/brand/brand.png"
       alt="Brand logo"
     />
   </div>

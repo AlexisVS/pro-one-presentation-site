@@ -20,10 +20,11 @@ definePageMeta({
     </template>
 
     <template #product-details-image>
-      <NuxtImg
+      <NuxtPicture
+        placeholder
         class="product-details__image"
         alt="Gravity stuff"
-        src="./images/pressure/products.png"
+        src="/pressure/products.png"
       />
     </template>
 

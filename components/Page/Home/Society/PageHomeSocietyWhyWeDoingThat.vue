@@ -103,10 +103,11 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <NuxtImg
+  <NuxtPicture
+    placeholder
     alt="Water wall"
     class="image-water-wall"
-    src="./images/water/water_wall.jpg"
+    src="/water/water_wall.jpg"
   />
   <section ref="section" class="why-we-doing-that">
     <div class="why-we-doing-that__text-side">
