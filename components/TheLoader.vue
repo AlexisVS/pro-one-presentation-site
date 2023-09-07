@@ -39,7 +39,7 @@
 
   &__image {
     width: 90dvw;
-    max-width: 500px;
+    max-width: 450px;
     animation: translate-wave 4s infinite;
     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
