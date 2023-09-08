@@ -174,7 +174,7 @@ onMounted(() => {
           if (!props.visibility && props.once) {
             observer.value?.unobserve(element);
 
-            if (props.leave && state.currentTransition === "appear") {
+            if (props.leave) {
               handleOutIntersection(element);
             } else {
               displayed.value = false;
@@ -182,7 +182,7 @@ onMounted(() => {
           }
         }, getTransitionDurationNumber("appear"));
       } else if (entry && !entry.isIntersecting && props.visibility === false) {
-        if (props.leave && state.currentTransition === "appear") {
+        if (props.leave) {
           handleOutIntersection(element);
         } else {
           displayed.value = false;
