@@ -53,6 +53,7 @@ const onAnimationMenuItemHasFinished = (el: Element) => {
                     ? localePath(item.path)
                     : 'https://prooneusa.eu/shop'
                 "
+                :target="item.name === 'shop' ? '_blank' : ''"
                 class="mobile-menu__body__navigation__item fluid-font-size-2"
                 active-class="mobile-menu__body__navigation__item--active"
                 @click="props.toggleMenu"

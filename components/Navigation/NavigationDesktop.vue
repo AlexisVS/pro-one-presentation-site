@@ -17,6 +17,7 @@ const { width } = useWindowSize();
             ? localePath(item.path)
             : 'https://prooneusa.eu/shop'
         "
+        :target="item.name === 'shop' ? '_blank' : ''"
         class="navigation-desktop__menu__item"
         :class="width <= 1920 ? 'fluid-font-size--1' : 'fluid-font-size--2'"
         active-class="navigation-desktop__menu__item--active"
