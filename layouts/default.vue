@@ -97,7 +97,7 @@ onUnmounted(() => {
         backdrop-filter 650ms;
 
       &.absolute {
-        background: transparentize(lighten($color-primary, 50%), 0.5);
+        background: transparentize(lighten($color-primary, 45%), 0.5);
         position: fixed;
         height: 65px;
         top: 0;
@@ -121,6 +121,7 @@ onUnmounted(() => {
   .layout {
     &__navigation {
       height: 8dvh;
+
       &.absolute {
         height: 8dvh;
       }

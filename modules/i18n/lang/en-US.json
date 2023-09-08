@@ -1,8 +1,8 @@
 {
   "navigation": {
     "home": "Home",
-    "Gravity": "Gravity",
-    "Pressure": "Pressure",
+    "gravity": "Gravity",
+    "pressure": "Pressure",
     "about_us": "About us",
     "shop": "Shop"
   },

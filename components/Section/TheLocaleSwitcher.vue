@@ -16,7 +16,7 @@ const switchLocalePath = useSwitchLocalePath();
       <NuxtLink
         :class="
           'local-switcher__item__locale ' +
-          (width < 1024 ? ' fluid-font-size-0' : 'fluid-font-size--1') +
+          (width < 1024 ? ' fluid-font-size-0' : 'fluid-font-size-0') +
           (locale.code === currentLocale
             ? ' local-switcher__item__locale--active '
             : '')
@@ -46,13 +46,14 @@ const switchLocalePath = useSwitchLocalePath();
     display: inline-flex;
     align-items: center;
     font-weight: 660;
+    text-shadow: 0 0 1px transparentize(darken($color-primary, 100%), 0);
 
     &__locale {
-      color: $color-primary;
+      color: darken($color-primary, 10%);
       transition: color 350ms ease-out;
 
       &:visited {
-        color: $color-primary;
+        color: darken($color-primary, 10%);
       }
 
       &:hover {
