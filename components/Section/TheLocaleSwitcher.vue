@@ -22,7 +22,7 @@ const switchLocalePath = useSwitchLocalePath();
             : '')
         "
         :to="switchLocalePath(locale.code)"
-        @click.prevent.stop="$i18n.setLocale(locale.code)"
+        @click="$i18n.setLocale(locale.code)"
       >
         {{ locale.code.toUpperCase() }}
       </NuxtLink>

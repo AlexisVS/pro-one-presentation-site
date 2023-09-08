@@ -1,11 +1,19 @@
 <template>
-  <div v-if="displayed" ref="observed" :style="getTransition().initial">
+  <div
+    v-if="displayed"
+    ref="observed"
+    :style="getTransition()[state.currentTransition]"
+  >
     <slot></slot>
   </div>
 </template>
 
 <script setup lang="ts">
 import { CSSProperties, PropType } from "vue";
+
+const state = reactive({
+  currentTransition: "initial",
+});
 
 type transitionKey = "appear" | "leave" | "initial";
 
@@ -133,10 +141,12 @@ const applyTransitionStyle = (
 };
 
 const handleInIntersection = (element: Element) => {
+  state.currentTransition = "appear";
   applyTransitionStyle("appear", element);
 };
 
 const handleOutIntersection = (element: Element) => {
+  state.currentTransition = "leave";
   applyTransitionStyle("leave", element);
 };
 
@@ -164,7 +174,7 @@ onMounted(() => {
           if (!props.visibility && props.once) {
             observer.value?.unobserve(element);
 
-            if (props.leave) {
+            if (props.leave && state.currentTransition === "appear") {
               handleOutIntersection(element);
             } else {
               displayed.value = false;
@@ -172,7 +182,7 @@ onMounted(() => {
           }
         }, getTransitionDurationNumber("appear"));
       } else if (entry && !entry.isIntersecting && props.visibility === false) {
-        if (props.leave) {
+        if (props.leave && state.currentTransition === "appear") {
           handleOutIntersection(element);
         } else {
           displayed.value = false;
