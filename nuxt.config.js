@@ -1,8 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 const seoConfig = {
-  name: "pro one",
-  description: "Welcome to my pro one website!",
+  name: "ProOne Water Filter ®",
+  description: "Welcome to my ProOne Water Filter ® website!",
   image: "/images/brand/brand.png",
   url: process.env.NUXT_PUBLIC_SITE_URL,
   phone: "+33 6 00 00 00 00",
@@ -17,7 +17,7 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: "%pageTitle %titleSeparator %siteName",
       htmlAttrs: {
-        lang: "fr",
+        lang: "en",
       },
     },
   },
@@ -35,8 +35,8 @@ export default defineNuxtConfig({
     fonts: ["Raleway"],
   },
   i18n: {
-    vueI18n: "./modules/i18n/i18n.config.ts",
-    defaultLocale: process.env.NUXT_PUBLIC_LANGUAGE || "fr",
+    vueI18n: "./modules/i18n/i18n.config.js",
+    defaultLocale: process.env.NUXT_PUBLIC_LANGUAGE || "en",
     defaultDirection: "ltr",
     langDir: "./modules/i18n/lang",
     trailingSlash: undefined,
@@ -54,10 +54,16 @@ export default defineNuxtConfig({
         file: "en-US.json",
         dir: "ltr",
       },
+      {
+        code: "es",
+        iso: "es-ES",
+        file: "es-ES.json",
+        dir: "ltr",
+      },
     ],
     detectBrowserLanguage: {
       alwaysRedirect: true,
-      fallbackLocale: "fr",
+      fallbackLocale: "en",
       redirectOn: "root",
       useCookie: true,
       cookieKey: "i18n_redirected",
@@ -110,7 +116,7 @@ export default defineNuxtConfig({
       url: seoConfig.url,
       siteName: seoConfig.name,
       siteDescription: seoConfig.description,
-      language: "fr-FR", // prefer more explicit language codes like `en-AU` over `en`
+      language: "en-EN", // prefer more explicit language codes like `en-AU` over `en`
       seo: seoConfig,
       titleSeparator: "|",
       trailingSlash: true,

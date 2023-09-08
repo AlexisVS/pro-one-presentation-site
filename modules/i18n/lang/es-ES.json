@@ -1,0 +1,67 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "gravity": "Gravedad",
+    "pressure": "Presión",
+    "about_us": "Sobre nosotros",
+    "shop": "Tienda"
+  },
+  "page": {
+    "home": {
+      "header": {
+        "title": "El poder del agua al alcance de tu mano.",
+        "subtitle": "Descubre nuestros productos para un acceso fácil a agua perfectamente purificada."
+      },
+      "who_we_are": {
+        "title": "Agua saludable para todas tus necesidades.",
+        "paragraph_1": "En ProOne Water Filter ®, somos un equipo apasionado y comprometido con hacer que el acceso al agua pura sea asequible.",
+        "paragraph_2": "Con nuestra experiencia y compromiso con el medio ambiente, nos esforzamos por ofrecerte filtros de agua de calidad superior que garantizan agua saludable y deliciosa en cada gota."
+      },
+      "why_we_doing_that": {
+        "title": "Para tu salud, la de tu familia y nuestro planeta.",
+        "paragraph_1": "En ProOne Water Filter ®, nuestro compromiso no se limita solo a tu salud, sino también a la de nuestro planeta.",
+        "paragraph_2": "Al usar nuestros avanzados filtros de agua, te conviertes en parte de la solución para preservar el medio ambiente y reducir el uso de plásticos de un solo uso."
+      },
+      "proone_filter": {
+        "title": "La tecnología de los filtros ProOne ® G2.0 es inigualable.",
+        "paragraph_1": "Aunque no fuimos los primeros en el mercado de la filtración y tratamiento del agua, nuestra empresa ha desarrollado una de las mejores tecnologías disponibles en el mercado actualmente.",
+        "paragraph_2": "Estamos orgullosos de anunciar que nuestra gama de elementos ProOne ® G2.0 ha obtenido la certificación NSF ANSI-42, garantizando una alta calidad de purificación.",
+        "paragraph_3": "Hemos aplicado los mismos estándares en nuestra gama Coldstream y ProMax (sistemas a presión)."
+      },
+      "conclusion": {
+        "title": "Únete a la revolución de ProOne Water Filter ® hoy mismo",
+        "paragraph_1": "Haz la elección inteligente y sostenible al optar por los filtros de agua de ProOne Water Filter ®, la referencia en purificación de agua.",
+        "paragraph_2": "No esperes más para mejorar la calidad de tu agua y contribuir a un futuro más saludable para todos."
+      }
+    },
+    "gravity": {
+      "products": {
+        "title": "Agua Pura al Alcance de tu Mano con los Filtros ProOne Water Filter ®.",
+        "subtitle": "Ensamblaje Fácil y Uso Universal, sin Complicaciones.",
+        "paragraph_1": "Ya sea que estés en movimiento, buscando independencia o para uso diario, tienes la garantía de obtener agua potable de calidad con los filtros ProOne Water Filter ®.",
+        "paragraph_2": "Fáciles de ensamblar y sin necesidad de electricidad ni conexión a la red de distribución, puedes utilizar cualquier fuente de agua disponible, ya sea en casa, en la oficina o de vacaciones."
+      },
+      "additional-informations": {
+        "paragraph_1": "Todos nuestros sistemas de gravedad utilizan la tecnología ProOne ® G2.0 certificada por NSF.",
+        "paragraph_2": "Eliminan por completo o reducen a niveles trazas los microplásticos, pesticidas, herbicidas, metales pesados, cloro, fluoruro, parásitos, bacterias, contaminantes farmacéuticos y radiológicos, etc. (ver informe de laboratorio con más de 200 contaminantes probados)."
+      }
+    },
+    "pressure": {
+      "products": {
+        "title": "Domina tu Agua a Presión con las Soluciones de ProOne Water Filter ®",
+        "subtitle": "Descubre Nuestras Innovaciones a Presión de ProOne Water Filter ®",
+        "paragraph_1": "ProOne Water Filter ® ofrece una gama completa para tratar el agua de tu red de presión, desde la simple distribución hasta tu cisterna de recogida de agua de lluvia.",
+        "paragraph_2": "Desde ablandar el agua calcárea, eliminar el cloro de la ducha hasta producir agua potable sin necesidad de llenar tanques de gravedad, visita nuestra tienda para encontrar el sistema que mejor se adapte a tu hogar.",
+        "paragraph_3": "No requiere electricidad, solo la presión es suficiente."
+      }
+    },
+    "about": {
+      "paragraph": "ProOne Water Filter ® Europe - Mozito SRL es el importador exclusivo de productos ProOne Water Filter ® para Francia, Bélgica y Luxemburgo.\n\nEstamos ubicados en Bélgica y tenemos un amplio stock de modelos y piezas de repuesto.\n\nNos comprometemos a proporcionar a nuestros clientes documentación y guías de mantenimiento en francés e inglés, con un servicio postventa rápido y eficiente.\n\nOfrecemos documentación y manuales de alta calidad traducidos al francés.\n\nRealizamos envíos a Europa y Suiza (otros países bajo solicitud).\n\nNuestro servicio de envío incluye seguro de paquetería.\n\nLos pedidos se envían tras recibir el pago y los recibirás en un plazo de 2 a 3 días laborables / 24 horas en Bélgica a través de nuestro socio Bpost.\n\nSi necesitas ayuda después de tu compra, estaremos encantados de atenderte (por favor, ten tu número de factura y/o identificación listos).\n\nNo dudes en contactarnos al 0032 87 70 12 51 o al 0032 473 40 86 35 para obtener información adicional."
+    }
+  },
+  "component": {
+    "button": {
+      "visit_shop": "Visitar nuestra tienda"
+    }
+  }
+}

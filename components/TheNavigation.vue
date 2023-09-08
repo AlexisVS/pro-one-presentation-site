@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import TheLocaleSwitcher from "./Section/TheLocaleSwitcher.vue";
+
 const state = reactive({ windowWidth: 0 });
 
 onMounted(() => {
@@ -11,6 +13,8 @@ onMounted(() => {
 <template>
   <div v-if="state.windowWidth" class="navigation">
     <NavigationLogo class="navigation__logo" />
+    <TheLocaleSwitcher v-if="state.windowWidth < 1024" />
+
     <NavigationMobile v-if="state.windowWidth < 1024" />
     <NavigationDesktop v-if="state.windowWidth >= 1024" />
   </div>

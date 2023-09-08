@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import TheLocaleSwitcher from "../Section/TheLocaleSwitcher.vue";
+
 const localePath = useLocalePath();
 const navigation = useNavigation();
 const { width } = useWindowSize();
@@ -22,6 +24,7 @@ const { width } = useWindowSize();
         {{ $t(`navigation.${item.name}`) }}
       </NuxtLink>
     </nav>
+    <TheLocaleSwitcher />
   </div>
 </template>
 
@@ -32,6 +35,8 @@ const { width } = useWindowSize();
 .navigation-desktop {
   width: 100%;
   border-color: transparent;
+  display: inline-flex;
+  padding-right: 1rem;
 
   &__menu {
     width: 100%;
