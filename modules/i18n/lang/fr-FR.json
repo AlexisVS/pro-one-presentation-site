@@ -3,7 +3,7 @@
     "home": "Accueil",
     "gravity": "Gravité",
     "pressure": "Pression",
-    "about_us": "A propos",
+    "about_us": "À propos de nous",
     "shop": "Boutique"
   },
   "page": {
@@ -16,7 +16,7 @@
         "subtitle": "Du camping à l'équipement permanent de votre cuisine, avec des solutions performantes et économiques, il y a un ProOne Water Filter ® répondant à vos besoins."
       },
       "who_we_are": {
-        "title": "Une eau saine pour tous vos besoin.",
+        "title": "Une eau saine pour tous vos besoins.",
         "paragraph_1": "Chez ProOne Water Filter ®, nous sommes une équipe de passionnés et déterminés à rendre l'accès à une eau pure abordable.",
         "paragraph_2": "Fort de notre expertise et de notre engagement envers l'environnement, nous mettons tout en oeuvre pour vous offrir des filtres à eau de qualité superieure garantissant une eau saine et délicieuse à chaque goutte."
       },
@@ -32,7 +32,7 @@
         "paragraph_3": "Nous avons appliqué les mêmes standards dans notre gamme Coldsteam et ProMax (systèmes à pression)."
       },
       "pfas": {
-        "title": "Protection constre les acides organiques fluorés (PFAS).",
+        "title": "Protection contre les acides organiques fluorés (PFAS).",
         "paragraph_1": "Saviez-vous que près de la moitié de l'eau du robinet aux États-Unis est contaminée par des PFAS, également connus sous le nom d'acides organiques fluorés ou « produits chimiques éternels ». C'est une préoccupation croissante dans tout le pays. Les PFAS sont un groupe de contaminants comprenant :",
         "pfas_1": "Sulfonate de perfluorobutane (PFBS)",
         "pfas_2": "Acide perfluorodécanoïque (PFDA)",
@@ -58,8 +58,8 @@
         "title": "Gravité"
       },
       "products": {
-        "title": "Une Eau Pure à Portée de Main avec les Filtres ProOne.",
-        "subtitle": "Assemblage Facile et Utilisation Universelle, Sans Contraintes.",
+        "title": "Une eau pure à portée de main avec les filtres ProOne.",
+        "subtitle": "Assemblage facile et utilisation universelle, sans contraintes.",
         "paragraph_1": "Que vous soyez en déplacement, en recherche d'autonomie ou pour votre usage quotidien, vous aurez la garantie d'une eau potable de qualité avec les filtres ProOne.",
         "paragraph_2": "Simples à assembler, ne nécessitant ni électricité, ni raccord au réseau de distribution, vous pouvez utiliser toutes sources d'eau à votre disposition, que ce soit à votre domicile, votre bureau ou en vacances."
       },
@@ -73,8 +73,8 @@
         "title": "Pression"
       },
       "products": {
-        "title": "Maîtrisez Votre Eau Sous Pression avec les Solutions ProOne",
-        "subtitle": "Découvrez Nos Innovations Sous Pression ProOne",
+        "title": "Maîtrisez votre eau sous pression avec les solutions ProOne",
+        "subtitle": "Découvrez nos innovations sous pression ProOne",
         "paragraph_1": "ProOne vous propose une gamme complète destinée à traiter votre eau de votre réseau pression, de la simple distribution à votre citerne de récupération d'eau pluviale.",
         "paragraph_2": "De l'adoucissement de votre eau calcaire, de l'élimination du chlore pour la douche, à la production d'eau potable sans passer par le remplissage des cuves des filtres à gravité, visiter notre boutique pour trouver le système qui convient le mieux à votre domicile.",
         "paragraph_3": "Ne nécessite pas d’électricité, seule la pression est suffisante."
@@ -84,7 +84,7 @@
       "seo": {
         "title": "A propos"
       },
-      "paragraph": "ProOne Europe - Mozito SRL, est l'importateur exclusif des produits ProOne pour la France, la Belgique et le Luxembourg.\n\nNous sommes situés en Belgique et nous disposons d'un large stock de modèles et de pièces détachées.\n\nNous nous engageons à fournir à nos clients la documentation et guide d’entretien en français et en anglais avec un service après-vente rapide et efficace.\n\nNous vous offrons une documentation et des manuels de qualité traduits en français.\n\nNous assurons la livraison en Europe + Suisse (autres pays sur demande.)\n\nNotre service livraison comprends une assurance colis.\n\nLes commandes sont envoyées dès réception de votre payement, elle vous parviendront ensuite dans un délai de 2 à 3 jours ouvrables / 24 h en Belgique via notre partenaire Bpost.\n\nSi vous avez besoin d'aide à la suite de votre achat, nous nous ferons un plaisir de vous répondre (merci de préparer au préalable votre numéro de facture et/ou identifiant).\n\nN’hésitez pas à nous contacter au 0032 87 70 12 51 ou au 0032 473 40 86 35 pour toutes informations complémentaires."
+      "paragraph": "ProOne Europe - Mozito SRL, est l'importateur exclusif des produits ProOne Water Filter ® pour la France, la Belgique et le Luxembourg.\n\nNous sommes situés en Belgique et nous disposons d'un large stock de modèles et de pièces détachées.\n\nNous nous engageons à fournir à nos clients la documentation et guide d’entretien en français et en anglais avec un service après-vente rapide et efficace.\n\nNous vous offrons une documentation et des manuels de qualité traduits en français.\n\nNous assurons la livraison en Europe + Suisse (autres pays sur demande.)\n\nNotre service de livraison comprend une assurance colis.\n\nLes commandes sont envoyées dès réception de votre payement, elle vous parviendront ensuite dans un délai de 2 à 3 jours ouvrables / 24 h en Belgique via notre partenaire Bpost.\n\nSi vous avez besoin d'aide à la suite de votre achat, nous nous ferons un plaisir de vous répondre (merci de préparer au préalable votre numéro de facture et/ou identifiant).\n\nN’hésitez pas à nous contacter au 0032 87 70 12 51 ou au 0032 473 40 86 35 pour toutes informations complémentaires."
     }
   },
   "component": {
