@@ -8,6 +8,9 @@
   },
   "page": {
     "home": {
+      "seo": {
+        "title": "Home"
+      },
       "header": {
         "title": "A complete range for the treatment and purification of your water.",
         "subtitle": "From camping to permanent kitchen equipment, with high-performance and economical solutions, there's a ProOne Water Filter ® to meet your needs."
@@ -51,6 +54,9 @@
       }
     },
     "gravity": {
+      "seo": {
+        "title": "Gravity"
+      },
       "products": {
         "title": "Pure water at your fingertips with ProOne filters.",
         "subtitle": "Easy assembly and universal, stress-free use.",
@@ -63,6 +69,9 @@
       }
     },
     "pressure": {
+      "seo": {
+        "title": "Pressure"
+      },
       "products": {
         "title": "Control Your Pressurized Water with ProOne Solutions",
         "subtitle": "Discover our ProOne Pressurized Innovations",
@@ -72,6 +81,9 @@
       }
     },
     "about": {
+      "seo": {
+        "title": "About us"
+      },
       "paragraph": "ProOne Europe - Mozito SRL, is the exclusive importer of ProOne products for France, Belgium and Luxembourg.\n\nWe are located in Belgium and have a large stock of models and spare parts.\n \nWe are committed to providing our customers with documentation and service manuals in French and English, along with fast, efficient after-sales service.\n \nWe offer quality documentation and manuals translated into French.\n \nWe deliver in Europe + Switzerland (other countries on request).\n \nOur delivery service includes parcel insurance.\n \nOrders are dispatched as soon as we receive your payment, and will reach you within 2 to 3 working days / 24 h in Belgium via our partner Bpost.\n \nIf you need any assistance with your purchase, we'll be happy to help (please have your invoice number and/or ID ready).\n \nPlease do not hesitate to contact us on 0032 87 70 12 51 or 0032 473 40 86 35 for further information."
     }
   },

@@ -9,6 +9,10 @@ definePageMeta({
     mode: "out-in",
   },
 });
+
+useHead({
+  title: $t("page.about.title"),
+});
 </script>
 
 <template>

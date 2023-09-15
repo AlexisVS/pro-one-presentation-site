@@ -8,6 +8,9 @@
   },
   "page": {
     "home": {
+      "seo": {
+        "title": "Accueil"
+      },
       "header": {
         "title": "Une gamme complète pour le traitement et la purification de votre eau.",
         "subtitle": "Du camping à l'équipement permanent de votre cuisine, avec des solutions performantes et économiques, il y a un ProOne Water Filter ® répondant à vos besoins."
@@ -51,6 +54,9 @@
       }
     },
     "gravity": {
+      "seo": {
+        "title": "Gravité"
+      },
       "products": {
         "title": "Une Eau Pure à Portée de Main avec les Filtres ProOne.",
         "subtitle": "Assemblage Facile et Utilisation Universelle, Sans Contraintes.",
@@ -63,6 +69,9 @@
       }
     },
     "pressure": {
+      "seo": {
+        "title": "Pression"
+      },
       "products": {
         "title": "Maîtrisez Votre Eau Sous Pression avec les Solutions ProOne",
         "subtitle": "Découvrez Nos Innovations Sous Pression ProOne",
@@ -72,6 +81,9 @@
       }
     },
     "about": {
+      "seo": {
+        "title": "A propos"
+      },
       "paragraph": "ProOne Europe - Mozito SRL, est l'importateur exclusif des produits ProOne pour la France, la Belgique et le Luxembourg.\n\nNous sommes situés en Belgique et nous disposons d'un large stock de modèles et de pièces détachées.\n\nNous nous engageons à fournir à nos clients la documentation et guide d’entretien en français et en anglais avec un service après-vente rapide et efficace.\n\nNous vous offrons une documentation et des manuels de qualité traduits en français.\n\nNous assurons la livraison en Europe + Suisse (autres pays sur demande.)\n\nNotre service livraison comprends une assurance colis.\n\nLes commandes sont envoyées dès réception de votre payement, elle vous parviendront ensuite dans un délai de 2 à 3 jours ouvrables / 24 h en Belgique via notre partenaire Bpost.\n\nSi vous avez besoin d'aide à la suite de votre achat, nous nous ferons un plaisir de vous répondre (merci de préparer au préalable votre numéro de facture et/ou identifiant).\n\nN’hésitez pas à nous contacter au 0032 87 70 12 51 ou au 0032 473 40 86 35 pour toutes informations complémentaires."
     }
   },

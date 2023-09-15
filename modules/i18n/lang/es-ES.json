@@ -8,6 +8,9 @@
   },
   "page": {
     "home": {
+      "seo": {
+        "title": "Inicio"
+      },
       "header": {
         "title": "Una gama completa para tratar y purificar el agua.",
         "subtitle": "Desde el camping hasta el equipo de cocina permanente, con soluciones de alto rendimiento y económicas, hay un ProOne Water Filter ® para satisfacer sus necesidades."
@@ -51,6 +54,9 @@
       }
     },
     "gravity": {
+      "seo": {
+        "title": "Gravedad"
+      },
       "products": {
         "title": "Agua Pura al Alcance de tu Mano con los Filtros ProOne Water Filter ®.",
         "subtitle": "Ensamblaje Fácil y Uso Universal, sin Complicaciones.",
@@ -63,6 +69,9 @@
       }
     },
     "pressure": {
+      "seo": {
+        "title": "Presión"
+      },
       "products": {
         "title": "Domina tu Agua a Presión con las Soluciones de ProOne Water Filter ®",
         "subtitle": "Descubre Nuestras Innovaciones a Presión de ProOne Water Filter ®",
@@ -72,6 +81,9 @@
       }
     },
     "about": {
+      "seo": {
+        "title": "Sobre nosotros"
+      },
       "paragraph": "ProOne Water Filter ® Europe - Mozito SRL es el importador exclusivo de productos ProOne Water Filter ® para Francia, Bélgica y Luxemburgo.\n\nEstamos ubicados en Bélgica y tenemos un amplio stock de modelos y piezas de repuesto.\n\nNos comprometemos a proporcionar a nuestros clientes documentación y guías de mantenimiento en francés e inglés, con un servicio postventa rápido y eficiente.\n\nOfrecemos documentación y manuales de alta calidad traducidos al francés.\n\nRealizamos envíos a Europa y Suiza (otros países bajo solicitud).\n\nNuestro servicio de envío incluye seguro de paquetería.\n\nLos pedidos se envían tras recibir el pago y los recibirás en un plazo de 2 a 3 días laborables / 24 horas en Bélgica a través de nuestro socio Bpost.\n\nSi necesitas ayuda después de tu compra, estaremos encantados de atenderte (por favor, ten tu número de factura y/o identificación listos).\n\nNo dudes en contactarnos al 0032 87 70 12 51 o al 0032 473 40 86 35 para obtener información adicional."
     }
   },

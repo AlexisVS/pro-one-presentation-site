@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import PageHomePFAS from "../components/Page/Home/PageHomePFAS.vue";
-import { useAssetLoader } from "~/composables/useAssetLoader";
+import { useAssetLoader } from "../composables/useAssetLoader";
 
 const { isLoading } = useAssetLoader();
 
@@ -13,6 +13,10 @@ definePageMeta({
     name: "page",
     mode: "out-in",
   },
+});
+
+useHead({
+  title: $t("page.home.title"),
 });
 </script>
 
