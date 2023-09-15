@@ -11,11 +11,11 @@
 <script setup lang="ts">
 import { CSSProperties, PropType } from "vue";
 
-const state = reactive({
-  currentTransition: "initial",
-});
-
 type transitionKey = "appear" | "leave" | "initial";
+
+const state = reactive({
+  currentTransition: "initial" as transitionKey,
+});
 
 type transitionType = {
   [key in transitionKey]: CSSProperties;

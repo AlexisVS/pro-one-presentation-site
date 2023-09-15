@@ -2,7 +2,9 @@
 import { useWindowSize } from "@vueuse/core";
 
 const { width } = useWindowSize();
-const { locale: currentLocale, locales: availableLocales } = useI18n();
+const { locale: currentLocale, locales } = useI18n();
+// problem with type returned LocalObject[]
+const availableLocales = locales as unknown as Array<{ code: string }>;
 const switchLocalePath = useSwitchLocalePath();
 </script>
 
