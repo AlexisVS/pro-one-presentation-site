@@ -11,7 +11,7 @@ definePageMeta({
 });
 
 useHead({
-  title: $t("page.gravity.title"),
+  title: "Gravity",
 });
 </script>
 

@@ -2,7 +2,8 @@
 
 const seoConfig = {
   name: "ProOne Water Filter ®",
-  description: "Welcome to my ProOne Water Filter ® website!",
+  description:
+    "At ProOne Water Filter ®, we're a passionate team determined to make access to pure water affordable.",
   image: "/images/brand/brand.png",
   url: process.env.NUXT_PUBLIC_SITE_URL,
   phone: "+33 6 00 00 00 00",

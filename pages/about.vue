@@ -11,7 +11,7 @@ definePageMeta({
 });
 
 useHead({
-  title: $t("page.about.title"),
+  title: "About",
 });
 </script>
 

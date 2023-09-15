@@ -11,7 +11,7 @@ definePageMeta({
 });
 
 useHead({
-  title: $t("page.pressure.title"),
+  title: "Pressure",
 });
 </script>
 
