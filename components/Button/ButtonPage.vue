@@ -27,7 +27,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <NuxtLink :class="`button--${props.type}`" :to="props.to" class="button">
+  <a :class="`button--${props.type}`" :href="props.to" class="button">
     <span
       class="button__text fluid-font-size--1"
       :style="props.center === true ? 'text-align: center; width: 100%;' : ''"
@@ -39,7 +39,7 @@ const props = defineProps({
     <!--      :src="props.buttonImagePath"-->
     <!--      class="button__image"-->
     <!--    />-->
-  </NuxtLink>
+  </a>
 </template>
 
 <style lang="scss" scoped>
