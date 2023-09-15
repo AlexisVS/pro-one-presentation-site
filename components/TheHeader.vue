@@ -3,6 +3,8 @@ const state = reactive({
   pageLoaded: false,
 });
 
+const { width } = useWindowSize();
+
 const video = ref<HTMLVideoElement | null>(null);
 
 onMounted(() => {
@@ -38,10 +40,15 @@ const onAnimationLayerTextRendered = (el: Element) => {
         name="translate-header-text-top"
         @after-enter="onAnimationLayerTextRendered"
       >
-        <h1 v-if="state.pageLoaded" class="header__layer__title">
+        <h1
+          v-if="state.pageLoaded"
+          :class="width > 1350 ? 'fluid-font-size-4' : 'fluid-font-size-3'"
+          class="header__layer__title"
+        >
           {{ $t("page.home.header.title") }}
         </h1>
       </transition>
+      <hr style="height: 0.75rem" />
       <transition
         appear
         name="translate-header-text-top"
@@ -51,6 +58,7 @@ const onAnimationLayerTextRendered = (el: Element) => {
           v-if="state.pageLoaded"
           :style="'animation-delay: 500ms'"
           class="header__layer__subtitle"
+          :class="width > 1350 ? 'fluid-font-size-2' : 'fluid-font-size-1'"
         >
           {{ $t("page.home.header.subtitle") }}
         </span>
@@ -102,21 +110,22 @@ const onAnimationLayerTextRendered = (el: Element) => {
     );
 
     &__title {
-      @include fluid-type(font-size, 35px, 45px, 320px, 1024px);
+      //@include fluid-type(font-size, 35px, 45px, 320px, 1024px);
       width: 90%;
       font-weight: 680;
       opacity: 0;
       transform: translateY(0);
       margin: 0;
+      line-height: 1.175;
     }
 
     &__subtitle {
-      @include fluid-type(font-size, 22px, 30px, 320px, 1024px);
+      //@include fluid-type(font-size, 22px, 30px, 320px, 1024px);
       width: 90%;
-      font-size: 2rem;
       font-weight: 500;
       opacity: 0;
       transform: translateY(0);
+      line-height: 1.25;
     }
   }
 }
@@ -154,13 +163,25 @@ const onAnimationLayerTextRendered = (el: Element) => {
     text-align: initial;
 
     &__title {
+      width: 68%;
+      //@include fluid-type(font-size, 22px, 55px, 1024px, 3840px);
+    }
+
+    &__subtitle {
+      width: 68%;
+      //@include fluid-type(font-size, 16px, 38px, 1024px, 3840px);
+    }
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .header__layer {
+    &__title {
       width: 60%;
-      @include fluid-type(font-size, 55px, 90px, 1024px, 3840px);
     }
 
     &__subtitle {
       width: 60%;
-      @include fluid-type(font-size, 33px, 60px, 1024px, 3840px);
     }
   }
 }

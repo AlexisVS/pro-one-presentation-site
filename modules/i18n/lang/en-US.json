@@ -9,8 +9,8 @@
   "page": {
     "home": {
       "header": {
-        "title": "The power of water at your fingertips.",
-        "subtitle": "Discover our products for easy access to perfectly purified water."
+        "title": "A complete range for the treatment and purification of your water.",
+        "subtitle": "From camping to permanent kitchen equipment, with high-performance and economical solutions, there's a ProOne Water Filter ® to meet your needs."
       },
       "who_we_are": {
         "title": "Healthy water for all your needs.",
@@ -28,8 +28,24 @@
         "paragraph_2": "We are proud to announce that our ProOne ® G2.0 range of elements has been awarded NSF ANSI-42 certification, guaranteeing the highest purification quality.",
         "paragraph_3": "We have applied the same standards to our Coldsteam and ProMax (pressure systems) ranges."
       },
+      "pfas": {
+        "title": "Protection against fluorinated organic acids (PFAS).",
+        "paragraph_1": "Did you know that nearly half of all tap water in the U.S. is contaminated with PFAS, also known as fluorinated organic acids or 'eternal chemicals'. It's a growing concern across the country. PFAS are a group of contaminants including:",
+        "pfas_1": "Perfluorobutane sulfonate (PFBS)",
+        "pfas_2": "Perfluorodecanoic acid (PFDA)",
+        "pfas_3": "Perfluorohexanoic acid (PFHxA)",
+        "pfas_4": "Perfluorononanoic acid (PFNA)",
+        "pfas_5": "Perfluorooctanoic acid (PFOA)",
+        "pfas_6": "Substitute (C8)",
+        "pfas_7": "Perfluorooctane sulfonate (PFOS)",
+        "pfas_8": "Perfluorohexane sulfonate (PFSxS)",
+        "pfas_9": "Polytetrafluoroethylene (PTFE)",
+        "pfas_10": "Fluorotelomer alcohol 8:2 (PTOH)",
+        "paragraph_2": "Although PFOS and PFOA are perhaps the most common contaminants, we have tested all the above PFAS contaminants.",
+        "paragraph_3": "ProOne offers several solutions for the reduction of PFAS contaminants, including gravity and pressure water filtration systems."
+      },
       "conclusion": {
-        "title": "Join the ProOne Water Filter ® revolution today",
+        "title": "Join the ProOne Water Filter ® evolution today",
         "paragraph_1": "Make the smart, sustainable choice with ProOne Water Filter ® water filters, the benchmark in water purification.",
         "paragraph_2": "Don't wait any longer to improve the quality of your water and contribute to a healthier, more physical future for all."
       }

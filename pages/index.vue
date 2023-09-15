@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import PageHomePFAS from "../components/Page/Home/PageHomePFAS.vue";
 import { useAssetLoader } from "~/composables/useAssetLoader";
 
 const { isLoading } = useAssetLoader();
@@ -22,6 +23,7 @@ definePageMeta({
     <PageHomeSocietyWhoWeAre />
     <PageHomeSocietyWhyWeDoingThat />
     <PageHomeProoneFilter />
+    <PageHomePFAS />
     <PageHomeConclusion />
   </div>
 </template>

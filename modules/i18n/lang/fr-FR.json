@@ -9,8 +9,8 @@
   "page": {
     "home": {
       "header": {
-        "title": "Le pouvoir de l'eau à porter de main.",
-        "subtitle": "Découvrez nos produits pour un accès facile à une eau parfaitement purifiées."
+        "title": "Une gamme complète pour le traitement et la purification de votre eau.",
+        "subtitle": "Du camping à l'équipement permanent de votre cuisine, avec des solutions performantes et économiques, il y a un ProOne Water Filter ® répondant à vos besoins."
       },
       "who_we_are": {
         "title": "Une eau saine pour tous vos besoin.",
@@ -28,8 +28,24 @@
         "paragraph_2": "Nous sommes fiers d'annoncer notre gamme d'éléments ProOne ® G2.0 a obtenu la certification NSF ANSI-42 garantissant une qualité de purification de très haut niveau.",
         "paragraph_3": "Nous avons appliqué les mêmes standards dans notre gamme Coldsteam et ProMax (systèmes à pression)."
       },
+      "pfas": {
+        "title": "Protection constre les acides organiques fluorés (PFAS).",
+        "paragraph_1": "Saviez-vous que près de la moitié de l'eau du robinet aux États-Unis est contaminée par des PFAS, également connus sous le nom d'acides organiques fluorés ou « produits chimiques éternels ». C'est une préoccupation croissante dans tout le pays. Les PFAS sont un groupe de contaminants comprenant :",
+        "pfas_1": "Sulfonate de perfluorobutane (PFBS)",
+        "pfas_2": "Acide perfluorodécanoïque (PFDA)",
+        "pfas_3": "Acide perfluorohexanoïque (PFHxA)",
+        "pfas_4": "Acide perfluorononanoïque (PFNA)",
+        "pfas_5": "Acide perfluorooctanoïque (PFOA)",
+        "pfas_6": "Substitut (C8)",
+        "pfas_7": "Sulfonate de perfluorooctane (PFOS)",
+        "pfas_8": "Sulfonate de perfluorohexane (PFSxS)",
+        "pfas_9": "Polytétrafluoroéthylène (PTFE)",
+        "pfas_10": "Alcool fluorotélomère 8:2 (PTOH)",
+        "paragraph_2": "Bien que le PFOS et le PFOA soient peut-être les contaminants les plus courants, nous avons testé tous les contaminants PFAS ci-dessus.",
+        "paragraph_3": "ProOne propose plusieurs solutions pour la réduction des contaminants PFAS, notamment des systèmes de filtration d'eau par gravité et sous pression."
+      },
       "conclusion": {
-        "title": "Rejoignez la révolution ProOne Water Filter ® dès aujourd'hui",
+        "title": "Rejoignez l'évolution ProOne Water Filter ® dès aujourd'hui",
         "paragraph_1": "Faite le choix intelligent et durable en optant pour les filtres à eaux ProOne Water Filter ®, la référence en matière de purification d'eaux.",
         "paragraph_2": "N'attendez plus pour améliorer la qualité de votre eau et contribuer à un avenir physique et plus sain pour tous."
       }

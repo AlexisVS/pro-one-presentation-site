@@ -5,6 +5,7 @@
       class="loader__image"
       src="/brand/brand.png"
       alt="Brand logo"
+      width="305"
     />
   </div>
 </template>
@@ -39,7 +40,7 @@
 
   &__image {
     width: 90dvw;
-    max-width: 450px;
+    max-width: 305px;
     animation: translate-wave 4s infinite;
     animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }

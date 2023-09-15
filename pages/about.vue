@@ -19,10 +19,7 @@ definePageMeta({
       src="/proone-independant.png"
       style="margin: 0 auto; display: block"
     />
-    <pre
-      class="fluid-font-size-0"
-      style="max-width: 700px; margin: 3rem auto 0"
-    >
+    <pre class="fluid-font-size-0">
       {{ $t("page.about.paragraph") }}
     </pre>
   </section>
@@ -30,7 +27,10 @@ definePageMeta({
 
 <style scoped lang="scss">
 pre {
-  white-space: pre-wrap;
+  max-width: 700px;
+  margin: 3rem auto 0;
+  white-space: pre-line;
+  line-height: 1.2;
   word-wrap: break-word;
   font-family: inherit;
 }

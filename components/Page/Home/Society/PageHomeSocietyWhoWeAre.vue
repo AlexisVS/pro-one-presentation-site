@@ -7,12 +7,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 <template>
   <section class="who-we-are">
-    <NuxtImg
-      format="webp"
-      alt="Our team"
-      class="who-we-are__image"
-      src="/team/team1.jpg"
-    />
+    <div class="who-we-are__image-wrapper">
+      <NuxtImg
+        alt="Our team"
+        class="who-we-are__image"
+        format="webp"
+        src="/team/team.jpg"
+      />
+    </div>
 
     <div class="who-we-are__text-side">
       <TheTransitionBase transition="easeTranslateTop">
@@ -38,11 +40,18 @@ gsap.registerPlugin(ScrollTrigger);
 .who-we-are {
   position: relative;
 
-  &__image {
+  &__image-wrapper {
+    border-radius: 12px;
     width: 100%;
     height: 100%;
-    object-fit: contain;
   }
+
+  &__image {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
   &__text-side {
     position: relative;
     z-index: 2;
@@ -59,10 +68,15 @@ gsap.registerPlugin(ScrollTrigger);
     justify-content: space-between;
     align-items: center;
 
-    &__image {
+    &__image-wrapper {
       width: 50%;
-      height: 100%;
+      height: auto;
+    }
+
+    &__image {
       object-fit: contain;
+      width: 100%;
+      height: 100%;
     }
 
     &__text-side {
