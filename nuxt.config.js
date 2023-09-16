@@ -92,6 +92,11 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
+      routes: [
+        "/_ipx/f_webp/filtration/filtration_agents_en.png",
+        "/_ipx/f_webp/filtration/filtration_agents_fr.png",
+        "/_ipx/f_webp/filtration/filtration_agents_es.png",
+      ],
     },
   },
   // ogImage: {

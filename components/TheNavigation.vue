@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TheLocaleSwitcher from "./Section/TheLocaleSwitcher.vue";
+import TheLocaleSwitcher from "./TheLocaleSwitcher.vue";
 
 const state = reactive({ windowWidth: 0 });
 

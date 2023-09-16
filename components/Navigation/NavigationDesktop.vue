@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import TheLocaleSwitcher from "../Section/TheLocaleSwitcher.vue";
-
 const localePath = useLocalePath();
 const navigation = useNavigation();
 const { width } = useWindowSize();

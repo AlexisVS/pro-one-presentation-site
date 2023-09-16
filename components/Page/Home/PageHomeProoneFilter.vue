@@ -1,4 +1,6 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { locale: currentLocale } = useI18n();
+</script>
 
 <template>
   <section class="proone-filter">
@@ -21,7 +23,7 @@
         format="webp"
         alt="Pro One stuff"
         class="proone-filter__image-side__image"
-        src="/filtration/filtration_agents.png"
+        :src="`/filtration/filtration_agents_${currentLocale}.png`"
       />
     </div>
   </section>
